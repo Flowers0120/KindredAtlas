@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#faf7f5">
+  <meta name="description" content="相逢图鉴：棕色尘埃 II 有缘之客的手动操作指南。按角色查看互动部位、点击长按、拖拽、连续组合与阶段路线，无须安装插件。">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self';script-src 'self';style-src 'self';img-src 'self' data:;connect-src 'self';base-uri 'none';form-action 'none'">
+  <title>相逢图鉴 · KindredAtlas</title>
+  <link rel="icon" href="./assets/cherry-mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#guide">跳到当前攻略</a>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="相逢图鉴首页">
+      <img src="./assets/cherry-mark.svg" alt="" width="42" height="42">
+      <span><strong>相逢图鉴</strong><small>KindredAtlas</small></span>
+    </a>
+    <span class="header-note">把每一步相处，慢慢看明白。</span>
+    <nav class="header-actions" aria-label="页面操作">
+      <button class="quiet-button mobile-character-button" id="choose-character" type="button" aria-label="切换角色或服装" title="切换角色或服装"><span aria-hidden="true">☷</span> 角色</button>
+      <button class="quiet-button" id="share-button" type="button"><span aria-hidden="true">↗</span> 分享当前路线</button>
+      <button class="quiet-button" id="print-button" type="button"><span aria-hidden="true">▤</span> 打印</button>
+      <a class="github-link" href="https://github.com/Flowers0120/KindredAtlas" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <div class="page-shell">
+    <aside class="character-sidebar" aria-label="角色与服装">
+      <div class="sidebar-heading"><span class="eyebrow">选择一场相逢</span><span class="count-badge" id="character-count">…</span></div>
+      <label class="search-box"><span aria-hidden="true">⌕</span><input id="character-search" type="search" placeholder="搜索角色或服装" autocomplete="off" aria-label="搜索角色或服装"><kbd>/</kbd></label>
+      <p class="sidebar-caption" id="list-caption">正在整理角色目录…</p>
+      <div class="character-list" id="character-list" role="navigation" aria-label="角色列表"></div>
+      <div class="sidebar-bottom"><span class="small-flower" aria-hidden="true">✿</span><p>不用安装插件。<br>打开游戏，对照路线手动操作。</p></div>
+    </aside>
+
+    <main id="guide" class="guide" tabindex="-1">
+      <section class="loading-panel" id="loading-panel" aria-live="polite"><span class="loading-flower" aria-hidden="true">✿</span><h1>相逢的路线，正在展开</h1><p>正在读取角色与操作指南。</p></section>
+      <section class="error-panel" id="error-panel" hidden aria-live="assertive"><span class="eyebrow">暂时没有读到攻略</span><h1>再试一次，好吗？</h1><p id="error-message">角色资料暂时无法加载。</p><button type="button" class="primary-button" id="retry-button">重新加载</button><p class="muted">如果你是在本地直接打开文件，请通过本地静态服务器预览。网站在线访问不需要安装任何程序。</p></section>
+
+      <div id="guide-content" hidden>
+        <section class="character-hero" aria-labelledby="character-name">
+          <div class="hero-copy"><div class="eyebrow"><span aria-hidden="true">✧</span> 有缘之客 · 手动操作图鉴</div><h1 id="character-name"></h1><p class="costume-name" id="costume-name"></p><p class="hero-description" id="character-summary"></p><div class="hero-badges" id="character-badges"></div></div>
+          <div class="hero-art" aria-hidden="true"><span class="orbit orbit-one"></span><span class="orbit orbit-two"></span><span class="petal petal-one"></span><span class="petal petal-two"></span><span class="petal petal-three"></span><span class="hero-character-mark" id="character-mark"></span><span class="art-caption">一期一会</span></div>
+        </section>
+
+        <section class="start-note" aria-label="开始前"><span class="start-note-icon" aria-hidden="true">↳</span><p><strong>先在游戏里进入对应服装的「有缘之客」。</strong>可开启右上角提示模式，找到当前姿态下的互动部位，再按下面的操作路线进行。这里是手动攻略，无须安装 KT。</p></section>
+        <p class="scope-note" id="scope-note" hidden></p>
+        <div id="verification-note" class="verification-note" hidden></div>
+        <section class="costume-switcher" id="costume-switcher" aria-label="同角色的其他服装" hidden></section>
+
+        <section class="phase-section" aria-labelledby="phase-heading">
+          <div class="section-heading"><div><span class="eyebrow">先看此刻，再往前</span><h2 id="phase-heading">相处路线</h2></div><span class="stage-count" id="stage-count"></span></div>
+          <div class="phase-tabs" id="phase-tabs" role="tablist" aria-label="选择要查看的阶段"></div>
+          <p id="phase-empty" class="empty-state" hidden></p>
+          <div id="phase-content" role="tabpanel" tabindex="0">
+            <div class="phase-intro"><span class="phase-number" id="phase-number"></span><div><h3 id="phase-name"></h3><p id="phase-summary"></p></div><span class="viewing-label">正在查看</span></div>
+            <div class="flow-legend" aria-label="路线图图例"><span><b class="legend-parallel" aria-hidden="true">Ⅱ</b> 并列：可以分别操作</span><span><b aria-hidden="true">→</b> 连续：按顺序完成</span><span><b aria-hidden="true">⇢</b> 单向：进入下一阶段</span><span><b aria-hidden="true">⇄</b> 可逆：可来回切换</span></div>
+            <div class="swimlane" id="swimlane" aria-label="本阶段手动操作泳道图"></div>
+          </div>
+        </section>
+
+        <section class="instruction-section" aria-labelledby="instruction-heading">
+          <div class="section-heading"><div><span class="eyebrow">知道点哪里，也知道怎么做</span><h2 id="instruction-heading">逐项操作</h2></div><span class="stage-count" id="action-count"></span></div>
+          <div class="gesture-filters" id="gesture-filters" role="group" aria-label="按操作方式筛选"></div>
+          <div class="action-grid" id="action-grid"></div>
+        </section>
+
+        <section class="combo-section" aria-labelledby="combo-heading">
+          <div class="section-heading"><div><span class="eyebrow">连起来，才是一套</span><h2 id="combo-heading">连续组合</h2></div><span class="stage-count" id="combo-count"></span></div>
+          <p class="section-description">从第一步开始，按箭头顺序继续。需要等待或有操作时限时，以对应步骤的说明为准。</p>
+          <div id="combo-list" class="combo-list"></div>
+        </section>
+
+        <section class="gauge-section" aria-labelledby="gauge-heading">
+          <div class="section-heading"><div><span class="eyebrow">条件满足，下一步才会出现</span><h2 id="gauge-heading">进度条与触发条件</h2></div></div>
+          <div id="gauge-list" class="gauge-list"></div>
+        </section>
+
+        <section class="transition-section" aria-labelledby="transition-heading"><div class="section-heading"><div><span class="eyebrow">走到这里，再选择下一步</span><h2 id="transition-heading">阶段变化</h2></div></div><div id="transition-list" class="transition-list"></div></section>
+
+        <details class="full-route" id="full-route"><summary><span><strong>展开其他阶段</strong><small>后续动作默认收起，需要时再查看。</small></span><span aria-hidden="true">＋</span></summary><div id="other-phases"></div></details>
+
+        <section class="reference-notes" id="reference-notes" hidden><h2>阅读提示</h2><div id="reference-notes-content"></div></section>
+        <div class="guide-bottom-nav"><button id="previous-stage" class="secondary-button" type="button">← 上一阶段</button><a href="#guide" class="back-top">回到顶部 ↑</a><button id="next-stage" class="primary-button" type="button">查看下一阶段 →</button></div>
+      </div>
+    </main>
+  </div>
+
+  <footer class="site-footer"><div><img src="./assets/cherry-mark.svg" width="28" height="28" alt=""><p><strong>相逢图鉴</strong><span>KindredAtlas · 作者 Flowers0120</span></p></div><p>欢迎点一个 <a href="https://github.com/Flowers0120/KindredAtlas" target="_blank" rel="noopener noreferrer">Star</a>，Star 是开发的最大动力！</p><p class="footer-note">非官方玩家指南 · 仅说明游戏操作 · 图中阶段由你手动选择</p></footer>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+  <dialog id="share-dialog"><h2>分享这条路线</h2><p>复制下面的网址，就能直接打开当前角色与阶段。</p><label for="share-url">当前路线网址</label><input id="share-url" type="url" readonly><button id="close-share-dialog" class="primary-button" type="button">完成</button></dialog>
+  <noscript><p class="noscript-note">此图鉴需要启用 JavaScript 来切换角色和查看路线。网站不收集账号或浏览记录。</p></noscript>
+</body>
+</html>
