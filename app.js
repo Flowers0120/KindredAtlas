@@ -136,7 +136,7 @@
     $("character-summary").textContent = text(character.summary) || "跟着当前姿态，一步一步找到可以互动的部位。";
     $("scope-note").hidden = !state.scope;
     $("scope-note").textContent = state.scope ? `收录范围：${state.scope}` : "";
-    document.title = `${character.name} · ${character.costume} — 相逢图鉴`;
+    document.title = `${character.name} · ${character.costume} — BD2有缘之客互动图鉴`;
     const verification = element("span", `badge ${isVerified(character.verification) ? "verified" : "pending"}`, verificationLabel(character.verification));
     const badges = [element("span", "badge", `${character.phases.length} 个阶段`), verification];
     const availability = text(character.availability?.label) || text(character.availability);

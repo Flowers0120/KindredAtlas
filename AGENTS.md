@@ -1,4 +1,4 @@
-# KindredAtlas · 相逢图鉴
+# KindredAtlas · BD2有缘之客互动图鉴
 
 - This is an independent, buildless GitHub Pages guide for manual game controls. It does not connect to or control the game.
 - Keep player wording clear: location, gesture, order, conditions, and stage transitions. Never invent directions, coordinates, hold durations, dependencies, or live verification.

@@ -24,3 +24,7 @@
 .combo-list,.combo-card{min-width:0}.combo-steps{flex-wrap:wrap;row-gap:20px}.combo-step{flex:1 1 155px;overflow-wrap:anywhere}.combo-card-heading{min-width:0}.combo-card-heading h3{min-width:0;overflow-wrap:anywhere}.combo-note{overflow-wrap:anywhere}
 
 .flow-combination+.flow-combination{margin-top:15px}.flow-combination-name{font-size:11px;font-weight:650;color:#945871;margin-bottom:7px}.flow-combination{min-width:0}
+
+/* Keep the descriptive product name readable beside the mobile controls. */
+.brand{flex:0 1 auto;min-width:0}.brand>span{min-width:0}.brand strong{letter-spacing:.03em;overflow-wrap:anywhere}.brand strong>span{display:inline-block;white-space:nowrap}.header-actions{flex-shrink:0}
+@media(max-width:800px){.brand{flex:1}.brand strong{line-height:1.3}}
