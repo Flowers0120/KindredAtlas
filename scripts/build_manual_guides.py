@@ -125,13 +125,26 @@ def safe_point(point, yuri=False):
 def ordered_clicks(point):
     motions = point.get("NativeClickMotionNames", [])
     return bool(point.get("SupportsClick") and not point.get("SupportsHold") and not point.get("SupportsDrag") and
-                (not point.get("ChangesStageOnEnd") or point.get("SupportsContinuousClick")) and
-                (not point.get("SupportsContinuousClick") or 2 <= point.get("ClickMaxCount", 0) <= 128) and
+                not point.get("ChangesStageOnEnd") and not point.get("SupportsContinuousClick") and
                 point.get("NativeClickMotionsReadable") and not point.get("NativeClickMotionsRandom") and
                 2 <= len(motions) <= 128 and all(motions) and len(set(motions)) > 1)
 
 
-def make_action(point, pose, stage_gauge, auto_motion_names, child_names):
+def reviewed_automatic_point(resource, key, point, stage_configs):
+    """Only the observed Aquila zero tail is known to replace a manual input."""
+    if resource != "Illust_dating22" or key != (2, 0, 24):
+        return False
+    if not point.get("GaugeIsOn") or point.get("GaugeInteractableMin") != 0 or point.get("GaugeInteractableMax") != 0:
+        return False
+    if set(point.get("NativeMotionNames", [])) != {"mix2_24_1"}:
+        return False
+    return any(state.get("tool") == 0 and state.get("gauge", {}).get("IsOn") and
+               any(motion.get("Score") == 0 and motion.get("IsCanPlayWhenDecreaseScore") and
+                   motion.get("MixAnimationName") == "mix2_24_1"
+                   for motion in state["gauge"].get("MotionNameByScoreList", [])) for state in stage_configs)
+
+
+def make_action(point, pose, stage_gauge, auto_motion_names, child_names, automatic_only=False):
     name = clean_name(point["DisplayName"])
     stage, tool, pid = signature(point)
     aid = "touch-" + short_id(f"{stage}:{tool}:{pid}:{name}")
@@ -141,11 +154,14 @@ def make_action(point, pose, stage_gauge, auto_motion_names, child_names):
         conditions.append("先切换至对应互动方式；该工具的显示名称尚待逐项核对。")
     if point.get("GaugeIsOn"):
         lo, hi = point.get("GaugeInteractableMin", 0), point.get("GaugeInteractableMax", 100)
-        if lo != 0 or hi != 100:
+        configured = next((state.get("gauge", {}) for state in stage_gauge if state.get("tool") == tool and state.get("gauge", {}).get("IsOn")), {})
+        full_range = configured.get("MinMaxScore", {})
+        maximum = full_range.get("y", 100)
+        if lo != 0 or hi != 100 or maximum != 100:
             conditions.append(f"进度条为 {fnum(lo)} 时可用。" if lo == hi else f"进度条在 {fnum(lo)}–{fnum(hi)} 范围内可用。")
     threshold = float(point.get("HoldThresholdSeconds", 0) or 0)
     drag, hold = None, None
-    if set(point.get("NativeMotionNames", [])) & auto_motion_names:
+    if automatic_only:
         gesture = "自动触发"
         instructions = ["按进度条说明达到对应阈值，由游戏自动播放该动作。", "等待收尾动画结束；不要为重复同一动画额外连点。"]
         location = "进度条触发；无需再次寻找手动点击位置。"
@@ -178,13 +194,17 @@ def make_action(point, pose, stage_gauge, auto_motion_names, child_names):
     else:
         count = int(point.get("ClickMaxCount", 0) or 0) if point.get("SupportsContinuousClick") else len(point.get("NativeClickMotionNames", [])) if ordered_clicks(point) else 0
         if count >= 2:
-            gesture = "连续短按"
-            instructions.append(f"在{name}按顺序短按 {count} 次，每次允许继续触控时再点；最后一次后等待完整动画。")
-            if ordered_clicks(point):
+            if point.get("SupportsContinuousClick"):
+                gesture = "连续短按"
+                instructions.append(f"在{name}连续短按 {count} 次，每次按下后松开再继续，保持游戏接受输入的连点节奏。")
+                conditions.append("次数按本轮连续计数计算；超过复位间隔后需重新计数。")
+                reset = float(point.get("ContinuousClickResetSeconds", 0) or 0)
+                if reset > 0:
+                    notes.append(f"两次有效点击的间隔不要超过约 {fnum(reset)} 秒，否则连续计数会复位；最后一次后再等待完整动画。")
+            else:
+                gesture = "顺序短按"
+                instructions.append(f"在{name}依次短按 {count} 次，每次等待当前反应完整结束，再轻点接续；没有限时连点要求。")
                 conditions.append("次数以本阶段初始化状态为起点；已经做到中途时，从当前动作继续，不重播开头。")
-            reset = float(point.get("ContinuousClickResetSeconds", 0) or 0)
-            if reset > 0:
-                notes.append(f"两次触控的间隔不要超过约 {fnum(reset)} 秒，否则连续计数会复位。")
         else:
             gesture = "短按"
             instructions.append(f"在{name}单击一次鼠标左键。")
@@ -198,6 +218,8 @@ def make_action(point, pose, stage_gauge, auto_motion_names, child_names):
                 notes.append(f"重复用于调节进度时，先等约 {fnum(reset)} 秒让连续判定复位；快速连点可能不再改变进度。")
     if point.get("GaugeIsOn") and point.get("SupportsHold") and point.get("GaugeLongPressSuccessScore"):
         notes.append(f"长按成功的进度变化为 {float(point['GaugeLongPressSuccessScore']):+g}。")
+    if not automatic_only and set(point.get("NativeMotionNames", [])) & auto_motion_names:
+        notes.append("同一动画也可能由进度条阈值触发；手动操作仍按本卡说明。")
     return dict(id=aid, name="进度条 · 自动收尾" if gesture == "自动触发" else f"{name} · {gesture}", location=location, gesture=gesture, holdSeconds=hold,
                 drag=drag, conditions=conditions, instructions=instructions, note=" ".join(notes), verified=False)
 
@@ -397,6 +419,36 @@ def apply_manual_routes(characters, source):
         action = {key: addition[key] for key in ("id", "name", "location", "gesture", "conditions", "instructions", "note")}
         action.update(holdSeconds=None, drag=None, verified=False, variantCount=1, source="wiki-text")
         phase["actions"].append(action)
+    for override in document.get("actionOverrides", []):
+        character = known.get(override.get("characterId"))
+        if not character or character["id"] == "yuri":
+            raise ValueError("Manual wording override requires an eligible character.")
+        matched = []
+        for phase in character["phases"]:
+            if str(override.get("phaseId", "*")) not in ("*", phase["id"]):
+                continue
+            for action in phase["actions"]:
+                if action["name"].split("·")[0].strip() != override["matchName"]:
+                    continue
+                matched.append(action)
+                for field in ("location", "instructions"):
+                    if field in override:
+                        action[field] = override[field]
+                if override.get("appendNote"):
+                    action["note"] = " ".join(filter(None, [action.get("note"), override["appendNote"]]))
+        if not matched:
+            raise ValueError("Manual wording override no longer matches a public action.")
+    for addition in document.get("phaseGuideNotes", []):
+        character = known.get(addition.get("characterId"))
+        phase = next((p for p in character["phases"] if p["id"] == str(addition.get("phaseId"))), None) if character else None
+        if not phase or character["id"] == "yuri":
+            raise ValueError("Manual phase note lacks an eligible phase.")
+        phase["gaugeRules"].extend(addition.get("gaugeRules", []))
+    for addition in document.get("characterNotes", []):
+        character = known.get(addition.get("characterId"))
+        if not character or character["id"] == "yuri":
+            raise ValueError("Manual character note lacks an eligible identity.")
+        character["notes"].append(addition["text"])
     for route in document.get("routes", []):
         character = known.get(route.get("characterId"))
         if not character or character["id"] == "yuri":
@@ -505,12 +557,13 @@ def build(kt: Path, output: Path):
         for stage in stages:
             phase_points = {k: p for k, p in safe.items() if k[0] == stage}
             stage_configs = [s for s in flow["stageStates"] if s["stage"] == stage]
-            auto_names = {m["MixAnimationName"] for s in stage_configs for m in s.get("gauge", {}).get("MotionNameByScoreList", [])}
+            auto_names = {m["MixAnimationName"] for s in stage_configs if s.get("gauge", {}).get("IsOn") for m in s.get("gauge", {}).get("MotionNameByScoreList", [])}
             actions, by_key, conditions_by_key = [], {}, {}
             for key, point in sorted(phase_points.items()):
                 children = [clean_name(safe.get((stage, key[1], child), {}).get("DisplayName")) for child in point.get("NativeHiddenChildPointIds", [])]
                 pose_point, pose = poses.get(key, (point, None))
-                action = make_action({**point, **{k: v for k, v in pose_point.items() if k in ("ScreenX", "ScreenY", "DragDestinations")}}, pose, stage_configs, auto_names if not yuri else set(), children)
+                action = make_action({**point, **{k: v for k, v in pose_point.items() if k in ("ScreenX", "ScreenY", "DragDestinations")}}, pose, stage_configs, auto_names if not yuri else set(), children,
+                                     automatic_only=reviewed_automatic_point(resource, key, point, stage_configs))
                 actions.append(action)
                 by_key[key] = action
             combos, seen_routes = [], set()

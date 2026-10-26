@@ -7,7 +7,7 @@ import math
 import re
 from pathlib import Path
 
-from build_manual_guides import DENIED, ORDINARY_YURI, safe_point, ordered_clicks, make_gauge_routes
+from build_manual_guides import DENIED, ORDINARY_YURI, safe_point, ordered_clicks, make_gauge_routes, make_action, reviewed_automatic_point
 
 ROOT = Path(__file__).resolve().parent.parent
 
@@ -55,7 +55,7 @@ def validate(path=ROOT / "data/characters.json"):
                 check(bool(action["location"] and action["instructions"]), "manual action lacks location or operation")
                 check(not re.search(r"互动点|对象\s*\d|[0-9]+\s*·", action["name"]), "developer numbering leaked into player label")
                 check(not DENIED.search(action["name"]), "sensitive body target included")
-                check(action["gesture"] in ("短按", "连续短按", "长按", "拖拽", "自动触发"), "unknown gesture")
+                check(action["gesture"] in ("短按", "连续短按", "顺序短按", "长按", "拖拽", "自动触发"), "unknown gesture")
                 if action["holdSeconds"] is not None:
                     check(math.isfinite(action["holdSeconds"]) and 0 < action["holdSeconds"] <= 30, "invalid hold duration")
                 if action["drag"]:
@@ -79,7 +79,7 @@ def validate(path=ROOT / "data/characters.json"):
                     check(bool(combo.get("conditions")), "temperature route lacks starting conditions")
                 for step in combo["steps"]:
                     check(combo_action(character, phase, step) is not None, "combo points to an omitted or unknown stage action")
-                    check(step["gesture"] in ("短按", "连续短按", "长按", "拖拽"), "wait/tool/automatic motion presented as combo interaction")
+                    check(step["gesture"] in ("短按", "连续短按", "顺序短按", "长按", "拖拽"), "wait/tool/automatic motion presented as combo interaction")
                     check(bool(step["instruction"] and step.get("location")), "combo lacks manual instructions or location")
                     if "repeatUntil" in step:
                         check(isinstance(step["repeatUntil"], str) and bool(step["repeatUntil"]), "repeat control lacks a visible target")
@@ -137,6 +137,21 @@ def validate(path=ROOT / "data/characters.json"):
     check(not ordered_clicks({**fixture, "NativeClickMotionsRandom": True}), "random variants promoted to fixed combo")
     check(not ordered_clicks({**fixture, "NativeClickMotionNames": ["same", "same"]}), "repeated one-motion gesture promoted to fixed combo")
     check(not ordered_clicks({**fixture, "NativeClickMotionsReadable": False, "ClickMaxCount": 2}), "serialized default maximum promoted to fixed combo")
+    check(not ordered_clicks({**fixture, "SupportsContinuousClick": True, "ClickMaxCount": 10}), "one timed consecutive gesture promoted to a ten-step combo")
+    ordinary = {**fixture, "PointGroupId": 1, "ToolId": 0, "PointId": 1, "DisplayName": "面部", "ContinuousClickResetSeconds": 1}
+    ordinary_card = make_action(ordinary, None, [], set(), [])
+    check(ordinary_card["gesture"] == "顺序短按" and "没有限时" in ordinary_card["instructions"][0] and "复位" not in ordinary_card["note"], "ordinary sequence acquired an unsupported one-second timer")
+    timed_card = make_action({**ordinary, "SupportsContinuousClick": True, "ClickMaxCount": 10}, None, [], set(), [])
+    check(timed_card["gesture"] == "连续短按" and "10" in timed_card["instructions"][0] and "1 秒" in timed_card["note"], "timed native gesture lost its count or reset interval")
+    manual_mix = make_action({**ordinary, "NativeMotionNames": ["shared-ending"]}, None, [], {"shared-ending"}, [])
+    check(manual_mix["gesture"] != "自动触发", "an automatic animation name swallowed a genuine manual input")
+    automatic_cards = [(c["id"], p["id"], a["id"]) for c in characters for p in c["phases"] for a in p["actions"] if a["gesture"] == "自动触发"]
+    check(len(automatic_cards) == 1 and automatic_cards[0][0:2] == ("aquila", "2"), "unreviewed animation overlap acquired an automatic-only card")
+    scheherazade = next(c for c in characters if c["id"] == "scheherazade")
+    check(any("皮鞋" in a["name"] and a["gesture"] != "自动触发" for p in scheherazade["phases"] if p["id"] == "1" for a in p["actions"]), "manual shoe control remains mislabeled automatic")
+    loen = next(c for c in characters if c["id"] == "loen")
+    check(all(p["gaugeRules"] for p in loen["phases"]), "missing generic gauge configuration hid the Wiki blue-heart mechanism")
+    check(any("两支兔耳" in a["location"] for p in loen["phases"] for a in p["actions"]), "Loen head ornament location was lost")
     first = dict(id="1", actions=[dict(id="same", name="first")])
     second = dict(id="2", actions=[dict(id="same", name="second")])
     sample = dict(phases=[first, second])

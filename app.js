@@ -27,9 +27,10 @@
   function empty(message) { return element("p", "empty-state", message); }
   function verificationLabel(value) { return text(value?.label) || text(value) || "说明待核对"; }
   function isVerified(value) { return ["verified", "live-verified", "live-tested", "current-live-verified"].includes(text(value?.level)); }
+  function isReversible(transition) { return transition?.reversible === true || transition?.direction === "reversible"; }
   function gestureKey(action) {
     const raw = text(action.gesture).toLowerCase();
-    if (["click", "tap", "短按", "点击", "单击"].includes(raw)) return "click";
+    if (["click", "tap", "短按", "连续短按", "顺序短按", "点击", "单击"].includes(raw)) return "click";
     if (["hold", "longpress", "长按"].includes(raw)) return "hold";
     if (["drag", "swipe", "拖拽", "滑动", "拖动"].includes(raw)) return "drag";
     if (["automatic", "auto", "自动触发", "自动"].includes(raw)) return "automatic";
@@ -38,6 +39,7 @@
   function gestureLabel(action) {
     const key = gestureKey(action);
     let label = gestureNames[key] || text(action.gesture) || "操作待核对";
+    if (key === "click" && ["连续短按", "顺序短按"].includes(text(action.gesture))) label = text(action.gesture);
     if (key === "hold" && Number.isFinite(Number(action.holdSeconds)) && Number(action.holdSeconds) > 0) label += ` ${Number(action.holdSeconds)} 秒`;
     return label;
   }
@@ -280,7 +282,7 @@
     });
     const transitions = phase.transitions.map((transition) => {
       const card = element("div", "flow-transition");
-      const reversible = transition?.reversible === true;
+      const reversible = isReversible(transition);
       card.append(element("span", "transition-symbol", reversible ? "⇄" : "⇢"));
       const copy = element("div");
       copy.append(element("strong", "", text(transition?.label) || text(transition) || "阶段变化待核对"));
@@ -445,11 +447,11 @@
   function renderTransitions() {
     replace("transition-list", state.phase.transitions.length ? state.phase.transitions.map((transition) => {
       const card = element("article", "transition-card");
-      card.append(element("span", "big-arrow", transition?.reversible === true ? "⇄" : "⇢"));
+      card.append(element("span", "big-arrow", isReversible(transition) ? "⇄" : "⇢"));
       const copy = element("div");
       copy.append(element("h3", "", text(transition?.label) || text(transition) || "阶段变化"));
       const description = [text(transition?.condition), ...words(transition?.notes)].filter(Boolean);
-      if (transition?.reversible === true) description.push("这是可逆切换，可按游戏当前开放的反向入口返回。");
+      if (isReversible(transition)) description.push("这是可逆切换，可按游戏当前开放的反向入口返回。");
       else description.push("按单向路线处理；继续前先完成本阶段想看的动作。");
       if (text(transition?.actionId)) {
         const match = findAction(transition.actionId);

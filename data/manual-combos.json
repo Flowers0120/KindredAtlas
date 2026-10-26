@@ -274,6 +274,21 @@
         "短按后方电脑，完成机关并进入下一姿态。"
       ],
       "note": "依据Wiki文字补充的手动位置说明；未在本轮逐条实机核对，不代表插件自动执行支持。"
+    },
+    {
+      "characterId": "loen",
+      "phaseId": "2",
+      "id": "wiki-loen-blue-heart-icon",
+      "name": "蓝心图标 · 短按",
+      "location": "画面中的蓝色爱心图标；不要把它当成角色身体触点。",
+      "gesture": "短按",
+      "conditions": [
+        "蓝心已达到游戏提示可触发的状态。"
+      ],
+      "instructions": [
+        "确认充能与触发提示后，短按蓝心图标一次。"
+      ],
+      "note": "Wiki界面控件说明；长按充能的具体落点仍待核对。"
     }
   ],
   "routes": [
@@ -934,6 +949,102 @@
           "instruction": "短按后方电脑，完成机关并进入下一姿态。"
         }
       ]
+    }
+  ],
+  "actionOverrides": [
+    {
+      "characterId": "loen",
+      "matchName": "耳朵",
+      "location": "头顶的两支兔耳装饰，分别有可点击提示区。",
+      "appendNote": "Wiki把这里称为两支兔耳；两侧可分别操作，并非只有一个耳部触点。"
+    },
+    {
+      "characterId": "loen",
+      "matchName": "面部",
+      "location": "双眼附近的面部提示区；对应Wiki所说的打头位置。"
+    },
+    {
+      "characterId": "loen",
+      "matchName": "脸颊",
+      "location": "画面左右脸颊的拉伸提示区；选一侧按住拖动。"
+    },
+    {
+      "characterId": "loen",
+      "matchName": "腰部",
+      "location": "画面左右侧腰的拉伸提示区；按游戏高亮选择一侧。"
+    },
+    {
+      "characterId": "loen",
+      "matchName": "天花板",
+      "location": "背景可点击物件包括左上两块电子屏、右上霓虹灯与左侧沙发椅，请开启提示定位。",
+      "appendNote": "Wiki给出了这些场景位置；本页旧标签“天花板／墙”尚未逐个对应，不把它们误作只有一个触点。"
+    },
+    {
+      "characterId": "loen",
+      "matchName": "墙",
+      "location": "背景可点击物件包括左上两块电子屏、右上霓虹灯与左侧沙发椅，请开启提示定位。",
+      "appendNote": "Wiki给出了这些场景位置；本页旧标签“天花板／墙”尚未逐个对应，不把它们误作只有一个触点。"
+    },
+    {
+      "characterId": "nebris",
+      "matchName": "靴子",
+      "appendNote": "先打开相机模式，把视角调到双腿；操作前退出相机模式，再按本卡的拖动说明进行。后续上半身操作需重新调整视角。"
+    }
+  ],
+  "phaseGuideNotes": [
+    {
+      "characterId": "loen",
+      "phaseId": "1",
+      "gaugeRules": [
+        {
+          "title": "Wiki补充 · 蓝心充能",
+          "description": "按节律点击腹部使蓝心充满，完成后进入后段姿态；这是一轮连续充能操作，不能拆成十个独立组合步骤。次数与节奏见腹部动作卡，已在中途时以当前蓝心和画面提示为准。"
+        }
+      ]
+    },
+    {
+      "characterId": "loen",
+      "phaseId": "2",
+      "gaugeRules": [
+        {
+          "title": "Wiki补充 · 后段蓝心",
+          "description": "Wiki说明后段仍可通过长按继续为蓝心充能，并可点击蓝心图标触发对应演出；原文未明确长按的精确落点和秒数，这两项仍需核对，不能编造固定时长。"
+        }
+      ]
+    },
+    {
+      "characterId": "levia",
+      "phaseId": "2",
+      "gaugeRules": [
+        {
+          "title": "Wiki百分比与本页数值",
+          "description": "本页后段采用0–150的原生刻度。Wiki约70%对应105/150，100%满条对应150；105–149区间约为条形长度70%–99%。不要把原生数值直接读成百分比。"
+        }
+      ]
+    },
+    {
+      "characterId": "aquila",
+      "phaseId": "2",
+      "gaugeRules": [
+        {
+          "title": "与Wiki收尾描述的差异",
+          "description": "本版已观察到的收尾是进度降到0后自动播放，并立即回到50；Wiki文字写到100触发，与本版实际行为不一致。本页保留本版原生证据，不据旧文字改成升到100。"
+        }
+      ]
+    }
+  ],
+  "characterNotes": [
+    {
+      "characterId": "wilhelmina",
+      "text": "本页按6个原生姿态拆分，Wiki将它们归为两大段；最终躺卧接续主要在阶段6。请按画面姿态对应，不直接照搬Wiki阶段数字。"
+    },
+    {
+      "characterId": "dafi",
+      "text": "本页按7个原生姿态拆分，Wiki按两大段讲解，阶段数字不一一对应；请以当前姿态和入口条件定位。"
+    },
+    {
+      "characterId": "loen",
+      "text": "Wiki中的蓝心是单独的界面充能说明；没有读取到通用进度配置，不代表这名角色没有蓝心机制。"
     }
   ]
 }
