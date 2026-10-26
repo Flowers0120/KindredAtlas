@@ -5,6 +5,7 @@
   const state = { characters: [], character: null, phase: null, gesture: "all", action: "", search: "", scope: "", toastTimer: null };
   const gestureNames = { click: "短按", tap: "短按", hold: "长按", longpress: "长按", drag: "拖拽", swipe: "拖拽", automatic: "自动触发", auto: "自动触发", wait: "等待" };
   const gestureSymbols = { click: "·", hold: "◷", drag: "↝", automatic: "✧", unknown: "?" };
+  const comboKinds = { "hidden-route": "隐藏接续", "ordered-clicks": "顺序接续", "gauge-route": "进度解锁", "stage-route": "阶段接续", "wiki-route": "攻略接续" };
   const avatarColors = [["#efe5ef", "#916687"], ["#e9ecee", "#718391"], ["#f4e8df", "#ad866b"], ["#e7eeea", "#78927e"], ["#eee5ed", "#9a7193"], ["#f1e7e8", "#a97581"]];
 
   function text(value) {
@@ -255,10 +256,13 @@
       combo.steps.forEach((step, index) => {
         if (index) routeNode.append(element("span", "route-arrow", "→"));
         const chip = element("span", "route-step");
-        const action = findAction(step?.actionId)?.action;
+        const match = findAction(step?.actionId, step?.phaseId);
+        const action = match?.action;
         const part = action ? action.name.split(/[·｜|]/)[0].trim() : "";
         const label = stepLabel(step);
-        chip.append(element("span", "step-number", String(index + 1)), element("span", "", part && !label.includes(part) ? `${part} · ${label}` : label));
+        const phase = text(step?.phaseId) ? shortPhaseLabel(step.phaseId) : "";
+        const caption = part && !label.includes(part) ? `${part} · ${label}` : label;
+        chip.append(element("span", "step-number", String(index + 1)), element("span", "", phase ? `${phase} · ${caption}` : caption));
         routeNode.append(chip);
       });
       group.append(routeNode);
@@ -350,42 +354,73 @@
     if (action.nextStage != null && text(action.nextStage)) card.append(element("p", "action-next", `⇢ 执行后前往${phaseLabel(action.nextStage) || "下一阶段"}，操作前先确认本阶段想看的动作已完成。`));
     return card;
   }
-  function findAction(actionId) {
-    const phases = [state.phase, ...state.character.phases.filter(phase => phase.id !== state.phase?.id)].filter(Boolean);
+  function findAction(actionId, phaseId = "") {
+    const explicitPhase = text(phaseId);
+    const phases = explicitPhase ? state.character.phases.filter(phase => phase.id === explicitPhase) :
+      [state.phase, ...state.character.phases.filter(phase => phase.id !== state.phase?.id)].filter(Boolean);
     for (const phase of phases) {
       const action = phase.actions.find((item) => item.id === text(actionId));
       if (action) return { phase, action };
     }
     return null;
   }
-  function stepLabel(step) { return text(step?.label) || text(step?.name) || text(step) || findAction(step?.actionId)?.action.name || "按本步说明操作"; }
+  function stepLabel(step) { return text(step?.label) || text(step?.name) || text(step) || findAction(step?.actionId, step?.phaseId)?.action.name || "按本步说明操作"; }
+  function shortPhaseLabel(id) {
+    const index = state.character.phases.findIndex(phase => phase.id === text(id));
+    return index >= 0 ? `阶段 ${index + 1}` : "阶段待核对";
+  }
   function renderCombos() {
     const combos = state.phase.combos;
-    $("combo-count").textContent = `${combos.length} 套连续操作`;
+    const total = state.character.phases.reduce((count, phase) => count + phase.combos.length, 0);
+    $("combo-count").textContent = `本阶段 ${combos.length} 套 · 整套服装 ${total} 套`;
     replace("combo-list", combos.length ? combos.map((combo) => {
       const card = element("article", "combo-card");
       const heading = element("div", "combo-card-heading");
       heading.append(element("h3", "", text(combo.name) || "连续组合"));
+      const kind = Object.hasOwn(comboKinds, text(combo.kind)) ? comboKinds[text(combo.kind)] : "";
+      if (kind) heading.append(element("span", "combo-kind", kind));
       const seconds = Number(combo.windowSeconds);
       if (Number.isFinite(seconds) && seconds > 0) heading.append(element("span", "combo-duration", `操作窗口 ${seconds} 秒`));
       const steps = element("ol", "combo-steps");
       combo.steps.forEach((step, index) => {
         const li = element("li", "combo-step");
         li.append(element("span", "combo-step-number", String(index + 1).padStart(2, "0")));
-        const match = findAction(step?.actionId);
+        const match = findAction(step?.actionId, step?.phaseId);
+        if (text(step?.phaseId)) li.append(element("span", "combo-step-phase", shortPhaseLabel(step.phaseId)));
         const title = match ? element("a", "", stepLabel(step)) : element("strong", "", stepLabel(step));
         if (match) { title.href = currentHash(state.character.id, match.phase.id, match.action.id); title.addEventListener("click", (event) => { event.preventDefault(); route(state.character.id, match.phase.id, match.action.id); }); }
         li.append(title);
         const detail = text(step?.instruction) || text(step?.note);
         if (detail) li.append(element("p", "", detail));
         else if (match) li.append(element("p", "", `${gestureLabel(match.action)} · ${text(match.action.location) || "部位见该动作说明"}`));
+        const repeat = text(step?.repeatUntil);
+        const compact = value => value.replace(/[\s，。；：、,.!?！？:;（）()]/g, "");
+        if (repeat && compact(repeat) && !compact(detail).includes(compact(repeat)))
+          li.append(element("p", "combo-repeat-until", `结束条件：${repeat}`));
         steps.append(li);
       });
       card.append(heading, steps);
       const details = [...words(combo.conditions), text(combo.note)].filter(Boolean);
       if (details.length) card.append(element("p", "combo-note", details.join("；")));
+      if (combo.steps.some(step => text(step?.phaseId) && text(step.phaseId) !== state.phase.id))
+        card.append(element("p", "combo-stage-note", "跨阶段路线：先在游戏中完成前一步并确认姿态变化，再操作下一阶段。点击步骤标题只切换图鉴，不会操作游戏。"));
+      const evidence = text(combo.evidence) || text(combo.evidence?.description) || text(combo.evidence?.label);
+      if (evidence) card.append(element("p", "combo-evidence", `说明来源：${evidence}`));
       return card;
     }) : [empty("当前阶段未收录可确认的连续组合。独立点击、长按或一段完整拖拽仍可在“逐项操作”中查看。")]);
+    if (!combos.length && total > 0) {
+      const alternatives = element("div", "combo-alternatives");
+      alternatives.append(element("p", "", "这套服装的其他阶段已收录组合，可按需查看："));
+      const links = element("div", "combo-phase-links");
+      state.character.phases.filter(phase => phase.id !== state.phase.id && phase.combos.length).forEach(phase => {
+        const button = element("button", "combo-phase-link", `${shortPhaseLabel(phase.id)} · ${phase.combos.length} 套组合 →`);
+        button.type = "button";
+        button.addEventListener("click", () => route(state.character.id, phase.id));
+        links.append(button);
+      });
+      alternatives.append(links);
+      $("combo-list").append(alternatives);
+    }
   }
   function renderGauge() {
     const rules = state.phase.gaugeRules;

@@ -1,0 +1,939 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-10-26",
+  "sourceUrl": "https://www.gamekee.com/zsca2/644053.html",
+  "sourceTitle": "满好感角色互动攻略",
+  "scope": "普通、中性的攻略接续；不含评论、媒体或账号信息。",
+  "actions": [
+    {
+      "characterId": "sylvia",
+      "phaseId": "3",
+      "id": "wiki-sylvia-294c12ef",
+      "name": "一侧小腿 · 短按",
+      "location": "当前姿态中的一侧小腿；以游戏提示区为准。",
+      "gesture": "短按",
+      "conditions": [
+        "只在对应姿态且该提示区可操作时使用。"
+      ],
+      "instructions": [
+        "轻点一侧小腿的提示区，确认对应腿抬起。"
+      ],
+      "note": "依据Wiki文字补充的手动位置说明；未在本轮逐条实机核对，不代表插件自动执行支持。"
+    },
+    {
+      "characterId": "sylvia",
+      "phaseId": "3",
+      "id": "wiki-sylvia-26bf4a99",
+      "name": "另一侧小腿 · 短按",
+      "location": "当前姿态中的另一侧小腿；以游戏提示区为准。",
+      "gesture": "短按",
+      "conditions": [
+        "只在对应姿态且该提示区可操作时使用。"
+      ],
+      "instructions": [
+        "轻点另一侧小腿的提示区，完成两侧抬腿。"
+      ],
+      "note": "依据Wiki文字补充的手动位置说明；未在本轮逐条实机核对，不代表插件自动执行支持。"
+    },
+    {
+      "characterId": "glancithe",
+      "phaseId": "2",
+      "id": "wiki-glancithe-left-arm-followup",
+      "name": "左手臂接续位置 · 短按",
+      "location": "当前姿态中的左手臂；以游戏提示区为准。",
+      "gesture": "短按",
+      "conditions": [
+        "只在对应姿态且该提示区可操作时使用。"
+      ],
+      "instructions": [
+        "在左手臂新出现的接续提示区短按；接续时进度需在41–99内。"
+      ],
+      "note": "依据Wiki文字补充的手动位置说明；未在本轮逐条实机核对，不代表插件自动执行支持。"
+    },
+    {
+      "characterId": "glancithe",
+      "phaseId": "2",
+      "id": "wiki-glancithe-right-arm-followup",
+      "name": "右手臂接续位置 · 短按",
+      "location": "当前姿态中的右手臂；以游戏提示区为准。",
+      "gesture": "短按",
+      "conditions": [
+        "只在对应姿态且该提示区可操作时使用。"
+      ],
+      "instructions": [
+        "在右手臂新出现的接续提示区短按；接续时进度需在41–99内。"
+      ],
+      "note": "依据Wiki文字补充的手动位置说明；未在本轮逐条实机核对，不代表插件自动执行支持。"
+    },
+    {
+      "characterId": "levia",
+      "phaseId": "1",
+      "id": "wiki-levia-897fa8bf",
+      "name": "画面左下触手 · 短按",
+      "location": "当前姿态中的画面左下触手；以游戏提示区为准。",
+      "gesture": "短按",
+      "conditions": [
+        "只在对应姿态且该提示区可操作时使用。"
+      ],
+      "instructions": [
+        "在画面左下触手的当前提示区短按一次；下一处接续提示出现时立即进行下一步。"
+      ],
+      "note": "依据Wiki文字补充的手动位置说明；未在本轮逐条实机核对，不代表插件自动执行支持。"
+    },
+    {
+      "characterId": "levia",
+      "phaseId": "1",
+      "id": "wiki-levia-363ce90e",
+      "name": "画面左中触手 · 短按",
+      "location": "当前姿态中的画面左中触手；以游戏提示区为准。",
+      "gesture": "短按",
+      "conditions": [
+        "只在对应姿态且该提示区可操作时使用。"
+      ],
+      "instructions": [
+        "在画面左中触手的当前提示区短按一次；等待本条接续完整结束。"
+      ],
+      "note": "依据Wiki文字补充的手动位置说明；未在本轮逐条实机核对，不代表插件自动执行支持。"
+    },
+    {
+      "characterId": "levia",
+      "phaseId": "1",
+      "id": "wiki-levia-32876094",
+      "name": "画面右下触手 · 短按",
+      "location": "当前姿态中的画面右下触手；以游戏提示区为准。",
+      "gesture": "短按",
+      "conditions": [
+        "只在对应姿态且该提示区可操作时使用。"
+      ],
+      "instructions": [
+        "在画面右下触手的当前提示区短按一次；下一处接续提示出现时立即进行下一步。"
+      ],
+      "note": "依据Wiki文字补充的手动位置说明；未在本轮逐条实机核对，不代表插件自动执行支持。"
+    },
+    {
+      "characterId": "levia",
+      "phaseId": "1",
+      "id": "wiki-levia-aa4a99be",
+      "name": "画面右中触手 · 短按",
+      "location": "当前姿态中的画面右中触手；以游戏提示区为准。",
+      "gesture": "短按",
+      "conditions": [
+        "只在对应姿态且该提示区可操作时使用。"
+      ],
+      "instructions": [
+        "在画面右中触手的当前提示区短按一次；等待本条接续完整结束。"
+      ],
+      "note": "依据Wiki文字补充的手动位置说明；未在本轮逐条实机核对，不代表插件自动执行支持。"
+    },
+    {
+      "characterId": "levia",
+      "phaseId": "2",
+      "id": "wiki-levia-ecc9becf",
+      "name": "画面右中触手 · 短按",
+      "location": "当前姿态中的画面右中触手；以游戏提示区为准。",
+      "gesture": "短按",
+      "conditions": [
+        "只在对应姿态且该提示区可操作时使用。"
+      ],
+      "instructions": [
+        "在画面右中触手的当前提示区短按一次；等待本条接续完整结束。"
+      ],
+      "note": "依据Wiki文字补充的手动位置说明；未在本轮逐条实机核对，不代表插件自动执行支持。"
+    },
+    {
+      "characterId": "levia",
+      "phaseId": "2",
+      "id": "wiki-levia-3c534859",
+      "name": "画面左下触手 · 短按",
+      "location": "当前姿态中的画面左下触手；以游戏提示区为准。",
+      "gesture": "短按",
+      "conditions": [
+        "只在对应姿态且该提示区可操作时使用。"
+      ],
+      "instructions": [
+        "在画面左下触手的当前提示区短按一次；下一处接续提示出现时立即进行下一步。"
+      ],
+      "note": "依据Wiki文字补充的手动位置说明；未在本轮逐条实机核对，不代表插件自动执行支持。"
+    },
+    {
+      "characterId": "levia",
+      "phaseId": "2",
+      "id": "wiki-levia-752136f7",
+      "name": "画面右下触手 · 短按",
+      "location": "当前姿态中的画面右下触手；以游戏提示区为准。",
+      "gesture": "短按",
+      "conditions": [
+        "只在对应姿态且该提示区可操作时使用。"
+      ],
+      "instructions": [
+        "在画面右下触手的当前提示区短按一次；下一处接续提示出现时立即进行下一步。"
+      ],
+      "note": "依据Wiki文字补充的手动位置说明；未在本轮逐条实机核对，不代表插件自动执行支持。"
+    },
+    {
+      "characterId": "levia",
+      "phaseId": "2",
+      "id": "wiki-levia-484d7a63",
+      "name": "画面左中触手 · 短按",
+      "location": "当前姿态中的画面左中触手；以游戏提示区为准。",
+      "gesture": "短按",
+      "conditions": [
+        "只在对应姿态且该提示区可操作时使用。"
+      ],
+      "instructions": [
+        "在画面左中触手的当前提示区短按一次；等待本条接续完整结束。"
+      ],
+      "note": "依据Wiki文字补充的手动位置说明；未在本轮逐条实机核对，不代表插件自动执行支持。"
+    },
+    {
+      "characterId": "wilhelmina",
+      "phaseId": "6",
+      "id": "wiki-wilhelmina-eab54766",
+      "name": "左脚 · 短按",
+      "location": "当前姿态中的左脚；以游戏提示区为准。",
+      "gesture": "短按",
+      "conditions": [
+        "只在对应姿态且该提示区可操作时使用。"
+      ],
+      "instructions": [
+        "在左脚的当前提示区短按一次；下一处接续提示出现时立即进行下一步。"
+      ],
+      "note": "依据Wiki文字补充的手动位置说明；未在本轮逐条实机核对，不代表插件自动执行支持。"
+    },
+    {
+      "characterId": "wilhelmina",
+      "phaseId": "6",
+      "id": "wiki-wilhelmina-879a00a9",
+      "name": "右脚 · 短按",
+      "location": "当前姿态中的右脚；以游戏提示区为准。",
+      "gesture": "短按",
+      "conditions": [
+        "只在对应姿态且该提示区可操作时使用。"
+      ],
+      "instructions": [
+        "在右脚的当前提示区短按一次；等待本条接续完整结束。"
+      ],
+      "note": "依据Wiki文字补充的手动位置说明；未在本轮逐条实机核对，不代表插件自动执行支持。"
+    },
+    {
+      "characterId": "justia",
+      "phaseId": "2",
+      "id": "wiki-justia-33d29da6",
+      "name": "腿部 · 短按",
+      "location": "当前姿态中的腿部；以游戏提示区为准。",
+      "gesture": "短按",
+      "conditions": [
+        "只在对应姿态且该提示区可操作时使用。"
+      ],
+      "instructions": [
+        "在腿部提示区短按一次，确认该腿已抬起。"
+      ],
+      "note": "依据Wiki文字补充的手动位置说明；未在本轮逐条实机核对，不代表插件自动执行支持。"
+    },
+    {
+      "characterId": "justia",
+      "phaseId": "2",
+      "id": "wiki-justia-1da5bc7e",
+      "name": "已经抬起的同一腿部 · 短按",
+      "location": "当前姿态中的已经抬起的同一腿部；以游戏提示区为准。",
+      "gesture": "短按",
+      "conditions": [
+        "只在对应姿态且该提示区可操作时使用。"
+      ],
+      "instructions": [
+        "在已经抬起的同一条腿上再短按一次，接续抬高动作；不要改点另一条腿。"
+      ],
+      "note": "依据Wiki文字补充的手动位置说明；未在本轮逐条实机核对，不代表插件自动执行支持。"
+    },
+    {
+      "characterId": "palette",
+      "phaseId": "1",
+      "id": "wiki-palette-123780dd",
+      "name": "漫画详情的第四格 · 短按",
+      "location": "当前姿态中的漫画详情的第四格；以游戏提示区为准。",
+      "gesture": "短按",
+      "conditions": [
+        "只在对应姿态且该提示区可操作时使用。"
+      ],
+      "instructions": [
+        "在漫画详情中短按第四格，确认后方电脑屏幕出现相应图案。"
+      ],
+      "note": "依据Wiki文字补充的手动位置说明；未在本轮逐条实机核对，不代表插件自动执行支持。"
+    },
+    {
+      "characterId": "palette",
+      "phaseId": "1",
+      "id": "wiki-palette-ffdc6a2c",
+      "name": "后方电脑 · 短按",
+      "location": "当前姿态中的后方电脑；以游戏提示区为准。",
+      "gesture": "短按",
+      "conditions": [
+        "只在对应姿态且该提示区可操作时使用。"
+      ],
+      "instructions": [
+        "短按后方电脑，完成机关并进入下一姿态。"
+      ],
+      "note": "依据Wiki文字补充的手动位置说明；未在本轮逐条实机核对，不代表插件自动执行支持。"
+    }
+  ],
+  "routes": [
+    {
+      "id": "wiki-sylvia-two-calves",
+      "characterId": "sylvia",
+      "phaseId": "3",
+      "name": "两侧小腿 · 抬腿接续",
+      "kind": "wiki-route",
+      "evidence": "依据GameKee教学文字及对应姿态目录整理；新增手动接续未在本轮逐条实机验证。",
+      "sourceUrl": "https://www.gamekee.com/zsca2/644053.html",
+      "conditions": [
+        "在本卡标注的姿态操作，先开启游戏提示；每一步都需等对应接续提示可用。"
+      ],
+      "note": "两侧的先后次序可以交换；这是完成两侧操作的路线，不要求固定先左或先右。",
+      "steps": [
+        {
+          "actionId": "wiki-sylvia-294c12ef",
+          "phaseId": "3",
+          "label": "一侧小腿",
+          "location": "当前姿态中的一侧小腿；左右以画面为准。",
+          "gesture": "短按",
+          "instruction": "轻点一侧小腿的提示区，确认对应腿抬起。"
+        },
+        {
+          "actionId": "wiki-sylvia-26bf4a99",
+          "phaseId": "3",
+          "label": "另一侧小腿",
+          "location": "当前姿态中的另一侧小腿；左右以画面为准。",
+          "gesture": "短按",
+          "instruction": "轻点另一侧小腿的提示区，完成两侧抬腿。"
+        }
+      ]
+    },
+    {
+      "id": "wiki-glancithe-right-left-arms",
+      "characterId": "glancithe",
+      "phaseId": "2",
+      "name": "右手臂 → 左手臂接续",
+      "kind": "wiki-route",
+      "evidence": "依据GameKee教学文字及对应姿态目录整理；新增手动接续未在本轮逐条实机验证。",
+      "sourceUrl": "https://www.gamekee.com/zsca2/644053.html",
+      "conditions": [
+        "进入后段姿态，接续动作的实际进度区间为41–99。",
+        "起手进度建议在41–96内；第一步后再次确认接续入口仍在41–99范围。"
+      ],
+      "note": "按列出的顺序接续，中间不要插入其他互动；正文未给统一秒数，以游戏提示开放为准。",
+      "steps": [
+        {
+          "actionId": "touch-9f06da26",
+          "phaseId": "2",
+          "label": "右手臂",
+          "location": "当前姿态中的右手臂；左右以画面为准。",
+          "gesture": "短按",
+          "instruction": "在右手臂普通提示区短按一次，待另一侧手臂的后继提示出现。"
+        },
+        {
+          "actionId": "wiki-glancithe-left-arm-followup",
+          "phaseId": "2",
+          "label": "左手臂",
+          "location": "当前姿态中的左手臂；左右以画面为准。",
+          "gesture": "短按",
+          "instruction": "在左手臂新出现的接续提示区短按；接续时进度需在41–99内。"
+        }
+      ]
+    },
+    {
+      "id": "wiki-glancithe-left-right-arms",
+      "characterId": "glancithe",
+      "phaseId": "2",
+      "name": "左手臂 → 右手臂接续",
+      "kind": "wiki-route",
+      "evidence": "依据GameKee教学文字及对应姿态目录整理；新增手动接续未在本轮逐条实机验证。",
+      "sourceUrl": "https://www.gamekee.com/zsca2/644053.html",
+      "conditions": [
+        "进入后段姿态，接续动作的实际进度区间为41–99。",
+        "起手进度建议在41–96内；第一步后再次确认接续入口仍在41–99范围。"
+      ],
+      "note": "按列出的顺序接续，中间不要插入其他互动；正文未给统一秒数，以游戏提示开放为准。",
+      "steps": [
+        {
+          "actionId": "touch-9f06da26",
+          "phaseId": "2",
+          "label": "左手臂",
+          "location": "当前姿态中的左手臂；左右以画面为准。",
+          "gesture": "短按",
+          "instruction": "在左手臂普通提示区短按一次，待另一侧手臂的后继提示出现。"
+        },
+        {
+          "actionId": "wiki-glancithe-right-arm-followup",
+          "phaseId": "2",
+          "label": "右手臂",
+          "location": "当前姿态中的右手臂；左右以画面为准。",
+          "gesture": "短按",
+          "instruction": "在右手臂新出现的接续提示区短按；接续时进度需在41–99内。"
+        }
+      ]
+    },
+    {
+      "id": "wiki-bantana-stage2-left-right-thighs",
+      "characterId": "bantana",
+      "phaseId": "2",
+      "name": "左大腿 → 右大腿",
+      "kind": "wiki-route",
+      "evidence": "依据GameKee教学文字及对应姿态目录整理；新增手动接续未在本轮逐条实机验证。",
+      "sourceUrl": "https://www.gamekee.com/zsca2/644053.html",
+      "conditions": [
+        "本阶段起手进度0–62便于衔接；第一步有效增加8，第二步需仍在0–70范围。",
+        "从当前姿态的左大腿提示区起手，再点右大腿后继入口。"
+      ],
+      "note": "按列出的顺序接续，中间不要插入其他互动；正文未给统一秒数，以游戏提示开放为准。",
+      "steps": [
+        {
+          "actionId": "touch-01f65158",
+          "phaseId": "2",
+          "label": "左大腿",
+          "location": "当前姿态中的左大腿；左右以画面为准。",
+          "gesture": "短按",
+          "instruction": "在左大腿的当前提示区短按一次；下一处接续提示出现时立即进行下一步。"
+        },
+        {
+          "actionId": "touch-324f9fde",
+          "phaseId": "2",
+          "label": "右大腿",
+          "location": "当前姿态中的右大腿；左右以画面为准。",
+          "gesture": "短按",
+          "instruction": "在右大腿的当前提示区短按一次；等待本条接续完整结束。"
+        }
+      ]
+    },
+    {
+      "id": "wiki-bantana-stage3-rightwrist-armpit",
+      "characterId": "bantana",
+      "phaseId": "3",
+      "name": "右手腕 → 腋下",
+      "kind": "wiki-route",
+      "evidence": "依据GameKee教学文字及对应姿态目录整理；新增手动接续未在本轮逐条实机验证。",
+      "sourceUrl": "https://www.gamekee.com/zsca2/644053.html",
+      "conditions": [
+        "处于后段躺卧姿态，建议在较低进度开始，避免中途进入自动收尾。",
+        "每一步前确认当前接续提示仍然开放。"
+      ],
+      "note": "按列出的顺序接续，中间不要插入其他互动；正文未给统一秒数，以游戏提示开放为准。",
+      "steps": [
+        {
+          "actionId": "touch-7f2a2ee6",
+          "phaseId": "3",
+          "label": "右手腕",
+          "location": "当前姿态中的右手腕；左右以画面为准。",
+          "gesture": "短按",
+          "instruction": "在右手腕的当前提示区短按一次；下一处接续提示出现时立即进行下一步。"
+        },
+        {
+          "actionId": "touch-0dfb74eb",
+          "phaseId": "3",
+          "label": "腋下",
+          "location": "当前姿态中的腋下；左右以画面为准。",
+          "gesture": "短按",
+          "instruction": "在腋下的当前提示区短按一次；等待本条接续完整结束。"
+        }
+      ]
+    },
+    {
+      "id": "wiki-bantana-stage3-wrists-mouth",
+      "characterId": "bantana",
+      "phaseId": "3",
+      "name": "右手腕 → 左手腕 → 嘴",
+      "kind": "wiki-route",
+      "evidence": "依据GameKee教学文字及对应姿态目录整理；新增手动接续未在本轮逐条实机验证。",
+      "sourceUrl": "https://www.gamekee.com/zsca2/644053.html",
+      "conditions": [
+        "处于后段躺卧姿态，建议在较低进度开始，避免中途进入自动收尾。",
+        "每一步前确认当前接续提示仍然开放。"
+      ],
+      "note": "按列出的顺序接续，中间不要插入其他互动；正文未给统一秒数，以游戏提示开放为准。",
+      "steps": [
+        {
+          "actionId": "touch-7f2a2ee6",
+          "phaseId": "3",
+          "label": "右手腕",
+          "location": "当前姿态中的右手腕；左右以画面为准。",
+          "gesture": "短按",
+          "instruction": "在右手腕的当前提示区短按一次；下一处接续提示出现时立即进行下一步。"
+        },
+        {
+          "actionId": "touch-f70fa586",
+          "phaseId": "3",
+          "label": "左手腕",
+          "location": "当前姿态中的左手腕；左右以画面为准。",
+          "gesture": "短按",
+          "instruction": "在左手腕的当前提示区短按一次；下一处接续提示出现时立即进行下一步。"
+        },
+        {
+          "actionId": "touch-17acb19f",
+          "phaseId": "3",
+          "label": "嘴部",
+          "location": "当前姿态中的嘴部；左右以画面为准。",
+          "gesture": "短按",
+          "instruction": "在嘴部的当前提示区短按一次；等待本条接续完整结束。"
+        }
+      ]
+    },
+    {
+      "id": "wiki-bantana-stage3-right-left-thighs",
+      "characterId": "bantana",
+      "phaseId": "3",
+      "name": "右大腿 → 左大腿",
+      "kind": "wiki-route",
+      "evidence": "依据GameKee教学文字及对应姿态目录整理；新增手动接续未在本轮逐条实机验证。",
+      "sourceUrl": "https://www.gamekee.com/zsca2/644053.html",
+      "conditions": [
+        "处于后段躺卧姿态，建议在较低进度开始，避免中途进入自动收尾。",
+        "每一步前确认当前接续提示仍然开放。"
+      ],
+      "note": "按列出的顺序接续，中间不要插入其他互动；正文未给统一秒数，以游戏提示开放为准。",
+      "steps": [
+        {
+          "actionId": "touch-a402b23a",
+          "phaseId": "3",
+          "label": "右大腿",
+          "location": "当前姿态中的右大腿；左右以画面为准。",
+          "gesture": "短按",
+          "instruction": "在右大腿的当前提示区短按一次；下一处接续提示出现时立即进行下一步。"
+        },
+        {
+          "actionId": "touch-dddfb1df",
+          "phaseId": "3",
+          "label": "左大腿",
+          "location": "当前姿态中的左大腿；左右以画面为准。",
+          "gesture": "短按",
+          "instruction": "在左大腿的当前提示区短按一次；等待本条接续完整结束。"
+        }
+      ]
+    },
+    {
+      "id": "wiki-levia-stage1-left-lower-middle",
+      "characterId": "levia",
+      "phaseId": "1",
+      "name": "画面左下触手 → 画面左中触手",
+      "kind": "wiki-route",
+      "evidence": "依据GameKee教学文字及对应姿态目录整理；新增手动接续未在本轮逐条实机验证。",
+      "sourceUrl": "https://www.gamekee.com/zsca2/644053.html",
+      "conditions": [
+        "使用享乐主义者装扮的对应姿态与基础触控方式。",
+        "触手位置按画面的上下左右寻找；具体可用区间以当前提示为准。"
+      ],
+      "note": "按列出的顺序接续，中间不要插入其他互动；正文未给统一秒数，以游戏提示开放为准。",
+      "steps": [
+        {
+          "actionId": "wiki-levia-897fa8bf",
+          "phaseId": "1",
+          "label": "画面左下触手",
+          "location": "当前姿态中的画面左下触手；左右以画面为准。",
+          "gesture": "短按",
+          "instruction": "在画面左下触手的当前提示区短按一次；下一处接续提示出现时立即进行下一步。"
+        },
+        {
+          "actionId": "wiki-levia-363ce90e",
+          "phaseId": "1",
+          "label": "画面左中触手",
+          "location": "当前姿态中的画面左中触手；左右以画面为准。",
+          "gesture": "短按",
+          "instruction": "在画面左中触手的当前提示区短按一次；等待本条接续完整结束。"
+        }
+      ]
+    },
+    {
+      "id": "wiki-levia-stage1-right-lower-middle",
+      "characterId": "levia",
+      "phaseId": "1",
+      "name": "画面右下触手 → 画面右中触手",
+      "kind": "wiki-route",
+      "evidence": "依据GameKee教学文字及对应姿态目录整理；新增手动接续未在本轮逐条实机验证。",
+      "sourceUrl": "https://www.gamekee.com/zsca2/644053.html",
+      "conditions": [
+        "使用享乐主义者装扮的对应姿态与基础触控方式。",
+        "触手位置按画面的上下左右寻找；具体可用区间以当前提示为准。"
+      ],
+      "note": "按列出的顺序接续，中间不要插入其他互动；正文未给统一秒数，以游戏提示开放为准。",
+      "steps": [
+        {
+          "actionId": "wiki-levia-32876094",
+          "phaseId": "1",
+          "label": "画面右下触手",
+          "location": "当前姿态中的画面右下触手；左右以画面为准。",
+          "gesture": "短按",
+          "instruction": "在画面右下触手的当前提示区短按一次；下一处接续提示出现时立即进行下一步。"
+        },
+        {
+          "actionId": "wiki-levia-aa4a99be",
+          "phaseId": "1",
+          "label": "画面右中触手",
+          "location": "当前姿态中的画面右中触手；左右以画面为准。",
+          "gesture": "短按",
+          "instruction": "在画面右中触手的当前提示区短按一次；等待本条接续完整结束。"
+        }
+      ]
+    },
+    {
+      "id": "wiki-levia-stage2-abdomen-right-middle",
+      "characterId": "levia",
+      "phaseId": "2",
+      "name": "肚脐／腹部 → 画面右中触手",
+      "kind": "wiki-route",
+      "evidence": "依据GameKee教学文字及对应姿态目录整理；新增手动接续未在本轮逐条实机验证。",
+      "sourceUrl": "https://www.gamekee.com/zsca2/644053.html",
+      "conditions": [
+        "使用享乐主义者装扮的对应姿态与基础触控方式。",
+        "触手位置按画面的上下左右寻找；具体可用区间以当前提示为准。"
+      ],
+      "note": "按列出的顺序接续，中间不要插入其他互动；正文未给统一秒数，以游戏提示开放为准。",
+      "steps": [
+        {
+          "actionId": "touch-855f6d03",
+          "phaseId": "2",
+          "label": "肚脐／腹部",
+          "location": "当前姿态中的肚脐／腹部；左右以画面为准。",
+          "gesture": "短按",
+          "instruction": "在肚脐／腹部的当前提示区短按一次；下一处接续提示出现时立即进行下一步。"
+        },
+        {
+          "actionId": "wiki-levia-ecc9becf",
+          "phaseId": "2",
+          "label": "画面右中触手",
+          "location": "当前姿态中的画面右中触手；左右以画面为准。",
+          "gesture": "短按",
+          "instruction": "在画面右中触手的当前提示区短按一次；等待本条接续完整结束。"
+        }
+      ]
+    },
+    {
+      "id": "wiki-levia-stage2-left-lower-right-middle",
+      "characterId": "levia",
+      "phaseId": "2",
+      "name": "画面左下触手 → 画面右中触手",
+      "kind": "wiki-route",
+      "evidence": "依据GameKee教学文字及对应姿态目录整理；新增手动接续未在本轮逐条实机验证。",
+      "sourceUrl": "https://www.gamekee.com/zsca2/644053.html",
+      "conditions": [
+        "使用享乐主义者装扮的对应姿态与基础触控方式。",
+        "触手位置按画面的上下左右寻找；具体可用区间以当前提示为准。"
+      ],
+      "note": "按列出的顺序接续，中间不要插入其他互动；正文未给统一秒数，以游戏提示开放为准。",
+      "steps": [
+        {
+          "actionId": "wiki-levia-3c534859",
+          "phaseId": "2",
+          "label": "画面左下触手",
+          "location": "当前姿态中的画面左下触手；左右以画面为准。",
+          "gesture": "短按",
+          "instruction": "在画面左下触手的当前提示区短按一次；下一处接续提示出现时立即进行下一步。"
+        },
+        {
+          "actionId": "wiki-levia-ecc9becf",
+          "phaseId": "2",
+          "label": "画面右中触手",
+          "location": "当前姿态中的画面右中触手；左右以画面为准。",
+          "gesture": "短按",
+          "instruction": "在画面右中触手的当前提示区短按一次；等待本条接续完整结束。"
+        }
+      ]
+    },
+    {
+      "id": "wiki-levia-stage2-right-lower-left-middle",
+      "characterId": "levia",
+      "phaseId": "2",
+      "name": "画面右下触手 → 画面左中触手",
+      "kind": "wiki-route",
+      "evidence": "依据GameKee教学文字及对应姿态目录整理；新增手动接续未在本轮逐条实机验证。",
+      "sourceUrl": "https://www.gamekee.com/zsca2/644053.html",
+      "conditions": [
+        "使用享乐主义者装扮的对应姿态与基础触控方式。",
+        "触手位置按画面的上下左右寻找；具体可用区间以当前提示为准。"
+      ],
+      "note": "按列出的顺序接续，中间不要插入其他互动；正文未给统一秒数，以游戏提示开放为准。",
+      "steps": [
+        {
+          "actionId": "wiki-levia-752136f7",
+          "phaseId": "2",
+          "label": "画面右下触手",
+          "location": "当前姿态中的画面右下触手；左右以画面为准。",
+          "gesture": "短按",
+          "instruction": "在画面右下触手的当前提示区短按一次；下一处接续提示出现时立即进行下一步。"
+        },
+        {
+          "actionId": "wiki-levia-484d7a63",
+          "phaseId": "2",
+          "label": "画面左中触手",
+          "location": "当前姿态中的画面左中触手；左右以画面为准。",
+          "gesture": "短按",
+          "instruction": "在画面左中触手的当前提示区短按一次；等待本条接续完整结束。"
+        }
+      ]
+    },
+    {
+      "id": "wiki-wilhelmina-left-right-feet",
+      "characterId": "wilhelmina",
+      "phaseId": "6",
+      "name": "左脚 → 右脚",
+      "kind": "wiki-route",
+      "evidence": "依据GameKee教学文字及对应姿态目录整理；新增手动接续未在本轮逐条实机验证。",
+      "sourceUrl": "https://www.gamekee.com/zsca2/644053.html",
+      "conditions": [
+        "进入最终躺卧姿态；本图鉴列为阶段6，Wiki将其并入后段。",
+        "使用普通触控方式，按脚或腿部的当前提示区接续。"
+      ],
+      "note": "按列出的顺序接续，中间不要插入其他互动；正文未给统一秒数，以游戏提示开放为准。",
+      "steps": [
+        {
+          "actionId": "wiki-wilhelmina-eab54766",
+          "phaseId": "6",
+          "label": "左脚",
+          "location": "当前姿态中的左脚；左右以画面为准。",
+          "gesture": "短按",
+          "instruction": "在左脚的当前提示区短按一次；下一处接续提示出现时立即进行下一步。"
+        },
+        {
+          "actionId": "wiki-wilhelmina-879a00a9",
+          "phaseId": "6",
+          "label": "右脚",
+          "location": "当前姿态中的右脚；左右以画面为准。",
+          "gesture": "短按",
+          "instruction": "在右脚的当前提示区短按一次；等待本条接续完整结束。"
+        }
+      ]
+    },
+    {
+      "id": "wiki-wilhelmina-left-leg-twice",
+      "characterId": "wilhelmina",
+      "phaseId": "6",
+      "name": "左腿 → 左腿",
+      "kind": "wiki-route",
+      "evidence": "依据GameKee教学文字及对应姿态目录整理；新增手动接续未在本轮逐条实机验证。",
+      "sourceUrl": "https://www.gamekee.com/zsca2/644053.html",
+      "conditions": [
+        "进入最终躺卧姿态；本图鉴列为阶段6，Wiki将其并入后段。",
+        "使用普通触控方式，按脚或腿部的当前提示区接续。"
+      ],
+      "note": "按列出的顺序接续，中间不要插入其他互动；正文未给统一秒数，以游戏提示开放为准。",
+      "steps": [
+        {
+          "actionId": "touch-0f5389d1",
+          "phaseId": "6",
+          "label": "左腿",
+          "location": "当前姿态中的左腿；左右以画面为准。",
+          "gesture": "短按",
+          "instruction": "在左腿提示区短按一次，观察同一条腿的后继反应。"
+        },
+        {
+          "actionId": "touch-0f5389d1",
+          "phaseId": "6",
+          "label": "左腿",
+          "location": "当前姿态中的左腿；左右以画面为准。",
+          "gesture": "短按",
+          "instruction": "同一条腿允许接续时，再在左腿短按一次；不要在同一帧快速双击。"
+        }
+      ]
+    },
+    {
+      "id": "wiki-wilhelmina-right-leg-twice",
+      "characterId": "wilhelmina",
+      "phaseId": "6",
+      "name": "右腿 → 右腿",
+      "kind": "wiki-route",
+      "evidence": "依据GameKee教学文字及对应姿态目录整理；新增手动接续未在本轮逐条实机验证。",
+      "sourceUrl": "https://www.gamekee.com/zsca2/644053.html",
+      "conditions": [
+        "进入最终躺卧姿态；本图鉴列为阶段6，Wiki将其并入后段。",
+        "使用普通触控方式，按脚或腿部的当前提示区接续。"
+      ],
+      "note": "按列出的顺序接续，中间不要插入其他互动；正文未给统一秒数，以游戏提示开放为准。",
+      "steps": [
+        {
+          "actionId": "touch-0f5389d1",
+          "phaseId": "6",
+          "label": "右腿",
+          "location": "当前姿态中的右腿；左右以画面为准。",
+          "gesture": "短按",
+          "instruction": "在右腿提示区短按一次，观察同一条腿的后继反应。"
+        },
+        {
+          "actionId": "touch-0f5389d1",
+          "phaseId": "6",
+          "label": "右腿",
+          "location": "当前姿态中的右腿；左右以画面为准。",
+          "gesture": "短按",
+          "instruction": "同一条腿允许接续时，再在右腿短按一次；不要在同一帧快速双击。"
+        }
+      ]
+    },
+    {
+      "id": "wiki-angelica-fringe-forehead",
+      "characterId": "angelica",
+      "phaseId": "1",
+      "name": "掀起刘海 → 接续额头",
+      "kind": "wiki-route",
+      "evidence": "依据GameKee教学文字及对应姿态目录整理；新增手动接续未在本轮逐条实机验证。",
+      "sourceUrl": "https://www.gamekee.com/zsca2/644053.html",
+      "conditions": [
+        "从初段姿态的刘海盖住额头状态开始；原生目录确认这里使用短按。"
+      ],
+      "note": "按列出的顺序接续，中间不要插入其他互动；正文未给统一秒数，以游戏提示开放为准。",
+      "steps": [
+        {
+          "actionId": "touch-db2b67f6",
+          "phaseId": "1",
+          "label": "掀起刘海",
+          "location": "当前姿态中的刘海位置；左右以画面为准。",
+          "gesture": "短按",
+          "instruction": "在额头前的刘海位置短按一次，看到刘海掀起后继续。"
+        },
+        {
+          "actionId": "touch-db2b67f6",
+          "phaseId": "1",
+          "label": "接续额头",
+          "location": "当前姿态中的同一位置／额头；左右以画面为准。",
+          "gesture": "短按",
+          "instruction": "在刚才掀起刘海的同一位置再短按一次，接续额头动作。"
+        }
+      ]
+    },
+    {
+      "id": "wiki-elise-rope-key-lock",
+      "characterId": "elise",
+      "phaseId": "1",
+      "name": "绳子 → 钥匙 → 锁",
+      "kind": "stage-route",
+      "evidence": "依据GameKee教学文字及对应姿态目录整理；新增手动接续未在本轮逐条实机验证。",
+      "sourceUrl": "https://www.gamekee.com/zsca2/644053.html",
+      "conditions": [
+        "在本卡标注的姿态操作，先开启游戏提示；每一步都需等对应接续提示可用。"
+      ],
+      "note": "按列出的顺序接续，中间不要插入其他互动；正文未给统一秒数，以游戏提示开放为准。 最后一步会推进姿态，先确认本阶段其他想看的动作已完成。",
+      "steps": [
+        {
+          "actionId": "touch-440a7caa",
+          "phaseId": "1",
+          "label": "画面最右侧绳子",
+          "location": "当前姿态中的画面最右侧绳子；左右以画面为准。",
+          "gesture": "短按",
+          "instruction": "短按画面最右侧的场景绳子，等待钥匙的入口出现；这里使用点击，不是拖拽绳子。"
+        },
+        {
+          "actionId": "touch-7d374864",
+          "phaseId": "1",
+          "label": "大腿上的钥匙",
+          "location": "当前姿态中的大腿上的钥匙；左右以画面为准。",
+          "gesture": "短按",
+          "instruction": "钥匙出现后，短按大腿上的钥匙，继续打开锁的入口。"
+        },
+        {
+          "actionId": "touch-874b4ed6",
+          "phaseId": "1",
+          "label": "出现的锁",
+          "location": "当前姿态中的出现的锁；左右以画面为准。",
+          "gesture": "短按",
+          "instruction": "短按随后出现的锁，完成机关路线；结束后会进入下一姿态。"
+        }
+      ]
+    },
+    {
+      "id": "wiki-dafi-cup-mouth",
+      "characterId": "dafi",
+      "phaseId": "5",
+      "name": "场景酒杯 → 嘴",
+      "kind": "wiki-route",
+      "evidence": "依据GameKee教学文字及对应姿态目录整理；新增手动接续未在本轮逐条实机验证。",
+      "sourceUrl": "https://www.gamekee.com/zsca2/644053.html",
+      "conditions": [
+        "进入可拿取桌面酒杯的中段坐姿；本图鉴列为阶段5。"
+      ],
+      "note": "按列出的顺序接续，中间不要插入其他互动；正文未给统一秒数，以游戏提示开放为准。 两步均为场景中的实际短按，首步不是工具栏选择。",
+      "steps": [
+        {
+          "actionId": "touch-33ac756c",
+          "phaseId": "5",
+          "label": "桌上的酒杯",
+          "location": "当前姿态中的桌上的酒杯；左右以画面为准。",
+          "gesture": "短按",
+          "instruction": "短按桌面场景中的酒杯，完成拿杯的起手动作。"
+        },
+        {
+          "actionId": "touch-dee66547",
+          "phaseId": "5",
+          "label": "角色嘴部",
+          "location": "当前姿态中的角色嘴部；左右以画面为准。",
+          "gesture": "短按",
+          "instruction": "嘴部接续提示出现后，短按嘴部，完成举杯互动。"
+        }
+      ]
+    },
+    {
+      "id": "wiki-justia-same-leg-raise-twice",
+      "characterId": "justia",
+      "phaseId": "2",
+      "name": "同一条腿 · 抬起后接续抬高",
+      "kind": "wiki-route",
+      "evidence": "依据GameKee教学文字及对应姿态目录整理；新增手动接续未在本轮逐条实机验证。",
+      "sourceUrl": "https://www.gamekee.com/zsca2/644053.html",
+      "conditions": [
+        "使用仲夏之梦装扮的后段姿态，从该腿尚未抬起的状态开始。"
+      ],
+      "note": "这里是先抬起再继续抬高的两段反应；中途已抬起时从第二步继续，不把同一动画任意重复当组合。",
+      "steps": [
+        {
+          "actionId": "wiki-justia-33d29da6",
+          "phaseId": "2",
+          "label": "腿部",
+          "location": "当前姿态中的腿部；左右以画面为准。",
+          "gesture": "短按",
+          "instruction": "在腿部提示区短按一次，确认该腿已抬起。"
+        },
+        {
+          "actionId": "wiki-justia-1da5bc7e",
+          "phaseId": "2",
+          "label": "已经抬起的同一腿部",
+          "location": "当前姿态中的已经抬起的同一腿部；左右以画面为准。",
+          "gesture": "短按",
+          "instruction": "在已经抬起的同一条腿上再短按一次，接续抬高动作；不要改点另一条腿。"
+        }
+      ]
+    },
+    {
+      "id": "wiki-palette-comic-fourth-computer",
+      "characterId": "palette",
+      "phaseId": "1",
+      "name": "漫画 → 第四格 → 电脑",
+      "kind": "stage-route",
+      "evidence": "依据GameKee教学文字及对应姿态目录整理；新增手动接续未在本轮逐条实机验证。",
+      "sourceUrl": "https://www.gamekee.com/zsca2/644053.html",
+      "conditions": [
+        "处于仍可打开漫画的初段姿态。"
+      ],
+      "note": "按列出的顺序接续，中间不要插入其他互动；正文未给统一秒数，以游戏提示开放为准。 最后一步会推进姿态，先确认本阶段其他想看的动作已完成。",
+      "steps": [
+        {
+          "actionId": "touch-d67d19a4",
+          "phaseId": "1",
+          "label": "漫画",
+          "location": "当前姿态中的漫画；左右以画面为准。",
+          "gesture": "短按",
+          "instruction": "短按场景中的漫画，打开漫画详情。"
+        },
+        {
+          "actionId": "wiki-palette-123780dd",
+          "phaseId": "1",
+          "label": "漫画详情的第四格",
+          "location": "当前姿态中的漫画详情的第四格；左右以画面为准。",
+          "gesture": "短按",
+          "instruction": "在漫画详情中短按第四格，确认后方电脑屏幕出现相应图案。"
+        },
+        {
+          "actionId": "wiki-palette-ffdc6a2c",
+          "phaseId": "1",
+          "label": "后方电脑",
+          "location": "当前姿态中的后方电脑；左右以画面为准。",
+          "gesture": "短按",
+          "instruction": "短按后方电脑，完成机关并进入下一姿态。"
+        }
+      ]
+    }
+  ]
+}

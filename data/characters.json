@@ -1,19 +1,28 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-25",
+  "generatedAt": "2026-10-26",
   "summary": {
     "characters": 22,
     "distinctCharacters": 21,
     "phases": 68,
-    "actions": 682,
-    "combinations": 47,
-    "scope": "普通、中性手动操作说明；包含待核对项，不是全部互动的公开清单。"
+    "actions": 700,
+    "combinations": 95,
+    "scope": "普通、中性手动操作说明；包含待核对项，不是全部互动的公开清单。",
+    "combinationTypes": {
+      "ordered-clicks": 40,
+      "stage-route": 2,
+      "wiki-route": 18,
+      "hidden-route": 7,
+      "gauge-route": 28
+    }
   },
   "characters": [
     {
       "id": "nebris",
       "name": "内布利斯",
       "costume": "新进员工",
+      "aliases": [],
+      "costumeEdition": "standard",
       "resource": "Illust_dating1",
       "initialPhaseId": "1",
       "verification": {
@@ -238,6 +247,8 @@
           "combos": [
             {
               "id": "ordered-080e76f0",
+              "kind": "ordered-clicks",
+              "evidence": "原生配置与历史现场目录；不代表最新客户端逐条手动重测。",
               "name": "墙 · 同部位顺序互动",
               "steps": [
                 {
@@ -269,6 +280,8 @@
             },
             {
               "id": "ordered-3bfda5ca",
+              "kind": "ordered-clicks",
+              "evidence": "原生配置与历史现场目录；不代表最新客户端逐条手动重测。",
               "name": "杯子 · 同部位顺序互动",
               "steps": [
                 {
@@ -534,6 +547,8 @@
           "combos": [
             {
               "id": "ordered-215e584a",
+              "kind": "ordered-clicks",
+              "evidence": "原生配置与历史现场目录；不代表最新客户端逐条手动重测。",
               "name": "墙 · 同部位顺序互动",
               "steps": [
                 {
@@ -565,6 +580,8 @@
             },
             {
               "id": "ordered-89230639",
+              "kind": "ordered-clicks",
+              "evidence": "原生配置与历史现场目录；不代表最新客户端逐条手动重测。",
               "name": "杯子 · 同部位顺序互动",
               "steps": [
                 {
@@ -854,6 +871,8 @@
           "combos": [
             {
               "id": "ordered-28f8f90e",
+              "kind": "ordered-clicks",
+              "evidence": "原生配置与历史现场目录；不代表最新客户端逐条手动重测。",
               "name": "墙 · 同部位顺序互动",
               "steps": [
                 {
@@ -899,6 +918,8 @@
             },
             {
               "id": "ordered-a203cb00",
+              "kind": "ordered-clicks",
+              "evidence": "原生配置与历史现场目录；不代表最新客户端逐条手动重测。",
               "name": "杯子 · 同部位顺序互动",
               "steps": [
                 {
@@ -968,6 +989,8 @@
       "id": "morphea",
       "name": "墨菲亚",
       "costume": "白日梦兔女郎",
+      "aliases": [],
+      "costumeEdition": "standard",
       "resource": "Illust_dating2",
       "initialPhaseId": "1",
       "verification": {
@@ -1205,6 +1228,8 @@
           "combos": [
             {
               "id": "ordered-84ff5504",
+              "kind": "ordered-clicks",
+              "evidence": "原生配置与历史现场目录；不代表最新客户端逐条手动重测。",
               "name": "腰部 · 同部位顺序互动",
               "steps": [
                 {
@@ -1229,6 +1254,8 @@
             },
             {
               "id": "ordered-c448af53",
+              "kind": "ordered-clicks",
+              "evidence": "原生配置与历史现场目录；不代表最新客户端逐条手动重测。",
               "name": "面部 · 同部位顺序互动",
               "steps": [
                 {
@@ -1491,6 +1518,8 @@
           "combos": [
             {
               "id": "ordered-951f1aa6",
+              "kind": "ordered-clicks",
+              "evidence": "原生配置与历史现场目录；不代表最新客户端逐条手动重测。",
               "name": "面部 · 同部位顺序互动",
               "steps": [
                 {
@@ -1515,6 +1544,8 @@
             },
             {
               "id": "ordered-c71d1fa1",
+              "kind": "ordered-clicks",
+              "evidence": "原生配置与历史现场目录；不代表最新客户端逐条手动重测。",
               "name": "沙发 · 同部位顺序互动",
               "steps": [
                 {
@@ -1783,6 +1814,8 @@
           "combos": [
             {
               "id": "ordered-9de0ecb0",
+              "kind": "ordered-clicks",
+              "evidence": "原生配置与历史现场目录；不代表最新客户端逐条手动重测。",
               "name": "面部 · 同部位顺序互动",
               "steps": [
                 {
@@ -1814,6 +1847,8 @@
             },
             {
               "id": "ordered-2b0c4ac9",
+              "kind": "ordered-clicks",
+              "evidence": "原生配置与历史现场目录；不代表最新客户端逐条手动重测。",
               "name": "沙发 · 同部位顺序互动",
               "steps": [
                 {
@@ -1862,6 +1897,8 @@
       "id": "loen",
       "name": "罗安",
       "costume": "名人兔女郎",
+      "aliases": [],
+      "costumeEdition": "standard",
       "resource": "Illust_dating3",
       "initialPhaseId": "1",
       "verification": {
@@ -2054,6 +2091,8 @@
           "combos": [
             {
               "id": "ordered-efbb7d4f",
+              "kind": "ordered-clicks",
+              "evidence": "原生配置与历史现场目录；不代表最新客户端逐条手动重测。",
               "name": "腹部 · 同部位顺序互动",
               "steps": [
                 {
@@ -2134,6 +2173,8 @@
             },
             {
               "id": "ordered-95bc164b",
+              "kind": "ordered-clicks",
+              "evidence": "原生配置与历史现场目录；不代表最新客户端逐条手动重测。",
               "name": "面部 · 同部位顺序互动",
               "steps": [
                 {
@@ -2158,6 +2199,8 @@
             },
             {
               "id": "ordered-85bed2e8",
+              "kind": "ordered-clicks",
+              "evidence": "原生配置与历史现场目录；不代表最新客户端逐条手动重测。",
               "name": "天花板 · 同部位顺序互动",
               "steps": [
                 {
@@ -2182,6 +2225,8 @@
             },
             {
               "id": "ordered-080e76f0",
+              "kind": "ordered-clicks",
+              "evidence": "原生配置与历史现场目录；不代表最新客户端逐条手动重测。",
               "name": "墙 · 同部位顺序互动",
               "steps": [
                 {
@@ -2431,6 +2476,8 @@
           "combos": [
             {
               "id": "ordered-3355ea61",
+              "kind": "ordered-clicks",
+              "evidence": "原生配置与历史现场目录；不代表最新客户端逐条手动重测。",
               "name": "腹部 · 同部位顺序互动",
               "steps": [
                 {
@@ -2483,6 +2530,8 @@
             },
             {
               "id": "ordered-6e4a6e3a",
+              "kind": "ordered-clicks",
+              "evidence": "原生配置与历史现场目录；不代表最新客户端逐条手动重测。",
               "name": "面部 · 同部位顺序互动",
               "steps": [
                 {
@@ -2507,6 +2556,8 @@
             },
             {
               "id": "ordered-7a0aae32",
+              "kind": "ordered-clicks",
+              "evidence": "原生配置与历史现场目录；不代表最新客户端逐条手动重测。",
               "name": "天花板 · 同部位顺序互动",
               "steps": [
                 {
@@ -2531,6 +2582,8 @@
             },
             {
               "id": "ordered-c71d1fa1",
+              "kind": "ordered-clicks",
+              "evidence": "原生配置与历史现场目录；不代表最新客户端逐条手动重测。",
               "name": "墙 · 同部位顺序互动",
               "steps": [
                 {
@@ -2579,6 +2632,8 @@
       "id": "teresse-health",
       "name": "泰瑞丝",
       "costume": "保健部",
+      "aliases": [],
+      "costumeEdition": "standard",
       "resource": "Illust_dating4",
       "initialPhaseId": "1",
       "verification": {
@@ -3157,6 +3212,8 @@
       "id": "elise",
       "name": "爱丽洁",
       "costume": "代号O",
+      "aliases": [],
+      "costumeEdition": "standard",
       "resource": "Illust_dating5",
       "initialPhaseId": "1",
       "verification": {
@@ -3392,7 +3449,45 @@
               "variantCount": 1
             }
           ],
-          "combos": [],
+          "combos": [
+            {
+              "id": "wiki-elise-rope-key-lock",
+              "name": "绳子 → 钥匙 → 锁",
+              "kind": "stage-route",
+              "evidence": "依据GameKee教学文字及对应姿态目录整理；新增手动接续未在本轮逐条实机验证。",
+              "sourceUrl": "https://www.gamekee.com/zsca2/644053.html",
+              "conditions": [
+                "在本卡标注的姿态操作，先开启游戏提示；每一步都需等对应接续提示可用。"
+              ],
+              "note": "按列出的顺序接续，中间不要插入其他互动；正文未给统一秒数，以游戏提示开放为准。 最后一步会推进姿态，先确认本阶段其他想看的动作已完成。",
+              "steps": [
+                {
+                  "actionId": "touch-440a7caa",
+                  "phaseId": "1",
+                  "label": "画面最右侧绳子",
+                  "location": "当前姿态中的画面最右侧绳子；左右以画面为准。",
+                  "gesture": "短按",
+                  "instruction": "短按画面最右侧的场景绳子，等待钥匙的入口出现；这里使用点击，不是拖拽绳子。"
+                },
+                {
+                  "actionId": "touch-7d374864",
+                  "phaseId": "1",
+                  "label": "大腿上的钥匙",
+                  "location": "当前姿态中的大腿上的钥匙；左右以画面为准。",
+                  "gesture": "短按",
+                  "instruction": "钥匙出现后，短按大腿上的钥匙，继续打开锁的入口。"
+                },
+                {
+                  "actionId": "touch-874b4ed6",
+                  "phaseId": "1",
+                  "label": "出现的锁",
+                  "location": "当前姿态中的出现的锁；左右以画面为准。",
+                  "gesture": "短按",
+                  "instruction": "短按随后出现的锁，完成机关路线；结束后会进入下一姿态。"
+                }
+              ]
+            }
+          ],
           "gaugeRules": [],
           "transitions": [
             {
@@ -3679,6 +3774,8 @@
           "combos": [
             {
               "id": "ordered-1575ebe2",
+              "kind": "ordered-clicks",
+              "evidence": "原生配置与历史现场目录；不代表最新客户端逐条手动重测。",
               "name": "大腿 · 同部位顺序互动",
               "steps": [
                 {
@@ -3781,7 +3878,7 @@
       "coverage": {
         "phases": 2,
         "actions": 28,
-        "combinations": 1,
+        "combinations": 2,
         "omittedItems": 16,
         "unlocatedDrags": 0,
         "unseparatedLocations": 5
@@ -3791,6 +3888,8 @@
       "id": "wilhelmina",
       "name": "威廉明娜",
       "costume": "水上乐园女王",
+      "aliases": [],
+      "costumeEdition": "standard",
       "resource": "Illust_dating6",
       "initialPhaseId": "1",
       "verification": {
@@ -3920,6 +4019,8 @@
           "combos": [
             {
               "id": "ordered-951f1aa6",
+              "kind": "ordered-clicks",
+              "evidence": "原生配置与历史现场目录；不代表最新客户端逐条手动重测。",
               "name": "泳衣 · 同部位顺序互动",
               "steps": [
                 {
@@ -4305,9 +4406,136 @@
               "note": "同一部位有不同后续反应；具体触控区差异尚待核对，请开启游戏提示，不按名称后的旧编号猜左右位置。",
               "verified": false,
               "variantCount": 2
+            },
+            {
+              "id": "wiki-wilhelmina-eab54766",
+              "name": "左脚 · 短按",
+              "location": "当前姿态中的左脚；以游戏提示区为准。",
+              "gesture": "短按",
+              "conditions": [
+                "只在对应姿态且该提示区可操作时使用。"
+              ],
+              "instructions": [
+                "在左脚的当前提示区短按一次；下一处接续提示出现时立即进行下一步。"
+              ],
+              "note": "依据Wiki文字补充的手动位置说明；未在本轮逐条实机核对，不代表插件自动执行支持。",
+              "holdSeconds": null,
+              "drag": null,
+              "verified": false,
+              "variantCount": 1,
+              "source": "wiki-text"
+            },
+            {
+              "id": "wiki-wilhelmina-879a00a9",
+              "name": "右脚 · 短按",
+              "location": "当前姿态中的右脚；以游戏提示区为准。",
+              "gesture": "短按",
+              "conditions": [
+                "只在对应姿态且该提示区可操作时使用。"
+              ],
+              "instructions": [
+                "在右脚的当前提示区短按一次；等待本条接续完整结束。"
+              ],
+              "note": "依据Wiki文字补充的手动位置说明；未在本轮逐条实机核对，不代表插件自动执行支持。",
+              "holdSeconds": null,
+              "drag": null,
+              "verified": false,
+              "variantCount": 1,
+              "source": "wiki-text"
             }
           ],
-          "combos": [],
+          "combos": [
+            {
+              "id": "wiki-wilhelmina-left-right-feet",
+              "name": "左脚 → 右脚",
+              "kind": "wiki-route",
+              "evidence": "依据GameKee教学文字及对应姿态目录整理；新增手动接续未在本轮逐条实机验证。",
+              "sourceUrl": "https://www.gamekee.com/zsca2/644053.html",
+              "conditions": [
+                "进入最终躺卧姿态；本图鉴列为阶段6，Wiki将其并入后段。",
+                "使用普通触控方式，按脚或腿部的当前提示区接续。"
+              ],
+              "note": "按列出的顺序接续，中间不要插入其他互动；正文未给统一秒数，以游戏提示开放为准。",
+              "steps": [
+                {
+                  "actionId": "wiki-wilhelmina-eab54766",
+                  "phaseId": "6",
+                  "label": "左脚",
+                  "location": "当前姿态中的左脚；左右以画面为准。",
+                  "gesture": "短按",
+                  "instruction": "在左脚的当前提示区短按一次；下一处接续提示出现时立即进行下一步。"
+                },
+                {
+                  "actionId": "wiki-wilhelmina-879a00a9",
+                  "phaseId": "6",
+                  "label": "右脚",
+                  "location": "当前姿态中的右脚；左右以画面为准。",
+                  "gesture": "短按",
+                  "instruction": "在右脚的当前提示区短按一次；等待本条接续完整结束。"
+                }
+              ]
+            },
+            {
+              "id": "wiki-wilhelmina-left-leg-twice",
+              "name": "左腿 → 左腿",
+              "kind": "wiki-route",
+              "evidence": "依据GameKee教学文字及对应姿态目录整理；新增手动接续未在本轮逐条实机验证。",
+              "sourceUrl": "https://www.gamekee.com/zsca2/644053.html",
+              "conditions": [
+                "进入最终躺卧姿态；本图鉴列为阶段6，Wiki将其并入后段。",
+                "使用普通触控方式，按脚或腿部的当前提示区接续。"
+              ],
+              "note": "按列出的顺序接续，中间不要插入其他互动；正文未给统一秒数，以游戏提示开放为准。",
+              "steps": [
+                {
+                  "actionId": "touch-0f5389d1",
+                  "phaseId": "6",
+                  "label": "左腿",
+                  "location": "当前姿态中的左腿；左右以画面为准。",
+                  "gesture": "短按",
+                  "instruction": "在左腿提示区短按一次，观察同一条腿的后继反应。"
+                },
+                {
+                  "actionId": "touch-0f5389d1",
+                  "phaseId": "6",
+                  "label": "左腿",
+                  "location": "当前姿态中的左腿；左右以画面为准。",
+                  "gesture": "短按",
+                  "instruction": "同一条腿允许接续时，再在左腿短按一次；不要在同一帧快速双击。"
+                }
+              ]
+            },
+            {
+              "id": "wiki-wilhelmina-right-leg-twice",
+              "name": "右腿 → 右腿",
+              "kind": "wiki-route",
+              "evidence": "依据GameKee教学文字及对应姿态目录整理；新增手动接续未在本轮逐条实机验证。",
+              "sourceUrl": "https://www.gamekee.com/zsca2/644053.html",
+              "conditions": [
+                "进入最终躺卧姿态；本图鉴列为阶段6，Wiki将其并入后段。",
+                "使用普通触控方式，按脚或腿部的当前提示区接续。"
+              ],
+              "note": "按列出的顺序接续，中间不要插入其他互动；正文未给统一秒数，以游戏提示开放为准。",
+              "steps": [
+                {
+                  "actionId": "touch-0f5389d1",
+                  "phaseId": "6",
+                  "label": "右腿",
+                  "location": "当前姿态中的右腿；左右以画面为准。",
+                  "gesture": "短按",
+                  "instruction": "在右腿提示区短按一次，观察同一条腿的后继反应。"
+                },
+                {
+                  "actionId": "touch-0f5389d1",
+                  "phaseId": "6",
+                  "label": "右腿",
+                  "location": "当前姿态中的右腿；左右以画面为准。",
+                  "gesture": "短按",
+                  "instruction": "同一条腿允许接续时，再在右腿短按一次；不要在同一帧快速双击。"
+                }
+              ]
+            }
+          ],
           "gaugeRules": [],
           "transitions": []
         }
@@ -4322,8 +4550,8 @@
       ],
       "coverage": {
         "phases": 6,
-        "actions": 23,
-        "combinations": 1,
+        "actions": 25,
+        "combinations": 4,
         "omittedItems": 16,
         "unlocatedDrags": 2,
         "unseparatedLocations": 4
@@ -4332,7 +4560,11 @@
     {
       "id": "justia",
       "name": "悠丝缇亚",
-      "costume": "泳池派对",
+      "costume": "仲夏之梦",
+      "aliases": [
+        "泳池派对"
+      ],
+      "costumeEdition": "prestige",
       "resource": "Illust_dating7",
       "initialPhaseId": "1",
       "verification": {
@@ -5070,9 +5302,75 @@
               "note": "",
               "verified": false,
               "variantCount": 1
+            },
+            {
+              "id": "wiki-justia-33d29da6",
+              "name": "腿部 · 短按",
+              "location": "当前姿态中的腿部；以游戏提示区为准。",
+              "gesture": "短按",
+              "conditions": [
+                "只在对应姿态且该提示区可操作时使用。"
+              ],
+              "instructions": [
+                "在腿部提示区短按一次，确认该腿已抬起。"
+              ],
+              "note": "依据Wiki文字补充的手动位置说明；未在本轮逐条实机核对，不代表插件自动执行支持。",
+              "holdSeconds": null,
+              "drag": null,
+              "verified": false,
+              "variantCount": 1,
+              "source": "wiki-text"
+            },
+            {
+              "id": "wiki-justia-1da5bc7e",
+              "name": "已经抬起的同一腿部 · 短按",
+              "location": "当前姿态中的已经抬起的同一腿部；以游戏提示区为准。",
+              "gesture": "短按",
+              "conditions": [
+                "只在对应姿态且该提示区可操作时使用。"
+              ],
+              "instructions": [
+                "在已经抬起的同一条腿上再短按一次，接续抬高动作；不要改点另一条腿。"
+              ],
+              "note": "依据Wiki文字补充的手动位置说明；未在本轮逐条实机核对，不代表插件自动执行支持。",
+              "holdSeconds": null,
+              "drag": null,
+              "verified": false,
+              "variantCount": 1,
+              "source": "wiki-text"
             }
           ],
-          "combos": [],
+          "combos": [
+            {
+              "id": "wiki-justia-same-leg-raise-twice",
+              "name": "同一条腿 · 抬起后接续抬高",
+              "kind": "wiki-route",
+              "evidence": "依据GameKee教学文字及对应姿态目录整理；新增手动接续未在本轮逐条实机验证。",
+              "sourceUrl": "https://www.gamekee.com/zsca2/644053.html",
+              "conditions": [
+                "使用仲夏之梦装扮的后段姿态，从该腿尚未抬起的状态开始。"
+              ],
+              "note": "这里是先抬起再继续抬高的两段反应；中途已抬起时从第二步继续，不把同一动画任意重复当组合。",
+              "steps": [
+                {
+                  "actionId": "wiki-justia-33d29da6",
+                  "phaseId": "2",
+                  "label": "腿部",
+                  "location": "当前姿态中的腿部；左右以画面为准。",
+                  "gesture": "短按",
+                  "instruction": "在腿部提示区短按一次，确认该腿已抬起。"
+                },
+                {
+                  "actionId": "wiki-justia-1da5bc7e",
+                  "phaseId": "2",
+                  "label": "已经抬起的同一腿部",
+                  "location": "当前姿态中的已经抬起的同一腿部；左右以画面为准。",
+                  "gesture": "短按",
+                  "instruction": "在已经抬起的同一条腿上再短按一次，接续抬高动作；不要改点另一条腿。"
+                }
+              ]
+            }
+          ],
           "gaugeRules": [],
           "transitions": []
         }
@@ -5087,8 +5385,8 @@
       ],
       "coverage": {
         "phases": 2,
-        "actions": 42,
-        "combinations": 0,
+        "actions": 44,
+        "combinations": 1,
         "omittedItems": 11,
         "unlocatedDrags": 0,
         "unseparatedLocations": 6
@@ -5098,6 +5396,8 @@
       "id": "sylvia",
       "name": "席比雅",
       "costume": "比基尼特工",
+      "aliases": [],
+      "costumeEdition": "standard",
       "resource": "Illust_dating8",
       "initialPhaseId": "1",
       "verification": {
@@ -5685,9 +5985,75 @@
               "note": "",
               "verified": false,
               "variantCount": 1
+            },
+            {
+              "id": "wiki-sylvia-294c12ef",
+              "name": "一侧小腿 · 短按",
+              "location": "当前姿态中的一侧小腿；以游戏提示区为准。",
+              "gesture": "短按",
+              "conditions": [
+                "只在对应姿态且该提示区可操作时使用。"
+              ],
+              "instructions": [
+                "轻点一侧小腿的提示区，确认对应腿抬起。"
+              ],
+              "note": "依据Wiki文字补充的手动位置说明；未在本轮逐条实机核对，不代表插件自动执行支持。",
+              "holdSeconds": null,
+              "drag": null,
+              "verified": false,
+              "variantCount": 1,
+              "source": "wiki-text"
+            },
+            {
+              "id": "wiki-sylvia-26bf4a99",
+              "name": "另一侧小腿 · 短按",
+              "location": "当前姿态中的另一侧小腿；以游戏提示区为准。",
+              "gesture": "短按",
+              "conditions": [
+                "只在对应姿态且该提示区可操作时使用。"
+              ],
+              "instructions": [
+                "轻点另一侧小腿的提示区，完成两侧抬腿。"
+              ],
+              "note": "依据Wiki文字补充的手动位置说明；未在本轮逐条实机核对，不代表插件自动执行支持。",
+              "holdSeconds": null,
+              "drag": null,
+              "verified": false,
+              "variantCount": 1,
+              "source": "wiki-text"
             }
           ],
-          "combos": [],
+          "combos": [
+            {
+              "id": "wiki-sylvia-two-calves",
+              "name": "两侧小腿 · 抬腿接续",
+              "kind": "wiki-route",
+              "evidence": "依据GameKee教学文字及对应姿态目录整理；新增手动接续未在本轮逐条实机验证。",
+              "sourceUrl": "https://www.gamekee.com/zsca2/644053.html",
+              "conditions": [
+                "在本卡标注的姿态操作，先开启游戏提示；每一步都需等对应接续提示可用。"
+              ],
+              "note": "两侧的先后次序可以交换；这是完成两侧操作的路线，不要求固定先左或先右。",
+              "steps": [
+                {
+                  "actionId": "wiki-sylvia-294c12ef",
+                  "phaseId": "3",
+                  "label": "一侧小腿",
+                  "location": "当前姿态中的一侧小腿；左右以画面为准。",
+                  "gesture": "短按",
+                  "instruction": "轻点一侧小腿的提示区，确认对应腿抬起。"
+                },
+                {
+                  "actionId": "wiki-sylvia-26bf4a99",
+                  "phaseId": "3",
+                  "label": "另一侧小腿",
+                  "location": "当前姿态中的另一侧小腿；左右以画面为准。",
+                  "gesture": "短按",
+                  "instruction": "轻点另一侧小腿的提示区，完成两侧抬腿。"
+                }
+              ]
+            }
+          ],
           "gaugeRules": [],
           "transitions": []
         }
@@ -5702,8 +6068,8 @@
       ],
       "coverage": {
         "phases": 3,
-        "actions": 31,
-        "combinations": 0,
+        "actions": 33,
+        "combinations": 1,
         "omittedItems": 15,
         "unlocatedDrags": 0,
         "unseparatedLocations": 11
@@ -5712,7 +6078,11 @@
     {
       "id": "teresse-beach",
       "name": "泰瑞丝",
-      "costume": "海滨天使",
+      "costume": "奶牛比基尼",
+      "aliases": [
+        "海滨天使"
+      ],
+      "costumeEdition": "prestige",
       "resource": "Illust_dating9",
       "initialPhaseId": "1",
       "verification": {
@@ -6066,6 +6436,8 @@
           "combos": [
             {
               "id": "ordered-f87b832f",
+              "kind": "ordered-clicks",
+              "evidence": "原生配置与历史现场目录；不代表最新客户端逐条手动重测。",
               "name": "颈部下方 · 同部位顺序互动",
               "steps": [
                 {
@@ -6132,6 +6504,8 @@
             },
             {
               "id": "ordered-5708df63",
+              "kind": "ordered-clicks",
+              "evidence": "原生配置与历史现场目录；不代表最新客户端逐条手动重测。",
               "name": "奶瓶 · 同部位顺序互动",
               "steps": [
                 {
@@ -6524,6 +6898,8 @@
           "combos": [
             {
               "id": "ordered-b745d207",
+              "kind": "ordered-clicks",
+              "evidence": "原生配置与历史现场目录；不代表最新客户端逐条手动重测。",
               "name": "奶牛模型 · 同部位顺序互动",
               "steps": [
                 {
@@ -6734,6 +7110,8 @@
       "id": "angelica",
       "name": "安洁莉卡",
       "costume": "霓虹救星",
+      "aliases": [],
+      "costumeEdition": "standard",
       "resource": "Illust_dating10",
       "initialPhaseId": "1",
       "verification": {
@@ -7021,6 +7399,8 @@
           "combos": [
             {
               "id": "ordered-7478ec65",
+              "kind": "ordered-clicks",
+              "evidence": "原生配置与历史现场目录；不代表最新客户端逐条手动重测。",
               "name": "面部 · 同部位顺序互动",
               "steps": [
                 {
@@ -7046,6 +7426,8 @@
             },
             {
               "id": "ordered-b7e7281c",
+              "kind": "ordered-clicks",
+              "evidence": "原生配置与历史现场目录；不代表最新客户端逐条手动重测。",
               "name": "下腹 · 同部位顺序互动",
               "steps": [
                 {
@@ -7092,6 +7474,8 @@
             },
             {
               "id": "ordered-c236143e",
+              "kind": "ordered-clicks",
+              "evidence": "原生配置与历史现场目录；不代表最新客户端逐条手动重测。",
               "name": "肩膀 · 同部位顺序互动",
               "steps": [
                 {
@@ -7124,6 +7508,8 @@
             },
             {
               "id": "ordered-63186958",
+              "kind": "ordered-clicks",
+              "evidence": "原生配置与历史现场目录；不代表最新客户端逐条手动重测。",
               "name": "颈部 · 同部位顺序互动",
               "steps": [
                 {
@@ -7153,6 +7539,35 @@
                 "次数以本阶段初始化状态为起点；已经做到中途时，从当前动作继续，不重播开头。"
               ],
               "note": "完整顺序共 3 次短按，会按固定顺序出现不同反应。不能跳过中间步骤；已经做到中途时，从当前反应继续。 同名后续记录合并展示，触控区差异仍待核对。"
+            },
+            {
+              "id": "wiki-angelica-fringe-forehead",
+              "name": "掀起刘海 → 接续额头",
+              "kind": "wiki-route",
+              "evidence": "依据GameKee教学文字及对应姿态目录整理；新增手动接续未在本轮逐条实机验证。",
+              "sourceUrl": "https://www.gamekee.com/zsca2/644053.html",
+              "conditions": [
+                "从初段姿态的刘海盖住额头状态开始；原生目录确认这里使用短按。"
+              ],
+              "note": "按列出的顺序接续，中间不要插入其他互动；正文未给统一秒数，以游戏提示开放为准。",
+              "steps": [
+                {
+                  "actionId": "touch-db2b67f6",
+                  "phaseId": "1",
+                  "label": "掀起刘海",
+                  "location": "当前姿态中的刘海位置；左右以画面为准。",
+                  "gesture": "短按",
+                  "instruction": "在额头前的刘海位置短按一次，看到刘海掀起后继续。"
+                },
+                {
+                  "actionId": "touch-db2b67f6",
+                  "phaseId": "1",
+                  "label": "接续额头",
+                  "location": "当前姿态中的同一位置／额头；左右以画面为准。",
+                  "gesture": "短按",
+                  "instruction": "在刚才掀起刘海的同一位置再短按一次，接续额头动作。"
+                }
+              ]
             }
           ],
           "gaugeRules": [],
@@ -7201,6 +7616,8 @@
           "combos": [
             {
               "id": "ordered-951f1aa6",
+              "kind": "ordered-clicks",
+              "evidence": "原生配置与历史现场目录；不代表最新客户端逐条手动重测。",
               "name": "腹部 · 同部位顺序互动",
               "steps": [
                 {
@@ -7623,7 +8040,7 @@
       "coverage": {
         "phases": 3,
         "actions": 35,
-        "combinations": 5,
+        "combinations": 6,
         "omittedItems": 14,
         "unlocatedDrags": 0,
         "unseparatedLocations": 6
@@ -7633,6 +8050,8 @@
       "id": "eclipse",
       "name": "伊柯利普斯",
       "costume": "恶梦兔女郎",
+      "aliases": [],
+      "costumeEdition": "standard",
       "resource": "Illust_dating11",
       "initialPhaseId": "1",
       "verification": {
@@ -7993,6 +8412,8 @@
           "combos": [
             {
               "id": "route-294c9f61",
+              "kind": "hidden-route",
+              "evidence": "原生配置与历史现场目录；不代表最新客户端逐条手动重测。",
               "name": "嘴 → 嘴",
               "steps": [
                 {
@@ -8013,6 +8434,8 @@
             },
             {
               "id": "route-d02d53ff",
+              "kind": "hidden-route",
+              "evidence": "原生配置与历史现场目录；不代表最新客户端逐条手动重测。",
               "name": "颈部下方 → 颈部下方",
               "steps": [
                 {
@@ -8033,6 +8456,8 @@
             },
             {
               "id": "route-4e5e0500",
+              "kind": "hidden-route",
+              "evidence": "原生配置与历史现场目录；不代表最新客户端逐条手动重测。",
               "name": "颈部下方 → 嘴",
               "steps": [
                 {
@@ -8225,6 +8650,8 @@
           "combos": [
             {
               "id": "route-48c4f03f",
+              "kind": "hidden-route",
+              "evidence": "原生配置与历史现场目录；不代表最新客户端逐条手动重测。",
               "name": "腹部 → 下腹",
               "steps": [
                 {
@@ -8276,7 +8703,11 @@
     {
       "id": "zenith",
       "name": "杰尼斯",
-      "costume": "罗宾汉",
+      "costume": "神秘面纱兔女郎",
+      "aliases": [
+        "罗宾汉"
+      ],
+      "costumeEdition": "prestige",
       "resource": "Illust_dating12",
       "initialPhaseId": "1",
       "verification": {
@@ -8397,6 +8828,8 @@
           "combos": [
             {
               "id": "ordered-c1ff00c2",
+              "kind": "ordered-clicks",
+              "evidence": "原生配置与历史现场目录；不代表最新客户端逐条手动重测。",
               "name": "面部 · 同部位顺序互动",
               "steps": [
                 {
@@ -8779,6 +9212,8 @@
           "combos": [
             {
               "id": "ordered-289f6de4",
+              "kind": "ordered-clicks",
+              "evidence": "原生配置与历史现场目录；不代表最新客户端逐条手动重测。",
               "name": "尾巴 · 同部位顺序互动",
               "steps": [
                 {
@@ -8859,6 +9294,8 @@
             },
             {
               "id": "ordered-e4ac713f",
+              "kind": "ordered-clicks",
+              "evidence": "原生配置与历史现场目录；不代表最新客户端逐条手动重测。",
               "name": "地板 · 同部位顺序互动",
               "steps": [
                 {
@@ -8963,6 +9400,8 @@
       "id": "tyr",
       "name": "提尔",
       "costume": "澄心无邪兔女郎",
+      "aliases": [],
+      "costumeEdition": "standard",
       "resource": "Illust_dating13",
       "initialPhaseId": "1",
       "verification": {
@@ -9202,6 +9641,8 @@
           "combos": [
             {
               "id": "route-10cec428",
+              "kind": "hidden-route",
+              "evidence": "原生配置与历史现场目录；不代表最新客户端逐条手动重测。",
               "name": "腿部 → 玩偶",
               "steps": [
                 {
@@ -9565,6 +10006,8 @@
           "combos": [
             {
               "id": "ordered-2881fe92",
+              "kind": "ordered-clicks",
+              "evidence": "原生配置与历史现场目录；不代表最新客户端逐条手动重测。",
               "name": "套娃 · 同部位顺序互动",
               "steps": [
                 {
@@ -9638,6 +10081,8 @@
             },
             {
               "id": "ordered-bf9e5a62",
+              "kind": "ordered-clicks",
+              "evidence": "原生配置与历史现场目录；不代表最新客户端逐条手动重测。",
               "name": "下腹 · 同部位顺序互动",
               "steps": [
                 {
@@ -9669,6 +10114,8 @@
             },
             {
               "id": "ordered-e4ac713f",
+              "kind": "ordered-clicks",
+              "evidence": "原生配置与历史现场目录；不代表最新客户端逐条手动重测。",
               "name": "手部 · 同部位顺序互动",
               "steps": [
                 {
@@ -9730,7 +10177,11 @@
     {
       "id": "levia",
       "name": "黎维塔",
-      "costume": "温泉管理员",
+      "costume": "享乐主义者",
+      "aliases": [
+        "温泉管理员"
+      ],
+      "costumeEdition": "prestige",
       "resource": "Illust_dating14",
       "initialPhaseId": "1",
       "verification": {
@@ -9890,9 +10341,256 @@
               "note": "同一部位有不同后续反应；具体触控区差异尚待核对，请开启游戏提示，不按名称后的旧编号猜左右位置。",
               "verified": false,
               "variantCount": 2
+            },
+            {
+              "id": "wiki-levia-897fa8bf",
+              "name": "画面左下触手 · 短按",
+              "location": "当前姿态中的画面左下触手；以游戏提示区为准。",
+              "gesture": "短按",
+              "conditions": [
+                "只在对应姿态且该提示区可操作时使用。"
+              ],
+              "instructions": [
+                "在画面左下触手的当前提示区短按一次；下一处接续提示出现时立即进行下一步。"
+              ],
+              "note": "依据Wiki文字补充的手动位置说明；未在本轮逐条实机核对，不代表插件自动执行支持。",
+              "holdSeconds": null,
+              "drag": null,
+              "verified": false,
+              "variantCount": 1,
+              "source": "wiki-text"
+            },
+            {
+              "id": "wiki-levia-363ce90e",
+              "name": "画面左中触手 · 短按",
+              "location": "当前姿态中的画面左中触手；以游戏提示区为准。",
+              "gesture": "短按",
+              "conditions": [
+                "只在对应姿态且该提示区可操作时使用。"
+              ],
+              "instructions": [
+                "在画面左中触手的当前提示区短按一次；等待本条接续完整结束。"
+              ],
+              "note": "依据Wiki文字补充的手动位置说明；未在本轮逐条实机核对，不代表插件自动执行支持。",
+              "holdSeconds": null,
+              "drag": null,
+              "verified": false,
+              "variantCount": 1,
+              "source": "wiki-text"
+            },
+            {
+              "id": "wiki-levia-32876094",
+              "name": "画面右下触手 · 短按",
+              "location": "当前姿态中的画面右下触手；以游戏提示区为准。",
+              "gesture": "短按",
+              "conditions": [
+                "只在对应姿态且该提示区可操作时使用。"
+              ],
+              "instructions": [
+                "在画面右下触手的当前提示区短按一次；下一处接续提示出现时立即进行下一步。"
+              ],
+              "note": "依据Wiki文字补充的手动位置说明；未在本轮逐条实机核对，不代表插件自动执行支持。",
+              "holdSeconds": null,
+              "drag": null,
+              "verified": false,
+              "variantCount": 1,
+              "source": "wiki-text"
+            },
+            {
+              "id": "wiki-levia-aa4a99be",
+              "name": "画面右中触手 · 短按",
+              "location": "当前姿态中的画面右中触手；以游戏提示区为准。",
+              "gesture": "短按",
+              "conditions": [
+                "只在对应姿态且该提示区可操作时使用。"
+              ],
+              "instructions": [
+                "在画面右中触手的当前提示区短按一次；等待本条接续完整结束。"
+              ],
+              "note": "依据Wiki文字补充的手动位置说明；未在本轮逐条实机核对，不代表插件自动执行支持。",
+              "holdSeconds": null,
+              "drag": null,
+              "verified": false,
+              "variantCount": 1,
+              "source": "wiki-text"
             }
           ],
-          "combos": [],
+          "combos": [
+            {
+              "id": "gauge-8181a35a",
+              "kind": "gauge-route",
+              "evidence": "原生配置与历史现场目录；不代表最新客户端逐条手动重测。",
+              "name": "触手 → 解锁护身符",
+              "steps": [
+                {
+                  "actionId": "touch-e55a1acf",
+                  "phaseId": "1",
+                  "label": "调节进度 1",
+                  "location": "当前姿态中的触手。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "在触手短按一次，新一轮有效触发使进度 +25。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 25,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-e55a1acf",
+                  "phaseId": "1",
+                  "label": "调节进度 2",
+                  "location": "当前姿态中的触手。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在触手短按一次，新一轮有效触发使进度 +25。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 25,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-e55a1acf",
+                  "phaseId": "1",
+                  "label": "调节进度 3",
+                  "location": "当前姿态中的触手。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在触手短按一次，新一轮有效触发使进度 +25。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 25,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-e55a1acf",
+                  "phaseId": "1",
+                  "label": "调节进度 4",
+                  "location": "当前姿态中的触手。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在触手短按一次，新一轮有效触发使进度 +25。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 25,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-96c1aab9",
+                  "phaseId": "1",
+                  "label": "执行解锁动作",
+                  "location": "当前姿态中的护身符。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "确认进度位于 100–100 且目标已可操作后，在护身符单击一次鼠标左键。"
+                }
+              ],
+              "conditions": [
+                "从本阶段起始进度 0 整理的参考路线；中途继续时以游戏当前进度为准。",
+                "先切换至对应互动方式；该工具的显示名称尚待逐项核对。"
+              ],
+              "note": "这是进度条件解锁路线，不是隐藏部位激活；不要跳过中间有效输入。目标已经可用时，可直接执行最后一步。 每次确认前一步的进度变化，再继续；同部位连点可能只播放动画而不再改变进度。 最后一步会推进姿态，先确认当前阶段其他想看的动作已完成。 同名后续记录合并展示，触控区差异仍待核对。",
+              "progress": {
+                "start": 0,
+                "targetMin": 100,
+                "targetMax": 100,
+                "naturalDecreasePerSecond": 0
+              }
+            },
+            {
+              "id": "gauge-0a95c33b",
+              "kind": "gauge-route",
+              "evidence": "原生配置与历史现场目录；不代表最新客户端逐条手动重测。",
+              "name": "触手 → 解锁护身符",
+              "steps": [
+                {
+                  "actionId": "touch-e55a1acf",
+                  "phaseId": "1",
+                  "label": "调节进度 1",
+                  "location": "当前姿态中的触手。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "在触手短按一次，新一轮有效触发使进度 +25。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 25,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-e55a1acf",
+                  "phaseId": "1",
+                  "label": "调节进度 2",
+                  "location": "当前姿态中的触手。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在触手短按一次，新一轮有效触发使进度 +25。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 25,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-a68129fb",
+                  "phaseId": "1",
+                  "label": "执行解锁动作",
+                  "location": "当前姿态中的护身符。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "确认进度位于 50–99 且目标已可操作后，在护身符单击一次鼠标左键。"
+                }
+              ],
+              "conditions": [
+                "从本阶段起始进度 0 整理的参考路线；中途继续时以游戏当前进度为准。",
+                "先切换至对应互动方式；该工具的显示名称尚待逐项核对。"
+              ],
+              "note": "这是进度条件解锁路线，不是隐藏部位激活；不要跳过中间有效输入。目标已经可用时，可直接执行最后一步。 每次确认前一步的进度变化，再继续；同部位连点可能只播放动画而不再改变进度。 同名后续记录合并展示，触控区差异仍待核对。",
+              "progress": {
+                "start": 0,
+                "targetMin": 50,
+                "targetMax": 99,
+                "naturalDecreasePerSecond": 0
+              }
+            },
+            {
+              "id": "wiki-levia-stage1-left-lower-middle",
+              "name": "画面左下触手 → 画面左中触手",
+              "kind": "wiki-route",
+              "evidence": "依据GameKee教学文字及对应姿态目录整理；新增手动接续未在本轮逐条实机验证。",
+              "sourceUrl": "https://www.gamekee.com/zsca2/644053.html",
+              "conditions": [
+                "使用享乐主义者装扮的对应姿态与基础触控方式。",
+                "触手位置按画面的上下左右寻找；具体可用区间以当前提示为准。"
+              ],
+              "note": "按列出的顺序接续，中间不要插入其他互动；正文未给统一秒数，以游戏提示开放为准。",
+              "steps": [
+                {
+                  "actionId": "wiki-levia-897fa8bf",
+                  "phaseId": "1",
+                  "label": "画面左下触手",
+                  "location": "当前姿态中的画面左下触手；左右以画面为准。",
+                  "gesture": "短按",
+                  "instruction": "在画面左下触手的当前提示区短按一次；下一处接续提示出现时立即进行下一步。"
+                },
+                {
+                  "actionId": "wiki-levia-363ce90e",
+                  "phaseId": "1",
+                  "label": "画面左中触手",
+                  "location": "当前姿态中的画面左中触手；左右以画面为准。",
+                  "gesture": "短按",
+                  "instruction": "在画面左中触手的当前提示区短按一次；等待本条接续完整结束。"
+                }
+              ]
+            },
+            {
+              "id": "wiki-levia-stage1-right-lower-middle",
+              "name": "画面右下触手 → 画面右中触手",
+              "kind": "wiki-route",
+              "evidence": "依据GameKee教学文字及对应姿态目录整理；新增手动接续未在本轮逐条实机验证。",
+              "sourceUrl": "https://www.gamekee.com/zsca2/644053.html",
+              "conditions": [
+                "使用享乐主义者装扮的对应姿态与基础触控方式。",
+                "触手位置按画面的上下左右寻找；具体可用区间以当前提示为准。"
+              ],
+              "note": "按列出的顺序接续，中间不要插入其他互动；正文未给统一秒数，以游戏提示开放为准。",
+              "steps": [
+                {
+                  "actionId": "wiki-levia-32876094",
+                  "phaseId": "1",
+                  "label": "画面右下触手",
+                  "location": "当前姿态中的画面右下触手；左右以画面为准。",
+                  "gesture": "短按",
+                  "instruction": "在画面右下触手的当前提示区短按一次；下一处接续提示出现时立即进行下一步。"
+                },
+                {
+                  "actionId": "wiki-levia-aa4a99be",
+                  "phaseId": "1",
+                  "label": "画面右中触手",
+                  "location": "当前姿态中的画面右中触手；左右以画面为准。",
+                  "gesture": "短按",
+                  "instruction": "在画面右中触手的当前提示区短按一次；等待本条接续完整结束。"
+                }
+              ]
+            }
+          ],
           "gaugeRules": [
             {
               "title": "提高进度",
@@ -10237,9 +10935,386 @@
               "note": "同一部位有不同后续反应；具体触控区差异尚待核对，请开启游戏提示，不按名称后的旧编号猜左右位置。",
               "verified": false,
               "variantCount": 4
+            },
+            {
+              "id": "wiki-levia-ecc9becf",
+              "name": "画面右中触手 · 短按",
+              "location": "当前姿态中的画面右中触手；以游戏提示区为准。",
+              "gesture": "短按",
+              "conditions": [
+                "只在对应姿态且该提示区可操作时使用。"
+              ],
+              "instructions": [
+                "在画面右中触手的当前提示区短按一次；等待本条接续完整结束。"
+              ],
+              "note": "依据Wiki文字补充的手动位置说明；未在本轮逐条实机核对，不代表插件自动执行支持。",
+              "holdSeconds": null,
+              "drag": null,
+              "verified": false,
+              "variantCount": 1,
+              "source": "wiki-text"
+            },
+            {
+              "id": "wiki-levia-3c534859",
+              "name": "画面左下触手 · 短按",
+              "location": "当前姿态中的画面左下触手；以游戏提示区为准。",
+              "gesture": "短按",
+              "conditions": [
+                "只在对应姿态且该提示区可操作时使用。"
+              ],
+              "instructions": [
+                "在画面左下触手的当前提示区短按一次；下一处接续提示出现时立即进行下一步。"
+              ],
+              "note": "依据Wiki文字补充的手动位置说明；未在本轮逐条实机核对，不代表插件自动执行支持。",
+              "holdSeconds": null,
+              "drag": null,
+              "verified": false,
+              "variantCount": 1,
+              "source": "wiki-text"
+            },
+            {
+              "id": "wiki-levia-752136f7",
+              "name": "画面右下触手 · 短按",
+              "location": "当前姿态中的画面右下触手；以游戏提示区为准。",
+              "gesture": "短按",
+              "conditions": [
+                "只在对应姿态且该提示区可操作时使用。"
+              ],
+              "instructions": [
+                "在画面右下触手的当前提示区短按一次；下一处接续提示出现时立即进行下一步。"
+              ],
+              "note": "依据Wiki文字补充的手动位置说明；未在本轮逐条实机核对，不代表插件自动执行支持。",
+              "holdSeconds": null,
+              "drag": null,
+              "verified": false,
+              "variantCount": 1,
+              "source": "wiki-text"
+            },
+            {
+              "id": "wiki-levia-484d7a63",
+              "name": "画面左中触手 · 短按",
+              "location": "当前姿态中的画面左中触手；以游戏提示区为准。",
+              "gesture": "短按",
+              "conditions": [
+                "只在对应姿态且该提示区可操作时使用。"
+              ],
+              "instructions": [
+                "在画面左中触手的当前提示区短按一次；等待本条接续完整结束。"
+              ],
+              "note": "依据Wiki文字补充的手动位置说明；未在本轮逐条实机核对，不代表插件自动执行支持。",
+              "holdSeconds": null,
+              "drag": null,
+              "verified": false,
+              "variantCount": 1,
+              "source": "wiki-text"
             }
           ],
-          "combos": [],
+          "combos": [
+            {
+              "id": "gauge-ce2e99b2",
+              "kind": "gauge-route",
+              "evidence": "原生配置与历史现场目录；不代表最新客户端逐条手动重测。",
+              "name": "触手 → 解锁护身符",
+              "steps": [
+                {
+                  "actionId": "touch-fadac067",
+                  "phaseId": "2",
+                  "label": "调节进度 1",
+                  "location": "当前姿态中的触手。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "在触手短按一次，新一轮有效触发使进度 +20。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 20,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-7cf55da4",
+                  "phaseId": "2",
+                  "label": "调节进度 2",
+                  "location": "当前姿态中的腹部。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "在腹部短按一次，新一轮有效触发使进度 +25。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 25,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-0bcb6ec7",
+                  "phaseId": "2",
+                  "label": "执行解锁动作",
+                  "location": "当前姿态中的护身符。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "确认进度位于 45–104 且目标已可操作后，在护身符单击一次鼠标左键。"
+                }
+              ],
+              "conditions": [
+                "从本阶段起始进度 0 整理的参考路线；中途继续时以游戏当前进度为准。",
+                "先切换至对应互动方式；该工具的显示名称尚待逐项核对。",
+                "进度条在 0–150 范围内可用。"
+              ],
+              "note": "这是进度条件解锁路线，不是隐藏部位激活；不要跳过中间有效输入。目标已经可用时，可直接执行最后一步。 每次确认前一步的进度变化，再继续；同部位连点可能只播放动画而不再改变进度。 同名后续记录合并展示，触控区差异仍待核对。",
+              "progress": {
+                "start": 0,
+                "targetMin": 45,
+                "targetMax": 104,
+                "naturalDecreasePerSecond": 0
+              }
+            },
+            {
+              "id": "gauge-b36248a1",
+              "kind": "gauge-route",
+              "evidence": "原生配置与历史现场目录；不代表最新客户端逐条手动重测。",
+              "name": "触手 → 解锁护身符",
+              "steps": [
+                {
+                  "actionId": "touch-687dd72c",
+                  "phaseId": "2",
+                  "label": "调节进度 1",
+                  "location": "当前姿态中的触手。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "在触手短按一次，新一轮有效触发使进度 +15。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 15,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-687dd72c",
+                  "phaseId": "2",
+                  "label": "调节进度 2",
+                  "location": "当前姿态中的触手。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在触手短按一次，新一轮有效触发使进度 +15。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 15,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-7cf55da4",
+                  "phaseId": "2",
+                  "label": "调节进度 3",
+                  "location": "当前姿态中的腹部。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "在腹部短按一次，新一轮有效触发使进度 +25。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 25,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-7cf55da4",
+                  "phaseId": "2",
+                  "label": "调节进度 4",
+                  "location": "当前姿态中的腹部。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腹部短按一次，新一轮有效触发使进度 +25。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 25,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-7cf55da4",
+                  "phaseId": "2",
+                  "label": "调节进度 5",
+                  "location": "当前姿态中的腹部。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腹部短按一次，新一轮有效触发使进度 +25。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 25,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-5a330112",
+                  "phaseId": "2",
+                  "label": "执行解锁动作",
+                  "location": "当前姿态中的护身符。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "确认进度位于 105–149 且目标已可操作后，在护身符单击一次鼠标左键。"
+                }
+              ],
+              "conditions": [
+                "从本阶段起始进度 0 整理的参考路线；中途继续时以游戏当前进度为准。",
+                "先切换至对应互动方式；该工具的显示名称尚待逐项核对。",
+                "进度条在 0–150 范围内可用。"
+              ],
+              "note": "这是进度条件解锁路线，不是隐藏部位激活；不要跳过中间有效输入。目标已经可用时，可直接执行最后一步。 每次确认前一步的进度变化，再继续；同部位连点可能只播放动画而不再改变进度。 同名后续记录合并展示，触控区差异仍待核对。",
+              "progress": {
+                "start": 0,
+                "targetMin": 105,
+                "targetMax": 149,
+                "naturalDecreasePerSecond": 0
+              }
+            },
+            {
+              "id": "gauge-59a96298",
+              "kind": "gauge-route",
+              "evidence": "原生配置与历史现场目录；不代表最新客户端逐条手动重测。",
+              "name": "腹部 → 解锁护身符",
+              "steps": [
+                {
+                  "actionId": "touch-7cf55da4",
+                  "phaseId": "2",
+                  "label": "调节进度 1",
+                  "location": "当前姿态中的腹部。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "在腹部短按一次，新一轮有效触发使进度 +25。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 25,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-7cf55da4",
+                  "phaseId": "2",
+                  "label": "调节进度 2",
+                  "location": "当前姿态中的腹部。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腹部短按一次，新一轮有效触发使进度 +25。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 25,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-7cf55da4",
+                  "phaseId": "2",
+                  "label": "调节进度 3",
+                  "location": "当前姿态中的腹部。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腹部短按一次，新一轮有效触发使进度 +25。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 25,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-7cf55da4",
+                  "phaseId": "2",
+                  "label": "调节进度 4",
+                  "location": "当前姿态中的腹部。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腹部短按一次，新一轮有效触发使进度 +25。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 25,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-7cf55da4",
+                  "phaseId": "2",
+                  "label": "调节进度 5",
+                  "location": "当前姿态中的腹部。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腹部短按一次，新一轮有效触发使进度 +25。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 25,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-7cf55da4",
+                  "phaseId": "2",
+                  "label": "调节进度 6",
+                  "location": "当前姿态中的腹部。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腹部短按一次，新一轮有效触发使进度 +25。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 25,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-768a26d2",
+                  "phaseId": "2",
+                  "label": "执行解锁动作",
+                  "location": "当前姿态中的护身符。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "确认进度位于 150–150 且目标已可操作后，在护身符单击一次鼠标左键。"
+                }
+              ],
+              "conditions": [
+                "从本阶段起始进度 0 整理的参考路线；中途继续时以游戏当前进度为准。",
+                "先切换至对应互动方式；该工具的显示名称尚待逐项核对。",
+                "进度条在 0–150 范围内可用。"
+              ],
+              "note": "这是进度条件解锁路线，不是隐藏部位激活；不要跳过中间有效输入。目标已经可用时，可直接执行最后一步。 每次确认前一步的进度变化，再继续；同部位连点可能只播放动画而不再改变进度。 同名后续记录合并展示，触控区差异仍待核对。",
+              "progress": {
+                "start": 0,
+                "targetMin": 150,
+                "targetMax": 150,
+                "naturalDecreasePerSecond": 0
+              }
+            },
+            {
+              "id": "wiki-levia-stage2-abdomen-right-middle",
+              "name": "肚脐／腹部 → 画面右中触手",
+              "kind": "wiki-route",
+              "evidence": "依据GameKee教学文字及对应姿态目录整理；新增手动接续未在本轮逐条实机验证。",
+              "sourceUrl": "https://www.gamekee.com/zsca2/644053.html",
+              "conditions": [
+                "使用享乐主义者装扮的对应姿态与基础触控方式。",
+                "触手位置按画面的上下左右寻找；具体可用区间以当前提示为准。"
+              ],
+              "note": "按列出的顺序接续，中间不要插入其他互动；正文未给统一秒数，以游戏提示开放为准。",
+              "steps": [
+                {
+                  "actionId": "touch-855f6d03",
+                  "phaseId": "2",
+                  "label": "肚脐／腹部",
+                  "location": "当前姿态中的肚脐／腹部；左右以画面为准。",
+                  "gesture": "短按",
+                  "instruction": "在肚脐／腹部的当前提示区短按一次；下一处接续提示出现时立即进行下一步。"
+                },
+                {
+                  "actionId": "wiki-levia-ecc9becf",
+                  "phaseId": "2",
+                  "label": "画面右中触手",
+                  "location": "当前姿态中的画面右中触手；左右以画面为准。",
+                  "gesture": "短按",
+                  "instruction": "在画面右中触手的当前提示区短按一次；等待本条接续完整结束。"
+                }
+              ]
+            },
+            {
+              "id": "wiki-levia-stage2-left-lower-right-middle",
+              "name": "画面左下触手 → 画面右中触手",
+              "kind": "wiki-route",
+              "evidence": "依据GameKee教学文字及对应姿态目录整理；新增手动接续未在本轮逐条实机验证。",
+              "sourceUrl": "https://www.gamekee.com/zsca2/644053.html",
+              "conditions": [
+                "使用享乐主义者装扮的对应姿态与基础触控方式。",
+                "触手位置按画面的上下左右寻找；具体可用区间以当前提示为准。"
+              ],
+              "note": "按列出的顺序接续，中间不要插入其他互动；正文未给统一秒数，以游戏提示开放为准。",
+              "steps": [
+                {
+                  "actionId": "wiki-levia-3c534859",
+                  "phaseId": "2",
+                  "label": "画面左下触手",
+                  "location": "当前姿态中的画面左下触手；左右以画面为准。",
+                  "gesture": "短按",
+                  "instruction": "在画面左下触手的当前提示区短按一次；下一处接续提示出现时立即进行下一步。"
+                },
+                {
+                  "actionId": "wiki-levia-ecc9becf",
+                  "phaseId": "2",
+                  "label": "画面右中触手",
+                  "location": "当前姿态中的画面右中触手；左右以画面为准。",
+                  "gesture": "短按",
+                  "instruction": "在画面右中触手的当前提示区短按一次；等待本条接续完整结束。"
+                }
+              ]
+            },
+            {
+              "id": "wiki-levia-stage2-right-lower-left-middle",
+              "name": "画面右下触手 → 画面左中触手",
+              "kind": "wiki-route",
+              "evidence": "依据GameKee教学文字及对应姿态目录整理；新增手动接续未在本轮逐条实机验证。",
+              "sourceUrl": "https://www.gamekee.com/zsca2/644053.html",
+              "conditions": [
+                "使用享乐主义者装扮的对应姿态与基础触控方式。",
+                "触手位置按画面的上下左右寻找；具体可用区间以当前提示为准。"
+              ],
+              "note": "按列出的顺序接续，中间不要插入其他互动；正文未给统一秒数，以游戏提示开放为准。",
+              "steps": [
+                {
+                  "actionId": "wiki-levia-752136f7",
+                  "phaseId": "2",
+                  "label": "画面右下触手",
+                  "location": "当前姿态中的画面右下触手；左右以画面为准。",
+                  "gesture": "短按",
+                  "instruction": "在画面右下触手的当前提示区短按一次；下一处接续提示出现时立即进行下一步。"
+                },
+                {
+                  "actionId": "wiki-levia-484d7a63",
+                  "phaseId": "2",
+                  "label": "画面左中触手",
+                  "location": "当前姿态中的画面左中触手；左右以画面为准。",
+                  "gesture": "短按",
+                  "instruction": "在画面左中触手的当前提示区短按一次；等待本条接续完整结束。"
+                }
+              ]
+            }
+          ],
           "gaugeRules": [
             {
               "title": "提高进度",
@@ -10303,8 +11378,8 @@
       ],
       "coverage": {
         "phases": 2,
-        "actions": 24,
-        "combinations": 0,
+        "actions": 32,
+        "combinations": 10,
         "omittedItems": 18,
         "unlocatedDrags": 0,
         "unseparatedLocations": 24
@@ -10314,6 +11389,8 @@
       "id": "bantana",
       "name": "班塔纳",
       "costume": "温泉修行者",
+      "aliases": [],
+      "costumeEdition": "standard",
       "resource": "Illust_dating15",
       "initialPhaseId": "1",
       "verification": {
@@ -10455,7 +11532,46 @@
               "variantCount": 1
             }
           ],
-          "combos": [],
+          "combos": [
+            {
+              "id": "gauge-82fe4e46",
+              "kind": "gauge-route",
+              "evidence": "原生配置与历史现场目录；不代表最新客户端逐条手动重测。",
+              "name": "头部 → 解锁身体",
+              "steps": [
+                {
+                  "actionId": "touch-9c0c4ce6",
+                  "phaseId": "1",
+                  "label": "调节进度",
+                  "location": "当前姿态中的头部。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "在头部短按，按实时进度重复，直到进入 50–50 的目标范围；每次新一轮有效触发使进度 +10。 同部位重复前至少等约 1 秒复位；自然降温会影响结果，不按固定次数操作。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 10,
+                  "resetSeconds": 1.0,
+                  "repeatUntil": "实时进度进入 50–50，且目标已经可操作后继续下一步。"
+                },
+                {
+                  "actionId": "touch-b32c7986",
+                  "phaseId": "1",
+                  "label": "执行解锁动作",
+                  "location": "当前姿态中的身体。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "确认进度位于 50–50 且目标已可操作后，在身体单击一次鼠标左键。"
+                }
+              ],
+              "conditions": [
+                "从本阶段起始进度 0 整理的参考路线；中途继续时以游戏当前进度为准。",
+                "进度条在 0–49 范围内可用。"
+              ],
+              "note": "这是进度条件解锁路线，不是隐藏部位激活；不要跳过中间有效输入。目标已经可用时，可直接执行最后一步。 自然降温每秒约 1，次数不固定，必须观察实时变化。 最后一步会推进姿态，先确认当前阶段其他想看的动作已完成。",
+              "progress": {
+                "start": 0,
+                "targetMin": 50,
+                "targetMax": 50,
+                "naturalDecreasePerSecond": 1.0
+              }
+            }
+          ],
           "gaugeRules": [
             {
               "title": "提高进度",
@@ -10760,7 +11876,38 @@
               "variantCount": 1
             }
           ],
-          "combos": [],
+          "combos": [
+            {
+              "id": "wiki-bantana-stage2-left-right-thighs",
+              "name": "左大腿 → 右大腿",
+              "kind": "wiki-route",
+              "evidence": "依据GameKee教学文字及对应姿态目录整理；新增手动接续未在本轮逐条实机验证。",
+              "sourceUrl": "https://www.gamekee.com/zsca2/644053.html",
+              "conditions": [
+                "本阶段起手进度0–62便于衔接；第一步有效增加8，第二步需仍在0–70范围。",
+                "从当前姿态的左大腿提示区起手，再点右大腿后继入口。"
+              ],
+              "note": "按列出的顺序接续，中间不要插入其他互动；正文未给统一秒数，以游戏提示开放为准。",
+              "steps": [
+                {
+                  "actionId": "touch-01f65158",
+                  "phaseId": "2",
+                  "label": "左大腿",
+                  "location": "当前姿态中的左大腿；左右以画面为准。",
+                  "gesture": "短按",
+                  "instruction": "在左大腿的当前提示区短按一次；下一处接续提示出现时立即进行下一步。"
+                },
+                {
+                  "actionId": "touch-324f9fde",
+                  "phaseId": "2",
+                  "label": "右大腿",
+                  "location": "当前姿态中的右大腿；左右以画面为准。",
+                  "gesture": "短按",
+                  "instruction": "在右大腿的当前提示区短按一次；等待本条接续完整结束。"
+                }
+              ]
+            }
+          ],
           "gaugeRules": [
             {
               "title": "提高进度",
@@ -11265,7 +12412,202 @@
               "variantCount": 1
             }
           ],
-          "combos": [],
+          "combos": [
+            {
+              "id": "gauge-2910bb51",
+              "kind": "gauge-route",
+              "evidence": "原生配置与历史现场目录；不代表最新客户端逐条手动重测。",
+              "name": "嘴 → 解锁身体",
+              "steps": [
+                {
+                  "actionId": "touch-17acb19f",
+                  "phaseId": "3",
+                  "label": "调节进度 1",
+                  "location": "当前姿态中的嘴。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "在嘴短按一次，新一轮有效触发使进度 +10。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 10,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-816a4171",
+                  "phaseId": "3",
+                  "label": "调节进度 2",
+                  "location": "当前姿态中的嘴。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "在嘴短按一次，新一轮有效触发使进度 +15。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 15,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-816a4171",
+                  "phaseId": "3",
+                  "label": "调节进度 3",
+                  "location": "当前姿态中的嘴。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在嘴短按一次，新一轮有效触发使进度 +15。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 15,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-816a4171",
+                  "phaseId": "3",
+                  "label": "调节进度 4",
+                  "location": "当前姿态中的嘴。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在嘴短按一次，新一轮有效触发使进度 +15。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 15,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-816a4171",
+                  "phaseId": "3",
+                  "label": "调节进度 5",
+                  "location": "当前姿态中的嘴。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在嘴短按一次，新一轮有效触发使进度 +15。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 15,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-816a4171",
+                  "phaseId": "3",
+                  "label": "调节进度 6",
+                  "location": "当前姿态中的嘴。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在嘴短按一次，新一轮有效触发使进度 +15。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 15,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-816a4171",
+                  "phaseId": "3",
+                  "label": "调节进度 7",
+                  "location": "当前姿态中的嘴。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在嘴短按一次，新一轮有效触发使进度 +15。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 15,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-e758ad33",
+                  "phaseId": "3",
+                  "label": "执行解锁动作",
+                  "location": "当前姿态中的身体。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "确认进度位于 100–100 且目标已可操作后，在身体单击一次鼠标左键。"
+                }
+              ],
+              "conditions": [
+                "从本阶段起始进度 0 整理的参考路线；中途继续时以游戏当前进度为准。"
+              ],
+              "note": "这是进度条件解锁路线，不是隐藏部位激活；不要跳过中间有效输入。目标已经可用时，可直接执行最后一步。 每次确认前一步的进度变化，再继续；同部位连点可能只播放动画而不再改变进度。",
+              "progress": {
+                "start": 0,
+                "targetMin": 100,
+                "targetMax": 100,
+                "naturalDecreasePerSecond": 0
+              }
+            },
+            {
+              "id": "wiki-bantana-stage3-rightwrist-armpit",
+              "name": "右手腕 → 腋下",
+              "kind": "wiki-route",
+              "evidence": "依据GameKee教学文字及对应姿态目录整理；新增手动接续未在本轮逐条实机验证。",
+              "sourceUrl": "https://www.gamekee.com/zsca2/644053.html",
+              "conditions": [
+                "处于后段躺卧姿态，建议在较低进度开始，避免中途进入自动收尾。",
+                "每一步前确认当前接续提示仍然开放。"
+              ],
+              "note": "按列出的顺序接续，中间不要插入其他互动；正文未给统一秒数，以游戏提示开放为准。",
+              "steps": [
+                {
+                  "actionId": "touch-7f2a2ee6",
+                  "phaseId": "3",
+                  "label": "右手腕",
+                  "location": "当前姿态中的右手腕；左右以画面为准。",
+                  "gesture": "短按",
+                  "instruction": "在右手腕的当前提示区短按一次；下一处接续提示出现时立即进行下一步。"
+                },
+                {
+                  "actionId": "touch-0dfb74eb",
+                  "phaseId": "3",
+                  "label": "腋下",
+                  "location": "当前姿态中的腋下；左右以画面为准。",
+                  "gesture": "短按",
+                  "instruction": "在腋下的当前提示区短按一次；等待本条接续完整结束。"
+                }
+              ]
+            },
+            {
+              "id": "wiki-bantana-stage3-wrists-mouth",
+              "name": "右手腕 → 左手腕 → 嘴",
+              "kind": "wiki-route",
+              "evidence": "依据GameKee教学文字及对应姿态目录整理；新增手动接续未在本轮逐条实机验证。",
+              "sourceUrl": "https://www.gamekee.com/zsca2/644053.html",
+              "conditions": [
+                "处于后段躺卧姿态，建议在较低进度开始，避免中途进入自动收尾。",
+                "每一步前确认当前接续提示仍然开放。"
+              ],
+              "note": "按列出的顺序接续，中间不要插入其他互动；正文未给统一秒数，以游戏提示开放为准。",
+              "steps": [
+                {
+                  "actionId": "touch-7f2a2ee6",
+                  "phaseId": "3",
+                  "label": "右手腕",
+                  "location": "当前姿态中的右手腕；左右以画面为准。",
+                  "gesture": "短按",
+                  "instruction": "在右手腕的当前提示区短按一次；下一处接续提示出现时立即进行下一步。"
+                },
+                {
+                  "actionId": "touch-f70fa586",
+                  "phaseId": "3",
+                  "label": "左手腕",
+                  "location": "当前姿态中的左手腕；左右以画面为准。",
+                  "gesture": "短按",
+                  "instruction": "在左手腕的当前提示区短按一次；下一处接续提示出现时立即进行下一步。"
+                },
+                {
+                  "actionId": "touch-17acb19f",
+                  "phaseId": "3",
+                  "label": "嘴部",
+                  "location": "当前姿态中的嘴部；左右以画面为准。",
+                  "gesture": "短按",
+                  "instruction": "在嘴部的当前提示区短按一次；等待本条接续完整结束。"
+                }
+              ]
+            },
+            {
+              "id": "wiki-bantana-stage3-right-left-thighs",
+              "name": "右大腿 → 左大腿",
+              "kind": "wiki-route",
+              "evidence": "依据GameKee教学文字及对应姿态目录整理；新增手动接续未在本轮逐条实机验证。",
+              "sourceUrl": "https://www.gamekee.com/zsca2/644053.html",
+              "conditions": [
+                "处于后段躺卧姿态，建议在较低进度开始，避免中途进入自动收尾。",
+                "每一步前确认当前接续提示仍然开放。"
+              ],
+              "note": "按列出的顺序接续，中间不要插入其他互动；正文未给统一秒数，以游戏提示开放为准。",
+              "steps": [
+                {
+                  "actionId": "touch-a402b23a",
+                  "phaseId": "3",
+                  "label": "右大腿",
+                  "location": "当前姿态中的右大腿；左右以画面为准。",
+                  "gesture": "短按",
+                  "instruction": "在右大腿的当前提示区短按一次；下一处接续提示出现时立即进行下一步。"
+                },
+                {
+                  "actionId": "touch-dddfb1df",
+                  "phaseId": "3",
+                  "label": "左大腿",
+                  "location": "当前姿态中的左大腿；左右以画面为准。",
+                  "gesture": "短按",
+                  "instruction": "在左大腿的当前提示区短按一次；等待本条接续完整结束。"
+                }
+              ]
+            }
+          ],
           "gaugeRules": [
             {
               "title": "提高进度",
@@ -11378,7 +12720,7 @@
       "coverage": {
         "phases": 3,
         "actions": 46,
-        "combinations": 0,
+        "combinations": 6,
         "omittedItems": 12,
         "unlocatedDrags": 0,
         "unseparatedLocations": 7
@@ -11388,6 +12730,8 @@
       "id": "olivier",
       "name": "奥利维耶",
       "costume": "传奇退役",
+      "aliases": [],
+      "costumeEdition": "standard",
       "resource": "Illust_dating16",
       "initialPhaseId": "1",
       "verification": {
@@ -11907,7 +13251,896 @@
               "variantCount": 4
             }
           ],
-          "combos": [],
+          "combos": [
+            {
+              "id": "gauge-04e9038d",
+              "kind": "gauge-route",
+              "evidence": "原生配置与历史现场目录；不代表最新客户端逐条手动重测。",
+              "name": "腋窝 → 解锁面部",
+              "steps": [
+                {
+                  "actionId": "touch-af6a7994",
+                  "phaseId": "2",
+                  "label": "调节进度 1",
+                  "location": "当前姿态中的腋窝。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "在腋窝短按一次，新一轮有效触发使进度 +3。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 3,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-af6a7994",
+                  "phaseId": "2",
+                  "label": "调节进度 2",
+                  "location": "当前姿态中的腋窝。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腋窝短按一次，新一轮有效触发使进度 +3。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 3,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-af6a7994",
+                  "phaseId": "2",
+                  "label": "调节进度 3",
+                  "location": "当前姿态中的腋窝。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腋窝短按一次，新一轮有效触发使进度 +3。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 3,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-af6a7994",
+                  "phaseId": "2",
+                  "label": "调节进度 4",
+                  "location": "当前姿态中的腋窝。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腋窝短按一次，新一轮有效触发使进度 +3。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 3,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-af6a7994",
+                  "phaseId": "2",
+                  "label": "调节进度 5",
+                  "location": "当前姿态中的腋窝。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腋窝短按一次，新一轮有效触发使进度 +3。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 3,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-af6a7994",
+                  "phaseId": "2",
+                  "label": "调节进度 6",
+                  "location": "当前姿态中的腋窝。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腋窝短按一次，新一轮有效触发使进度 +3。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 3,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-af6a7994",
+                  "phaseId": "2",
+                  "label": "调节进度 7",
+                  "location": "当前姿态中的腋窝。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腋窝短按一次，新一轮有效触发使进度 +3。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 3,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-af6a7994",
+                  "phaseId": "2",
+                  "label": "调节进度 8",
+                  "location": "当前姿态中的腋窝。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腋窝短按一次，新一轮有效触发使进度 +3。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 3,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-af6a7994",
+                  "phaseId": "2",
+                  "label": "调节进度 9",
+                  "location": "当前姿态中的腋窝。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腋窝短按一次，新一轮有效触发使进度 +3。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 3,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-af6a7994",
+                  "phaseId": "2",
+                  "label": "调节进度 10",
+                  "location": "当前姿态中的腋窝。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腋窝短按一次，新一轮有效触发使进度 +3。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 3,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-af6a7994",
+                  "phaseId": "2",
+                  "label": "调节进度 11",
+                  "location": "当前姿态中的腋窝。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腋窝短按一次，新一轮有效触发使进度 +3。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 3,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-af6a7994",
+                  "phaseId": "2",
+                  "label": "调节进度 12",
+                  "location": "当前姿态中的腋窝。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腋窝短按一次，新一轮有效触发使进度 +3。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 3,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-af6a7994",
+                  "phaseId": "2",
+                  "label": "调节进度 13",
+                  "location": "当前姿态中的腋窝。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腋窝短按一次，新一轮有效触发使进度 +3。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 3,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-af6a7994",
+                  "phaseId": "2",
+                  "label": "调节进度 14",
+                  "location": "当前姿态中的腋窝。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腋窝短按一次，新一轮有效触发使进度 +3。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 3,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-af6a7994",
+                  "phaseId": "2",
+                  "label": "调节进度 15",
+                  "location": "当前姿态中的腋窝。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腋窝短按一次，新一轮有效触发使进度 +3。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 3,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-af6a7994",
+                  "phaseId": "2",
+                  "label": "调节进度 16",
+                  "location": "当前姿态中的腋窝。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腋窝短按一次，新一轮有效触发使进度 +3。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 3,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-af6a7994",
+                  "phaseId": "2",
+                  "label": "调节进度 17",
+                  "location": "当前姿态中的腋窝。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腋窝短按一次，新一轮有效触发使进度 +3。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 3,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-ae92de17",
+                  "phaseId": "2",
+                  "label": "执行解锁动作",
+                  "location": "当前姿态中的面部。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "确认进度位于 50–99 且目标已可操作后，在面部单击一次鼠标左键。"
+                }
+              ],
+              "conditions": [
+                "从本阶段起始进度 0 整理的参考路线；中途继续时以游戏当前进度为准。",
+                "进度条在 0–49 范围内可用。"
+              ],
+              "note": "这是进度条件解锁路线，不是隐藏部位激活；不要跳过中间有效输入。目标已经可用时，可直接执行最后一步。 每次确认前一步的进度变化，再继续；同部位连点可能只播放动画而不再改变进度。",
+              "progress": {
+                "start": 0,
+                "targetMin": 50,
+                "targetMax": 99,
+                "naturalDecreasePerSecond": 0
+              }
+            },
+            {
+              "id": "gauge-5f19c1cc",
+              "kind": "gauge-route",
+              "evidence": "原生配置与历史现场目录；不代表最新客户端逐条手动重测。",
+              "name": "腋窝 → 解锁腹部",
+              "steps": [
+                {
+                  "actionId": "touch-af6a7994",
+                  "phaseId": "2",
+                  "label": "调节进度 1",
+                  "location": "当前姿态中的腋窝。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "在腋窝短按一次，新一轮有效触发使进度 +3。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 3,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-af6a7994",
+                  "phaseId": "2",
+                  "label": "调节进度 2",
+                  "location": "当前姿态中的腋窝。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腋窝短按一次，新一轮有效触发使进度 +3。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 3,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-af6a7994",
+                  "phaseId": "2",
+                  "label": "调节进度 3",
+                  "location": "当前姿态中的腋窝。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腋窝短按一次，新一轮有效触发使进度 +3。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 3,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-af6a7994",
+                  "phaseId": "2",
+                  "label": "调节进度 4",
+                  "location": "当前姿态中的腋窝。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腋窝短按一次，新一轮有效触发使进度 +3。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 3,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-af6a7994",
+                  "phaseId": "2",
+                  "label": "调节进度 5",
+                  "location": "当前姿态中的腋窝。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腋窝短按一次，新一轮有效触发使进度 +3。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 3,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-af6a7994",
+                  "phaseId": "2",
+                  "label": "调节进度 6",
+                  "location": "当前姿态中的腋窝。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腋窝短按一次，新一轮有效触发使进度 +3。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 3,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-af6a7994",
+                  "phaseId": "2",
+                  "label": "调节进度 7",
+                  "location": "当前姿态中的腋窝。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腋窝短按一次，新一轮有效触发使进度 +3。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 3,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-af6a7994",
+                  "phaseId": "2",
+                  "label": "调节进度 8",
+                  "location": "当前姿态中的腋窝。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腋窝短按一次，新一轮有效触发使进度 +3。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 3,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-af6a7994",
+                  "phaseId": "2",
+                  "label": "调节进度 9",
+                  "location": "当前姿态中的腋窝。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腋窝短按一次，新一轮有效触发使进度 +3。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 3,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-af6a7994",
+                  "phaseId": "2",
+                  "label": "调节进度 10",
+                  "location": "当前姿态中的腋窝。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腋窝短按一次，新一轮有效触发使进度 +3。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 3,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-af6a7994",
+                  "phaseId": "2",
+                  "label": "调节进度 11",
+                  "location": "当前姿态中的腋窝。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腋窝短按一次，新一轮有效触发使进度 +3。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 3,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-af6a7994",
+                  "phaseId": "2",
+                  "label": "调节进度 12",
+                  "location": "当前姿态中的腋窝。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腋窝短按一次，新一轮有效触发使进度 +3。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 3,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-af6a7994",
+                  "phaseId": "2",
+                  "label": "调节进度 13",
+                  "location": "当前姿态中的腋窝。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腋窝短按一次，新一轮有效触发使进度 +3。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 3,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-af6a7994",
+                  "phaseId": "2",
+                  "label": "调节进度 14",
+                  "location": "当前姿态中的腋窝。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腋窝短按一次，新一轮有效触发使进度 +3。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 3,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-af6a7994",
+                  "phaseId": "2",
+                  "label": "调节进度 15",
+                  "location": "当前姿态中的腋窝。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腋窝短按一次，新一轮有效触发使进度 +3。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 3,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-af6a7994",
+                  "phaseId": "2",
+                  "label": "调节进度 16",
+                  "location": "当前姿态中的腋窝。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腋窝短按一次，新一轮有效触发使进度 +3。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 3,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-af6a7994",
+                  "phaseId": "2",
+                  "label": "调节进度 17",
+                  "location": "当前姿态中的腋窝。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腋窝短按一次，新一轮有效触发使进度 +3。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 3,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-b319382a",
+                  "phaseId": "2",
+                  "label": "执行解锁动作",
+                  "location": "当前姿态中的腹部。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "确认进度位于 50–99 且目标已可操作后，在腹部单击一次鼠标左键。"
+                }
+              ],
+              "conditions": [
+                "从本阶段起始进度 0 整理的参考路线；中途继续时以游戏当前进度为准。",
+                "进度条在 0–49 范围内可用。"
+              ],
+              "note": "这是进度条件解锁路线，不是隐藏部位激活；不要跳过中间有效输入。目标已经可用时，可直接执行最后一步。 每次确认前一步的进度变化，再继续；同部位连点可能只播放动画而不再改变进度。",
+              "progress": {
+                "start": 0,
+                "targetMin": 50,
+                "targetMax": 99,
+                "naturalDecreasePerSecond": 0
+              }
+            },
+            {
+              "id": "gauge-32d1cf12",
+              "kind": "gauge-route",
+              "evidence": "原生配置与历史现场目录；不代表最新客户端逐条手动重测。",
+              "name": "腋窝 → 解锁肘部",
+              "steps": [
+                {
+                  "actionId": "touch-af6a7994",
+                  "phaseId": "2",
+                  "label": "调节进度 1",
+                  "location": "当前姿态中的腋窝。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "在腋窝短按一次，新一轮有效触发使进度 +3。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 3,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-af6a7994",
+                  "phaseId": "2",
+                  "label": "调节进度 2",
+                  "location": "当前姿态中的腋窝。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腋窝短按一次，新一轮有效触发使进度 +3。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 3,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-af6a7994",
+                  "phaseId": "2",
+                  "label": "调节进度 3",
+                  "location": "当前姿态中的腋窝。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腋窝短按一次，新一轮有效触发使进度 +3。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 3,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-af6a7994",
+                  "phaseId": "2",
+                  "label": "调节进度 4",
+                  "location": "当前姿态中的腋窝。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腋窝短按一次，新一轮有效触发使进度 +3。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 3,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-af6a7994",
+                  "phaseId": "2",
+                  "label": "调节进度 5",
+                  "location": "当前姿态中的腋窝。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腋窝短按一次，新一轮有效触发使进度 +3。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 3,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-af6a7994",
+                  "phaseId": "2",
+                  "label": "调节进度 6",
+                  "location": "当前姿态中的腋窝。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腋窝短按一次，新一轮有效触发使进度 +3。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 3,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-af6a7994",
+                  "phaseId": "2",
+                  "label": "调节进度 7",
+                  "location": "当前姿态中的腋窝。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腋窝短按一次，新一轮有效触发使进度 +3。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 3,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-af6a7994",
+                  "phaseId": "2",
+                  "label": "调节进度 8",
+                  "location": "当前姿态中的腋窝。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腋窝短按一次，新一轮有效触发使进度 +3。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 3,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-af6a7994",
+                  "phaseId": "2",
+                  "label": "调节进度 9",
+                  "location": "当前姿态中的腋窝。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腋窝短按一次，新一轮有效触发使进度 +3。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 3,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-af6a7994",
+                  "phaseId": "2",
+                  "label": "调节进度 10",
+                  "location": "当前姿态中的腋窝。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腋窝短按一次，新一轮有效触发使进度 +3。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 3,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-af6a7994",
+                  "phaseId": "2",
+                  "label": "调节进度 11",
+                  "location": "当前姿态中的腋窝。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腋窝短按一次，新一轮有效触发使进度 +3。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 3,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-af6a7994",
+                  "phaseId": "2",
+                  "label": "调节进度 12",
+                  "location": "当前姿态中的腋窝。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腋窝短按一次，新一轮有效触发使进度 +3。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 3,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-af6a7994",
+                  "phaseId": "2",
+                  "label": "调节进度 13",
+                  "location": "当前姿态中的腋窝。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腋窝短按一次，新一轮有效触发使进度 +3。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 3,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-af6a7994",
+                  "phaseId": "2",
+                  "label": "调节进度 14",
+                  "location": "当前姿态中的腋窝。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腋窝短按一次，新一轮有效触发使进度 +3。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 3,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-af6a7994",
+                  "phaseId": "2",
+                  "label": "调节进度 15",
+                  "location": "当前姿态中的腋窝。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腋窝短按一次，新一轮有效触发使进度 +3。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 3,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-af6a7994",
+                  "phaseId": "2",
+                  "label": "调节进度 16",
+                  "location": "当前姿态中的腋窝。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腋窝短按一次，新一轮有效触发使进度 +3。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 3,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-af6a7994",
+                  "phaseId": "2",
+                  "label": "调节进度 17",
+                  "location": "当前姿态中的腋窝。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腋窝短按一次，新一轮有效触发使进度 +3。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 3,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-151f675f",
+                  "phaseId": "2",
+                  "label": "执行解锁动作",
+                  "location": "当前姿态中的肘部。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "确认进度位于 50–99 且目标已可操作后，在肘部单击一次鼠标左键。"
+                }
+              ],
+              "conditions": [
+                "从本阶段起始进度 0 整理的参考路线；中途继续时以游戏当前进度为准。",
+                "进度条在 0–49 范围内可用。"
+              ],
+              "note": "这是进度条件解锁路线，不是隐藏部位激活；不要跳过中间有效输入。目标已经可用时，可直接执行最后一步。 每次确认前一步的进度变化，再继续；同部位连点可能只播放动画而不再改变进度。",
+              "progress": {
+                "start": 0,
+                "targetMin": 50,
+                "targetMax": 99,
+                "naturalDecreasePerSecond": 0
+              }
+            },
+            {
+              "id": "gauge-6870ebd3",
+              "kind": "gauge-route",
+              "evidence": "原生配置与历史现场目录；不代表最新客户端逐条手动重测。",
+              "name": "腋窝 → 解锁面部",
+              "steps": [
+                {
+                  "actionId": "touch-af6a7994",
+                  "phaseId": "2",
+                  "label": "调节进度 1",
+                  "location": "当前姿态中的腋窝。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "在腋窝短按一次，新一轮有效触发使进度 +3。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 3,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-af6a7994",
+                  "phaseId": "2",
+                  "label": "调节进度 2",
+                  "location": "当前姿态中的腋窝。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腋窝短按一次，新一轮有效触发使进度 +3。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 3,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-af6a7994",
+                  "phaseId": "2",
+                  "label": "调节进度 3",
+                  "location": "当前姿态中的腋窝。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腋窝短按一次，新一轮有效触发使进度 +3。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 3,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-af6a7994",
+                  "phaseId": "2",
+                  "label": "调节进度 4",
+                  "location": "当前姿态中的腋窝。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腋窝短按一次，新一轮有效触发使进度 +3。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 3,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-af6a7994",
+                  "phaseId": "2",
+                  "label": "调节进度 5",
+                  "location": "当前姿态中的腋窝。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腋窝短按一次，新一轮有效触发使进度 +3。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 3,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-af6a7994",
+                  "phaseId": "2",
+                  "label": "调节进度 6",
+                  "location": "当前姿态中的腋窝。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腋窝短按一次，新一轮有效触发使进度 +3。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 3,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-af6a7994",
+                  "phaseId": "2",
+                  "label": "调节进度 7",
+                  "location": "当前姿态中的腋窝。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腋窝短按一次，新一轮有效触发使进度 +3。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 3,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-af6a7994",
+                  "phaseId": "2",
+                  "label": "调节进度 8",
+                  "location": "当前姿态中的腋窝。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腋窝短按一次，新一轮有效触发使进度 +3。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 3,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-af6a7994",
+                  "phaseId": "2",
+                  "label": "调节进度 9",
+                  "location": "当前姿态中的腋窝。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腋窝短按一次，新一轮有效触发使进度 +3。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 3,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-af6a7994",
+                  "phaseId": "2",
+                  "label": "调节进度 10",
+                  "location": "当前姿态中的腋窝。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腋窝短按一次，新一轮有效触发使进度 +3。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 3,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-af6a7994",
+                  "phaseId": "2",
+                  "label": "调节进度 11",
+                  "location": "当前姿态中的腋窝。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腋窝短按一次，新一轮有效触发使进度 +3。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 3,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-af6a7994",
+                  "phaseId": "2",
+                  "label": "调节进度 12",
+                  "location": "当前姿态中的腋窝。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腋窝短按一次，新一轮有效触发使进度 +3。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 3,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-af6a7994",
+                  "phaseId": "2",
+                  "label": "调节进度 13",
+                  "location": "当前姿态中的腋窝。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腋窝短按一次，新一轮有效触发使进度 +3。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 3,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-af6a7994",
+                  "phaseId": "2",
+                  "label": "调节进度 14",
+                  "location": "当前姿态中的腋窝。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腋窝短按一次，新一轮有效触发使进度 +3。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 3,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-af6a7994",
+                  "phaseId": "2",
+                  "label": "调节进度 15",
+                  "location": "当前姿态中的腋窝。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腋窝短按一次，新一轮有效触发使进度 +3。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 3,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-af6a7994",
+                  "phaseId": "2",
+                  "label": "调节进度 16",
+                  "location": "当前姿态中的腋窝。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腋窝短按一次，新一轮有效触发使进度 +3。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 3,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-af6a7994",
+                  "phaseId": "2",
+                  "label": "调节进度 17",
+                  "location": "当前姿态中的腋窝。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腋窝短按一次，新一轮有效触发使进度 +3。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 3,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-ae92de17",
+                  "phaseId": "2",
+                  "label": "调节进度 18",
+                  "location": "当前姿态中的面部。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "在面部短按一次，新一轮有效触发使进度 +5。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 5,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-ae92de17",
+                  "phaseId": "2",
+                  "label": "调节进度 19",
+                  "location": "当前姿态中的面部。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在面部短按一次，新一轮有效触发使进度 +5。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 5,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-ae92de17",
+                  "phaseId": "2",
+                  "label": "调节进度 20",
+                  "location": "当前姿态中的面部。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在面部短按一次，新一轮有效触发使进度 +5。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 5,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-ae92de17",
+                  "phaseId": "2",
+                  "label": "调节进度 21",
+                  "location": "当前姿态中的面部。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在面部短按一次，新一轮有效触发使进度 +5。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 5,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-ae92de17",
+                  "phaseId": "2",
+                  "label": "调节进度 22",
+                  "location": "当前姿态中的面部。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在面部短按一次，新一轮有效触发使进度 +5。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 5,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-ae92de17",
+                  "phaseId": "2",
+                  "label": "调节进度 23",
+                  "location": "当前姿态中的面部。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在面部短按一次，新一轮有效触发使进度 +5。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 5,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-ae92de17",
+                  "phaseId": "2",
+                  "label": "调节进度 24",
+                  "location": "当前姿态中的面部。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在面部短按一次，新一轮有效触发使进度 +5。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 5,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-ae92de17",
+                  "phaseId": "2",
+                  "label": "调节进度 25",
+                  "location": "当前姿态中的面部。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在面部短按一次，新一轮有效触发使进度 +5。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 5,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-ae92de17",
+                  "phaseId": "2",
+                  "label": "调节进度 26",
+                  "location": "当前姿态中的面部。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在面部短按一次，新一轮有效触发使进度 +5。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 5,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-ae92de17",
+                  "phaseId": "2",
+                  "label": "调节进度 27",
+                  "location": "当前姿态中的面部。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在面部短按一次，新一轮有效触发使进度 +5。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 5,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-65fc8942",
+                  "phaseId": "2",
+                  "label": "执行解锁动作",
+                  "location": "当前姿态中的面部。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "确认进度位于 100–100 且目标已可操作后，在面部单击一次鼠标左键。"
+                }
+              ],
+              "conditions": [
+                "从本阶段起始进度 0 整理的参考路线；中途继续时以游戏当前进度为准。",
+                "进度条在 0–49 范围内可用。"
+              ],
+              "note": "这是进度条件解锁路线，不是隐藏部位激活；不要跳过中间有效输入。目标已经可用时，可直接执行最后一步。 每次确认前一步的进度变化，再继续；同部位连点可能只播放动画而不再改变进度。",
+              "progress": {
+                "start": 0,
+                "targetMin": 100,
+                "targetMax": 100,
+                "naturalDecreasePerSecond": 0
+              }
+            }
+          ],
           "gaugeRules": [
             {
               "title": "提高进度",
@@ -11978,7 +14211,7 @@
       "coverage": {
         "phases": 2,
         "actions": 27,
-        "combinations": 0,
+        "combinations": 4,
         "omittedItems": 67,
         "unlocatedDrags": 0,
         "unseparatedLocations": 12
@@ -11988,6 +14221,8 @@
       "id": "palette",
       "name": "帕莱特",
       "costume": "奇迹紫罗兰",
+      "aliases": [],
+      "costumeEdition": "standard",
       "resource": "Illust_dating17",
       "initialPhaseId": "1",
       "verification": {
@@ -12327,11 +14562,49 @@
               "note": "同一部位有不同后续反应；具体触控区差异尚待核对，请开启游戏提示，不按名称后的旧编号猜左右位置。",
               "verified": false,
               "variantCount": 2
+            },
+            {
+              "id": "wiki-palette-123780dd",
+              "name": "漫画详情的第四格 · 短按",
+              "location": "当前姿态中的漫画详情的第四格；以游戏提示区为准。",
+              "gesture": "短按",
+              "conditions": [
+                "只在对应姿态且该提示区可操作时使用。"
+              ],
+              "instructions": [
+                "在漫画详情中短按第四格，确认后方电脑屏幕出现相应图案。"
+              ],
+              "note": "依据Wiki文字补充的手动位置说明；未在本轮逐条实机核对，不代表插件自动执行支持。",
+              "holdSeconds": null,
+              "drag": null,
+              "verified": false,
+              "variantCount": 1,
+              "source": "wiki-text"
+            },
+            {
+              "id": "wiki-palette-ffdc6a2c",
+              "name": "后方电脑 · 短按",
+              "location": "当前姿态中的后方电脑；以游戏提示区为准。",
+              "gesture": "短按",
+              "conditions": [
+                "只在对应姿态且该提示区可操作时使用。"
+              ],
+              "instructions": [
+                "短按后方电脑，完成机关并进入下一姿态。"
+              ],
+              "note": "依据Wiki文字补充的手动位置说明；未在本轮逐条实机核对，不代表插件自动执行支持。",
+              "holdSeconds": null,
+              "drag": null,
+              "verified": false,
+              "variantCount": 1,
+              "source": "wiki-text"
             }
           ],
           "combos": [
             {
               "id": "ordered-46de3b72",
+              "kind": "ordered-clicks",
+              "evidence": "原生配置与历史现场目录；不代表最新客户端逐条手动重测。",
               "name": "创可贴 · 同部位顺序互动",
               "steps": [
                 {
@@ -12388,6 +14661,43 @@
                 "次数以本阶段初始化状态为起点；已经做到中途时，从当前动作继续，不重播开头。"
               ],
               "note": "完整顺序共 7 次短按，会按固定顺序出现不同反应。不能跳过中间步骤；已经做到中途时，从当前反应继续。"
+            },
+            {
+              "id": "wiki-palette-comic-fourth-computer",
+              "name": "漫画 → 第四格 → 电脑",
+              "kind": "stage-route",
+              "evidence": "依据GameKee教学文字及对应姿态目录整理；新增手动接续未在本轮逐条实机验证。",
+              "sourceUrl": "https://www.gamekee.com/zsca2/644053.html",
+              "conditions": [
+                "处于仍可打开漫画的初段姿态。"
+              ],
+              "note": "按列出的顺序接续，中间不要插入其他互动；正文未给统一秒数，以游戏提示开放为准。 最后一步会推进姿态，先确认本阶段其他想看的动作已完成。",
+              "steps": [
+                {
+                  "actionId": "touch-d67d19a4",
+                  "phaseId": "1",
+                  "label": "漫画",
+                  "location": "当前姿态中的漫画；左右以画面为准。",
+                  "gesture": "短按",
+                  "instruction": "短按场景中的漫画，打开漫画详情。"
+                },
+                {
+                  "actionId": "wiki-palette-123780dd",
+                  "phaseId": "1",
+                  "label": "漫画详情的第四格",
+                  "location": "当前姿态中的漫画详情的第四格；左右以画面为准。",
+                  "gesture": "短按",
+                  "instruction": "在漫画详情中短按第四格，确认后方电脑屏幕出现相应图案。"
+                },
+                {
+                  "actionId": "wiki-palette-ffdc6a2c",
+                  "phaseId": "1",
+                  "label": "后方电脑",
+                  "location": "当前姿态中的后方电脑；左右以画面为准。",
+                  "gesture": "短按",
+                  "instruction": "短按后方电脑，完成机关并进入下一姿态。"
+                }
+              ]
             }
           ],
           "gaugeRules": [],
@@ -12746,6 +15056,8 @@
           "combos": [
             {
               "id": "route-4e58599f",
+              "kind": "hidden-route",
+              "evidence": "原生配置与历史现场目录；不代表最新客户端逐条手动重测。",
               "name": "膝盖 → 脚底",
               "steps": [
                 {
@@ -12766,6 +15078,8 @@
             },
             {
               "id": "route-1f66744a",
+              "kind": "hidden-route",
+              "evidence": "原生配置与历史现场目录；不代表最新客户端逐条手动重测。",
               "name": "膝盖 → 脚趾",
               "steps": [
                 {
@@ -12786,6 +15100,8 @@
             },
             {
               "id": "ordered-215e584a",
+              "kind": "ordered-clicks",
+              "evidence": "原生配置与历史现场目录；不代表最新客户端逐条手动重测。",
               "name": "显示器 · 同部位顺序互动",
               "steps": [
                 {
@@ -12858,8 +15174,8 @@
       ],
       "coverage": {
         "phases": 2,
-        "actions": 39,
-        "combinations": 4,
+        "actions": 41,
+        "combinations": 5,
         "omittedItems": 12,
         "unlocatedDrags": 0,
         "unseparatedLocations": 5
@@ -12868,7 +15184,11 @@
     {
       "id": "scheherazade",
       "name": "莎赫拉查德",
-      "costume": "泳池派对",
+      "costume": "从容的王牌",
+      "aliases": [
+        "泳池派对"
+      ],
+      "costumeEdition": "prestige",
       "resource": "Illust_dating18",
       "initialPhaseId": "1",
       "verification": {
@@ -13709,6 +16029,8 @@
       "id": "glancithe",
       "name": "格兰希特",
       "costume": "战地医疗兵",
+      "aliases": [],
+      "costumeEdition": "standard",
       "resource": "Illust_dating19",
       "initialPhaseId": "1",
       "verification": {
@@ -13956,7 +16278,236 @@
               "variantCount": 1
             }
           ],
-          "combos": [],
+          "combos": [
+            {
+              "id": "gauge-7153aabd",
+              "kind": "gauge-route",
+              "evidence": "原生配置与历史现场目录；不代表最新客户端逐条手动重测。",
+              "name": "腿部 → 解锁腿部",
+              "steps": [
+                {
+                  "actionId": "touch-0475b381",
+                  "phaseId": "1",
+                  "label": "调节进度 1",
+                  "location": "当前姿态中的腿部。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "在腿部短按一次，新一轮有效触发使进度 +13。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 13,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-d1cddf01",
+                  "phaseId": "1",
+                  "label": "调节进度 2",
+                  "location": "当前姿态中的腹部。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "在腹部短按一次，新一轮有效触发使进度 +21。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 21,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-d1cddf01",
+                  "phaseId": "1",
+                  "label": "调节进度 3",
+                  "location": "当前姿态中的腹部。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腹部短按一次，新一轮有效触发使进度 +21。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 21,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-91a9f6a5",
+                  "phaseId": "1",
+                  "label": "执行解锁动作",
+                  "location": "当前姿态中的腿部。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "确认进度位于 51–99 且目标已可操作后，在腿部单击一次鼠标左键。"
+                }
+              ],
+              "conditions": [
+                "从本阶段起始进度 0 整理的参考路线；中途继续时以游戏当前进度为准。",
+                "进度条在 0–50 范围内可用。"
+              ],
+              "note": "这是进度条件解锁路线，不是隐藏部位激活；不要跳过中间有效输入。目标已经可用时，可直接执行最后一步。 每次确认前一步的进度变化，再继续；同部位连点可能只播放动画而不再改变进度。",
+              "progress": {
+                "start": 0,
+                "targetMin": 51,
+                "targetMax": 99,
+                "naturalDecreasePerSecond": 0
+              }
+            },
+            {
+              "id": "gauge-323f5f9b",
+              "kind": "gauge-route",
+              "evidence": "原生配置与历史现场目录；不代表最新客户端逐条手动重测。",
+              "name": "腿部 → 解锁头部",
+              "steps": [
+                {
+                  "actionId": "touch-0475b381",
+                  "phaseId": "1",
+                  "label": "调节进度 1",
+                  "location": "当前姿态中的腿部。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "在腿部短按一次，新一轮有效触发使进度 +13。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 13,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-d1cddf01",
+                  "phaseId": "1",
+                  "label": "调节进度 2",
+                  "location": "当前姿态中的腹部。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "在腹部短按一次，新一轮有效触发使进度 +21。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 21,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-d1cddf01",
+                  "phaseId": "1",
+                  "label": "调节进度 3",
+                  "location": "当前姿态中的腹部。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腹部短按一次，新一轮有效触发使进度 +21。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 21,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-c1890643",
+                  "phaseId": "1",
+                  "label": "执行解锁动作",
+                  "location": "当前姿态中的头部。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "确认进度位于 51–99 且目标已可操作后，在头部单击一次鼠标左键。"
+                }
+              ],
+              "conditions": [
+                "从本阶段起始进度 0 整理的参考路线；中途继续时以游戏当前进度为准。",
+                "进度条在 0–50 范围内可用。"
+              ],
+              "note": "这是进度条件解锁路线，不是隐藏部位激活；不要跳过中间有效输入。目标已经可用时，可直接执行最后一步。 每次确认前一步的进度变化，再继续；同部位连点可能只播放动画而不再改变进度。",
+              "progress": {
+                "start": 0,
+                "targetMin": 51,
+                "targetMax": 99,
+                "naturalDecreasePerSecond": 0
+              }
+            },
+            {
+              "id": "gauge-91c0fcb4",
+              "kind": "gauge-route",
+              "evidence": "原生配置与历史现场目录；不代表最新客户端逐条手动重测。",
+              "name": "腿部 → 解锁腹部",
+              "steps": [
+                {
+                  "actionId": "touch-0475b381",
+                  "phaseId": "1",
+                  "label": "调节进度 1",
+                  "location": "当前姿态中的腿部。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "在腿部短按一次，新一轮有效触发使进度 +13。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 13,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-d1cddf01",
+                  "phaseId": "1",
+                  "label": "调节进度 2",
+                  "location": "当前姿态中的腹部。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "在腹部短按一次，新一轮有效触发使进度 +21。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 21,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-d1cddf01",
+                  "phaseId": "1",
+                  "label": "调节进度 3",
+                  "location": "当前姿态中的腹部。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腹部短按一次，新一轮有效触发使进度 +21。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 21,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-95e0bae8",
+                  "phaseId": "1",
+                  "label": "执行解锁动作",
+                  "location": "当前姿态中的腹部。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "确认进度位于 51–99 且目标已可操作后，在腹部单击一次鼠标左键。"
+                }
+              ],
+              "conditions": [
+                "从本阶段起始进度 0 整理的参考路线；中途继续时以游戏当前进度为准。",
+                "进度条在 0–50 范围内可用。"
+              ],
+              "note": "这是进度条件解锁路线，不是隐藏部位激活；不要跳过中间有效输入。目标已经可用时，可直接执行最后一步。 每次确认前一步的进度变化，再继续；同部位连点可能只播放动画而不再改变进度。",
+              "progress": {
+                "start": 0,
+                "targetMin": 51,
+                "targetMax": 99,
+                "naturalDecreasePerSecond": 0
+              }
+            },
+            {
+              "id": "gauge-df3d8642",
+              "kind": "gauge-route",
+              "evidence": "原生配置与历史现场目录；不代表最新客户端逐条手动重测。",
+              "name": "腿部 → 解锁侧腰",
+              "steps": [
+                {
+                  "actionId": "touch-0475b381",
+                  "phaseId": "1",
+                  "label": "调节进度 1",
+                  "location": "当前姿态中的腿部。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "在腿部短按一次，新一轮有效触发使进度 +13。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 13,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-d1cddf01",
+                  "phaseId": "1",
+                  "label": "调节进度 2",
+                  "location": "当前姿态中的腹部。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "在腹部短按一次，新一轮有效触发使进度 +21。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 21,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-d1cddf01",
+                  "phaseId": "1",
+                  "label": "调节进度 3",
+                  "location": "当前姿态中的腹部。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腹部短按一次，新一轮有效触发使进度 +21。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 21,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-0e40b123",
+                  "phaseId": "1",
+                  "label": "执行解锁动作",
+                  "location": "当前姿态中的侧腰。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "确认进度位于 51–99 且目标已可操作后，在侧腰单击一次鼠标左键。"
+                }
+              ],
+              "conditions": [
+                "从本阶段起始进度 0 整理的参考路线；中途继续时以游戏当前进度为准。",
+                "进度条在 0–50 范围内可用。"
+              ],
+              "note": "这是进度条件解锁路线，不是隐藏部位激活；不要跳过中间有效输入。目标已经可用时，可直接执行最后一步。 每次确认前一步的进度变化，再继续；同部位连点可能只播放动画而不再改变进度。",
+              "progress": {
+                "start": 0,
+                "targetMin": 51,
+                "targetMax": 99,
+                "naturalDecreasePerSecond": 0
+              }
+            }
+          ],
           "gaugeRules": [
             {
               "title": "提高进度",
@@ -14359,9 +16910,869 @@
               "note": "新一轮有效触发的进度变化为 +5，以游戏实际显示为准。 重复用于调节进度时，先等约 1 秒让连续判定复位；快速连点可能不再改变进度。 同一部位有不同后续反应；具体触控区差异尚待核对，请开启游戏提示，不按名称后的旧编号猜左右位置。",
               "verified": false,
               "variantCount": 2
+            },
+            {
+              "id": "wiki-glancithe-left-arm-followup",
+              "name": "左手臂接续位置 · 短按",
+              "location": "当前姿态中的左手臂；以游戏提示区为准。",
+              "gesture": "短按",
+              "conditions": [
+                "只在对应姿态且该提示区可操作时使用。"
+              ],
+              "instructions": [
+                "在左手臂新出现的接续提示区短按；接续时进度需在41–99内。"
+              ],
+              "note": "依据Wiki文字补充的手动位置说明；未在本轮逐条实机核对，不代表插件自动执行支持。",
+              "holdSeconds": null,
+              "drag": null,
+              "verified": false,
+              "variantCount": 1,
+              "source": "wiki-text"
+            },
+            {
+              "id": "wiki-glancithe-right-arm-followup",
+              "name": "右手臂接续位置 · 短按",
+              "location": "当前姿态中的右手臂；以游戏提示区为准。",
+              "gesture": "短按",
+              "conditions": [
+                "只在对应姿态且该提示区可操作时使用。"
+              ],
+              "instructions": [
+                "在右手臂新出现的接续提示区短按；接续时进度需在41–99内。"
+              ],
+              "note": "依据Wiki文字补充的手动位置说明；未在本轮逐条实机核对，不代表插件自动执行支持。",
+              "holdSeconds": null,
+              "drag": null,
+              "verified": false,
+              "variantCount": 1,
+              "source": "wiki-text"
             }
           ],
-          "combos": [],
+          "combos": [
+            {
+              "id": "gauge-4845f5ec",
+              "kind": "gauge-route",
+              "evidence": "原生配置与历史现场目录；不代表最新客户端逐条手动重测。",
+              "name": "腹部 → 解锁腹部",
+              "steps": [
+                {
+                  "actionId": "touch-ed29d5ed",
+                  "phaseId": "2",
+                  "label": "调节进度 1",
+                  "location": "当前姿态中的腹部。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "在腹部短按一次，新一轮有效触发使进度 +15。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 15,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-ed29d5ed",
+                  "phaseId": "2",
+                  "label": "调节进度 2",
+                  "location": "当前姿态中的腹部。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腹部短按一次，新一轮有效触发使进度 +15。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 15,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-ed29d5ed",
+                  "phaseId": "2",
+                  "label": "调节进度 3",
+                  "location": "当前姿态中的腹部。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腹部短按一次，新一轮有效触发使进度 +15。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 15,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-2e8dce9f",
+                  "phaseId": "2",
+                  "label": "执行解锁动作",
+                  "location": "当前姿态中的腹部。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "确认进度位于 41–99 且目标已可操作后，在腹部单击一次鼠标左键。"
+                }
+              ],
+              "conditions": [
+                "从本阶段起始进度 0 整理的参考路线；中途继续时以游戏当前进度为准。",
+                "进度条在 0–40 范围内可用。"
+              ],
+              "note": "这是进度条件解锁路线，不是隐藏部位激活；不要跳过中间有效输入。目标已经可用时，可直接执行最后一步。 每次确认前一步的进度变化，再继续；同部位连点可能只播放动画而不再改变进度。",
+              "progress": {
+                "start": 0,
+                "targetMin": 41,
+                "targetMax": 99,
+                "naturalDecreasePerSecond": 0
+              }
+            },
+            {
+              "id": "gauge-79ec9158",
+              "kind": "gauge-route",
+              "evidence": "原生配置与历史现场目录；不代表最新客户端逐条手动重测。",
+              "name": "腹部 → 解锁泳衣下面",
+              "steps": [
+                {
+                  "actionId": "touch-ed29d5ed",
+                  "phaseId": "2",
+                  "label": "调节进度 1",
+                  "location": "当前姿态中的腹部。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "在腹部短按一次，新一轮有效触发使进度 +15。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 15,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-ed29d5ed",
+                  "phaseId": "2",
+                  "label": "调节进度 2",
+                  "location": "当前姿态中的腹部。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腹部短按一次，新一轮有效触发使进度 +15。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 15,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-ed29d5ed",
+                  "phaseId": "2",
+                  "label": "调节进度 3",
+                  "location": "当前姿态中的腹部。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腹部短按一次，新一轮有效触发使进度 +15。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 15,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-a25f93ad",
+                  "phaseId": "2",
+                  "label": "执行解锁动作",
+                  "location": "当前姿态中的泳衣下面。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "确认进度位于 41–99 且目标已可操作后，在泳衣下面单击一次鼠标左键。"
+                }
+              ],
+              "conditions": [
+                "从本阶段起始进度 0 整理的参考路线；中途继续时以游戏当前进度为准。",
+                "进度条在 0–40 范围内可用。"
+              ],
+              "note": "这是进度条件解锁路线，不是隐藏部位激活；不要跳过中间有效输入。目标已经可用时，可直接执行最后一步。 每次确认前一步的进度变化，再继续；同部位连点可能只播放动画而不再改变进度。",
+              "progress": {
+                "start": 0,
+                "targetMin": 41,
+                "targetMax": 99,
+                "naturalDecreasePerSecond": 0
+              }
+            },
+            {
+              "id": "gauge-6866bf4c",
+              "kind": "gauge-route",
+              "evidence": "原生配置与历史现场目录；不代表最新客户端逐条手动重测。",
+              "name": "腹部 → 解锁泳衣下方（毛巾）",
+              "steps": [
+                {
+                  "actionId": "touch-ed29d5ed",
+                  "phaseId": "2",
+                  "label": "调节进度 1",
+                  "location": "当前姿态中的腹部。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "在腹部短按一次，新一轮有效触发使进度 +15。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 15,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-ed29d5ed",
+                  "phaseId": "2",
+                  "label": "调节进度 2",
+                  "location": "当前姿态中的腹部。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腹部短按一次，新一轮有效触发使进度 +15。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 15,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-ed29d5ed",
+                  "phaseId": "2",
+                  "label": "调节进度 3",
+                  "location": "当前姿态中的腹部。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腹部短按一次，新一轮有效触发使进度 +15。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 15,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-0c634432",
+                  "phaseId": "2",
+                  "label": "执行解锁动作",
+                  "location": "当前姿态中的泳衣下方（毛巾）。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "确认进度位于 41–99 且目标已可操作后，在泳衣下方（毛巾）单击一次鼠标左键。"
+                }
+              ],
+              "conditions": [
+                "从本阶段起始进度 0 整理的参考路线；中途继续时以游戏当前进度为准。",
+                "进度条在 0–40 范围内可用。"
+              ],
+              "note": "这是进度条件解锁路线，不是隐藏部位激活；不要跳过中间有效输入。目标已经可用时，可直接执行最后一步。 每次确认前一步的进度变化，再继续；同部位连点可能只播放动画而不再改变进度。",
+              "progress": {
+                "start": 0,
+                "targetMin": 41,
+                "targetMax": 99,
+                "naturalDecreasePerSecond": 0
+              }
+            },
+            {
+              "id": "gauge-9b05601e",
+              "kind": "gauge-route",
+              "evidence": "原生配置与历史现场目录；不代表最新客户端逐条手动重测。",
+              "name": "腹部 → 解锁腿部",
+              "steps": [
+                {
+                  "actionId": "touch-ed29d5ed",
+                  "phaseId": "2",
+                  "label": "调节进度 1",
+                  "location": "当前姿态中的腹部。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "在腹部短按一次，新一轮有效触发使进度 +15。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 15,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-ed29d5ed",
+                  "phaseId": "2",
+                  "label": "调节进度 2",
+                  "location": "当前姿态中的腹部。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腹部短按一次，新一轮有效触发使进度 +15。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 15,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-ed29d5ed",
+                  "phaseId": "2",
+                  "label": "调节进度 3",
+                  "location": "当前姿态中的腹部。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腹部短按一次，新一轮有效触发使进度 +15。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 15,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-6d2e9cb5",
+                  "phaseId": "2",
+                  "label": "执行解锁动作",
+                  "location": "当前姿态中的腿部。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "确认进度位于 41–99 且目标已可操作后，在腿部单击一次鼠标左键。"
+                }
+              ],
+              "conditions": [
+                "从本阶段起始进度 0 整理的参考路线；中途继续时以游戏当前进度为准。",
+                "进度条在 0–40 范围内可用。"
+              ],
+              "note": "这是进度条件解锁路线，不是隐藏部位激活；不要跳过中间有效输入。目标已经可用时，可直接执行最后一步。 每次确认前一步的进度变化，再继续；同部位连点可能只播放动画而不再改变进度。",
+              "progress": {
+                "start": 0,
+                "targetMin": 41,
+                "targetMax": 99,
+                "naturalDecreasePerSecond": 0
+              }
+            },
+            {
+              "id": "gauge-2e2c4a61",
+              "kind": "gauge-route",
+              "evidence": "原生配置与历史现场目录；不代表最新客户端逐条手动重测。",
+              "name": "腹部 → 解锁腋窝",
+              "steps": [
+                {
+                  "actionId": "touch-ed29d5ed",
+                  "phaseId": "2",
+                  "label": "调节进度 1",
+                  "location": "当前姿态中的腹部。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "在腹部短按一次，新一轮有效触发使进度 +15。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 15,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-ed29d5ed",
+                  "phaseId": "2",
+                  "label": "调节进度 2",
+                  "location": "当前姿态中的腹部。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腹部短按一次，新一轮有效触发使进度 +15。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 15,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-ed29d5ed",
+                  "phaseId": "2",
+                  "label": "调节进度 3",
+                  "location": "当前姿态中的腹部。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腹部短按一次，新一轮有效触发使进度 +15。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 15,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-178b1b43",
+                  "phaseId": "2",
+                  "label": "执行解锁动作",
+                  "location": "当前姿态中的腋窝。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "确认进度位于 41–99 且目标已可操作后，在腋窝单击一次鼠标左键。"
+                }
+              ],
+              "conditions": [
+                "从本阶段起始进度 0 整理的参考路线；中途继续时以游戏当前进度为准。",
+                "进度条在 0–40 范围内可用。"
+              ],
+              "note": "这是进度条件解锁路线，不是隐藏部位激活；不要跳过中间有效输入。目标已经可用时，可直接执行最后一步。 每次确认前一步的进度变化，再继续；同部位连点可能只播放动画而不再改变进度。",
+              "progress": {
+                "start": 0,
+                "targetMin": 41,
+                "targetMax": 99,
+                "naturalDecreasePerSecond": 0
+              }
+            },
+            {
+              "id": "gauge-602a51dc",
+              "kind": "gauge-route",
+              "evidence": "原生配置与历史现场目录；不代表最新客户端逐条手动重测。",
+              "name": "腹部 → 解锁头部",
+              "steps": [
+                {
+                  "actionId": "touch-ed29d5ed",
+                  "phaseId": "2",
+                  "label": "调节进度 1",
+                  "location": "当前姿态中的腹部。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "在腹部短按一次，新一轮有效触发使进度 +15。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 15,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-ed29d5ed",
+                  "phaseId": "2",
+                  "label": "调节进度 2",
+                  "location": "当前姿态中的腹部。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腹部短按一次，新一轮有效触发使进度 +15。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 15,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-ed29d5ed",
+                  "phaseId": "2",
+                  "label": "调节进度 3",
+                  "location": "当前姿态中的腹部。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腹部短按一次，新一轮有效触发使进度 +15。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 15,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-28532cad",
+                  "phaseId": "2",
+                  "label": "调节进度 4",
+                  "location": "当前姿态中的腿部。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "在腿部短按一次，新一轮有效触发使进度 +5。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 5,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-28532cad",
+                  "phaseId": "2",
+                  "label": "调节进度 5",
+                  "location": "当前姿态中的腿部。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腿部短按一次，新一轮有效触发使进度 +5。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 5,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-28532cad",
+                  "phaseId": "2",
+                  "label": "调节进度 6",
+                  "location": "当前姿态中的腿部。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腿部短按一次，新一轮有效触发使进度 +5。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 5,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-28532cad",
+                  "phaseId": "2",
+                  "label": "调节进度 7",
+                  "location": "当前姿态中的腿部。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腿部短按一次，新一轮有效触发使进度 +5。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 5,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-28532cad",
+                  "phaseId": "2",
+                  "label": "调节进度 8",
+                  "location": "当前姿态中的腿部。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腿部短按一次，新一轮有效触发使进度 +5。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 5,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-28532cad",
+                  "phaseId": "2",
+                  "label": "调节进度 9",
+                  "location": "当前姿态中的腿部。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腿部短按一次，新一轮有效触发使进度 +5。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 5,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-28532cad",
+                  "phaseId": "2",
+                  "label": "调节进度 10",
+                  "location": "当前姿态中的腿部。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腿部短按一次，新一轮有效触发使进度 +5。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 5,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-b477308c",
+                  "phaseId": "2",
+                  "label": "执行解锁动作",
+                  "location": "当前姿态中的头部。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "确认进度位于 80–99 且目标已可操作后，在头部单击一次鼠标左键。"
+                }
+              ],
+              "conditions": [
+                "从本阶段起始进度 0 整理的参考路线；中途继续时以游戏当前进度为准。",
+                "进度条在 0–40 范围内可用。"
+              ],
+              "note": "这是进度条件解锁路线，不是隐藏部位激活；不要跳过中间有效输入。目标已经可用时，可直接执行最后一步。 每次确认前一步的进度变化，再继续；同部位连点可能只播放动画而不再改变进度。",
+              "progress": {
+                "start": 0,
+                "targetMin": 80,
+                "targetMax": 99,
+                "naturalDecreasePerSecond": 0
+              }
+            },
+            {
+              "id": "gauge-adc05194",
+              "kind": "gauge-route",
+              "evidence": "原生配置与历史现场目录；不代表最新客户端逐条手动重测。",
+              "name": "腹部 → 解锁脚部",
+              "steps": [
+                {
+                  "actionId": "touch-ed29d5ed",
+                  "phaseId": "2",
+                  "label": "调节进度 1",
+                  "location": "当前姿态中的腹部。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "在腹部短按一次，新一轮有效触发使进度 +15。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 15,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-ed29d5ed",
+                  "phaseId": "2",
+                  "label": "调节进度 2",
+                  "location": "当前姿态中的腹部。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腹部短按一次，新一轮有效触发使进度 +15。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 15,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-ed29d5ed",
+                  "phaseId": "2",
+                  "label": "调节进度 3",
+                  "location": "当前姿态中的腹部。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腹部短按一次，新一轮有效触发使进度 +15。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 15,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-28532cad",
+                  "phaseId": "2",
+                  "label": "调节进度 4",
+                  "location": "当前姿态中的腿部。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "在腿部短按一次，新一轮有效触发使进度 +5。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 5,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-28532cad",
+                  "phaseId": "2",
+                  "label": "调节进度 5",
+                  "location": "当前姿态中的腿部。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腿部短按一次，新一轮有效触发使进度 +5。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 5,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-28532cad",
+                  "phaseId": "2",
+                  "label": "调节进度 6",
+                  "location": "当前姿态中的腿部。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腿部短按一次，新一轮有效触发使进度 +5。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 5,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-28532cad",
+                  "phaseId": "2",
+                  "label": "调节进度 7",
+                  "location": "当前姿态中的腿部。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腿部短按一次，新一轮有效触发使进度 +5。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 5,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-28532cad",
+                  "phaseId": "2",
+                  "label": "调节进度 8",
+                  "location": "当前姿态中的腿部。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腿部短按一次，新一轮有效触发使进度 +5。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 5,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-28532cad",
+                  "phaseId": "2",
+                  "label": "调节进度 9",
+                  "location": "当前姿态中的腿部。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腿部短按一次，新一轮有效触发使进度 +5。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 5,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-28532cad",
+                  "phaseId": "2",
+                  "label": "调节进度 10",
+                  "location": "当前姿态中的腿部。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腿部短按一次，新一轮有效触发使进度 +5。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 5,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-b134cbe8",
+                  "phaseId": "2",
+                  "label": "执行解锁动作",
+                  "location": "当前姿态中的脚部。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "确认进度位于 80–99 且目标已可操作后，在脚部单击一次鼠标左键。"
+                }
+              ],
+              "conditions": [
+                "从本阶段起始进度 0 整理的参考路线；中途继续时以游戏当前进度为准。",
+                "进度条在 0–40 范围内可用。"
+              ],
+              "note": "这是进度条件解锁路线，不是隐藏部位激活；不要跳过中间有效输入。目标已经可用时，可直接执行最后一步。 每次确认前一步的进度变化，再继续；同部位连点可能只播放动画而不再改变进度。",
+              "progress": {
+                "start": 0,
+                "targetMin": 80,
+                "targetMax": 99,
+                "naturalDecreasePerSecond": 0
+              }
+            },
+            {
+              "id": "gauge-0e3e736d",
+              "kind": "gauge-route",
+              "evidence": "原生配置与历史现场目录；不代表最新客户端逐条手动重测。",
+              "name": "腹部 → 解锁下腹",
+              "steps": [
+                {
+                  "actionId": "touch-ed29d5ed",
+                  "phaseId": "2",
+                  "label": "调节进度 1",
+                  "location": "当前姿态中的腹部。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "在腹部短按一次，新一轮有效触发使进度 +15。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 15,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-ed29d5ed",
+                  "phaseId": "2",
+                  "label": "调节进度 2",
+                  "location": "当前姿态中的腹部。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腹部短按一次，新一轮有效触发使进度 +15。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 15,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-ed29d5ed",
+                  "phaseId": "2",
+                  "label": "调节进度 3",
+                  "location": "当前姿态中的腹部。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腹部短按一次，新一轮有效触发使进度 +15。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 15,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-28532cad",
+                  "phaseId": "2",
+                  "label": "调节进度 4",
+                  "location": "当前姿态中的腿部。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "在腿部短按一次，新一轮有效触发使进度 +5。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 5,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-28532cad",
+                  "phaseId": "2",
+                  "label": "调节进度 5",
+                  "location": "当前姿态中的腿部。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腿部短按一次，新一轮有效触发使进度 +5。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 5,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-28532cad",
+                  "phaseId": "2",
+                  "label": "调节进度 6",
+                  "location": "当前姿态中的腿部。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腿部短按一次，新一轮有效触发使进度 +5。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 5,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-28532cad",
+                  "phaseId": "2",
+                  "label": "调节进度 7",
+                  "location": "当前姿态中的腿部。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腿部短按一次，新一轮有效触发使进度 +5。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 5,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-28532cad",
+                  "phaseId": "2",
+                  "label": "调节进度 8",
+                  "location": "当前姿态中的腿部。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腿部短按一次，新一轮有效触发使进度 +5。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 5,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-28532cad",
+                  "phaseId": "2",
+                  "label": "调节进度 9",
+                  "location": "当前姿态中的腿部。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腿部短按一次，新一轮有效触发使进度 +5。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 5,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-28532cad",
+                  "phaseId": "2",
+                  "label": "调节进度 10",
+                  "location": "当前姿态中的腿部。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腿部短按一次，新一轮有效触发使进度 +5。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 5,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-28532cad",
+                  "phaseId": "2",
+                  "label": "调节进度 11",
+                  "location": "当前姿态中的腿部。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腿部短按一次，新一轮有效触发使进度 +5。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 5,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-28532cad",
+                  "phaseId": "2",
+                  "label": "调节进度 12",
+                  "location": "当前姿态中的腿部。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腿部短按一次，新一轮有效触发使进度 +5。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 5,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-28532cad",
+                  "phaseId": "2",
+                  "label": "调节进度 13",
+                  "location": "当前姿态中的腿部。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腿部短按一次，新一轮有效触发使进度 +5。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 5,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-28532cad",
+                  "phaseId": "2",
+                  "label": "调节进度 14",
+                  "location": "当前姿态中的腿部。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腿部短按一次，新一轮有效触发使进度 +5。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 5,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-8d3232ee",
+                  "phaseId": "2",
+                  "label": "执行解锁动作",
+                  "location": "当前姿态中的下腹。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "确认进度位于 100–100 且目标已可操作后，在下腹单击一次鼠标左键。"
+                }
+              ],
+              "conditions": [
+                "从本阶段起始进度 0 整理的参考路线；中途继续时以游戏当前进度为准。",
+                "进度条在 0–40 范围内可用。"
+              ],
+              "note": "这是进度条件解锁路线，不是隐藏部位激活；不要跳过中间有效输入。目标已经可用时，可直接执行最后一步。 每次确认前一步的进度变化，再继续；同部位连点可能只播放动画而不再改变进度。",
+              "progress": {
+                "start": 0,
+                "targetMin": 100,
+                "targetMax": 100,
+                "naturalDecreasePerSecond": 0
+              }
+            },
+            {
+              "id": "gauge-33be45bd",
+              "kind": "gauge-route",
+              "evidence": "原生配置与历史现场目录；不代表最新客户端逐条手动重测。",
+              "name": "腹部 → 解锁小腿",
+              "steps": [
+                {
+                  "actionId": "touch-ed29d5ed",
+                  "phaseId": "2",
+                  "label": "调节进度 1",
+                  "location": "当前姿态中的腹部。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "在腹部短按一次，新一轮有效触发使进度 +15。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 15,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-ed29d5ed",
+                  "phaseId": "2",
+                  "label": "调节进度 2",
+                  "location": "当前姿态中的腹部。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腹部短按一次，新一轮有效触发使进度 +15。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 15,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-ed29d5ed",
+                  "phaseId": "2",
+                  "label": "调节进度 3",
+                  "location": "当前姿态中的腹部。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 1 秒，让同部位连续判定复位；在腹部短按一次，新一轮有效触发使进度 +15。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 15,
+                  "resetSeconds": 1.0
+                },
+                {
+                  "actionId": "touch-ed3a4208",
+                  "phaseId": "2",
+                  "label": "执行解锁动作",
+                  "location": "当前姿态中的小腿。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "确认进度位于 41–99 且目标已可操作后，在小腿单击一次鼠标左键。"
+                }
+              ],
+              "conditions": [
+                "从本阶段起始进度 0 整理的参考路线；中途继续时以游戏当前进度为准。",
+                "进度条在 0–40 范围内可用。"
+              ],
+              "note": "这是进度条件解锁路线，不是隐藏部位激活；不要跳过中间有效输入。目标已经可用时，可直接执行最后一步。 每次确认前一步的进度变化，再继续；同部位连点可能只播放动画而不再改变进度。",
+              "progress": {
+                "start": 0,
+                "targetMin": 41,
+                "targetMax": 99,
+                "naturalDecreasePerSecond": 0
+              }
+            },
+            {
+              "id": "wiki-glancithe-right-left-arms",
+              "name": "右手臂 → 左手臂接续",
+              "kind": "wiki-route",
+              "evidence": "依据GameKee教学文字及对应姿态目录整理；新增手动接续未在本轮逐条实机验证。",
+              "sourceUrl": "https://www.gamekee.com/zsca2/644053.html",
+              "conditions": [
+                "进入后段姿态，接续动作的实际进度区间为41–99。",
+                "起手进度建议在41–96内；第一步后再次确认接续入口仍在41–99范围。"
+              ],
+              "note": "按列出的顺序接续，中间不要插入其他互动；正文未给统一秒数，以游戏提示开放为准。",
+              "steps": [
+                {
+                  "actionId": "touch-9f06da26",
+                  "phaseId": "2",
+                  "label": "右手臂",
+                  "location": "当前姿态中的右手臂；左右以画面为准。",
+                  "gesture": "短按",
+                  "instruction": "在右手臂普通提示区短按一次，待另一侧手臂的后继提示出现。"
+                },
+                {
+                  "actionId": "wiki-glancithe-left-arm-followup",
+                  "phaseId": "2",
+                  "label": "左手臂",
+                  "location": "当前姿态中的左手臂；左右以画面为准。",
+                  "gesture": "短按",
+                  "instruction": "在左手臂新出现的接续提示区短按；接续时进度需在41–99内。"
+                }
+              ]
+            },
+            {
+              "id": "wiki-glancithe-left-right-arms",
+              "name": "左手臂 → 右手臂接续",
+              "kind": "wiki-route",
+              "evidence": "依据GameKee教学文字及对应姿态目录整理；新增手动接续未在本轮逐条实机验证。",
+              "sourceUrl": "https://www.gamekee.com/zsca2/644053.html",
+              "conditions": [
+                "进入后段姿态，接续动作的实际进度区间为41–99。",
+                "起手进度建议在41–96内；第一步后再次确认接续入口仍在41–99范围。"
+              ],
+              "note": "按列出的顺序接续，中间不要插入其他互动；正文未给统一秒数，以游戏提示开放为准。",
+              "steps": [
+                {
+                  "actionId": "touch-9f06da26",
+                  "phaseId": "2",
+                  "label": "左手臂",
+                  "location": "当前姿态中的左手臂；左右以画面为准。",
+                  "gesture": "短按",
+                  "instruction": "在左手臂普通提示区短按一次，待另一侧手臂的后继提示出现。"
+                },
+                {
+                  "actionId": "wiki-glancithe-right-arm-followup",
+                  "phaseId": "2",
+                  "label": "右手臂",
+                  "location": "当前姿态中的右手臂；左右以画面为准。",
+                  "gesture": "短按",
+                  "instruction": "在右手臂新出现的接续提示区短按；接续时进度需在41–99内。"
+                }
+              ]
+            }
+          ],
           "gaugeRules": [
             {
               "title": "提高进度",
@@ -14441,8 +17852,8 @@
       ],
       "coverage": {
         "phases": 2,
-        "actions": 32,
-        "combinations": 0,
+        "actions": 34,
+        "combinations": 15,
         "omittedItems": 11,
         "unlocatedDrags": 0,
         "unseparatedLocations": 13
@@ -14452,6 +17863,8 @@
       "id": "dafi",
       "name": "达非",
       "costume": "明月",
+      "aliases": [],
+      "costumeEdition": "standard",
       "resource": "Illust_dating20",
       "initialPhaseId": "1",
       "verification": {
@@ -14801,7 +18214,37 @@
               "variantCount": 1
             }
           ],
-          "combos": [],
+          "combos": [
+            {
+              "id": "wiki-dafi-cup-mouth",
+              "name": "场景酒杯 → 嘴",
+              "kind": "wiki-route",
+              "evidence": "依据GameKee教学文字及对应姿态目录整理；新增手动接续未在本轮逐条实机验证。",
+              "sourceUrl": "https://www.gamekee.com/zsca2/644053.html",
+              "conditions": [
+                "进入可拿取桌面酒杯的中段坐姿；本图鉴列为阶段5。"
+              ],
+              "note": "按列出的顺序接续，中间不要插入其他互动；正文未给统一秒数，以游戏提示开放为准。 两步均为场景中的实际短按，首步不是工具栏选择。",
+              "steps": [
+                {
+                  "actionId": "touch-33ac756c",
+                  "phaseId": "5",
+                  "label": "桌上的酒杯",
+                  "location": "当前姿态中的桌上的酒杯；左右以画面为准。",
+                  "gesture": "短按",
+                  "instruction": "短按桌面场景中的酒杯，完成拿杯的起手动作。"
+                },
+                {
+                  "actionId": "touch-dee66547",
+                  "phaseId": "5",
+                  "label": "角色嘴部",
+                  "location": "当前姿态中的角色嘴部；左右以画面为准。",
+                  "gesture": "短按",
+                  "instruction": "嘴部接续提示出现后，短按嘴部，完成举杯互动。"
+                }
+              ]
+            }
+          ],
           "gaugeRules": [],
           "transitions": [
             {
@@ -15151,6 +18594,8 @@
           "combos": [
             {
               "id": "ordered-7cf5389c",
+              "kind": "ordered-clicks",
+              "evidence": "原生配置与历史现场目录；不代表最新客户端逐条手动重测。",
               "name": "身体 · 同部位顺序互动",
               "steps": [
                 {
@@ -15203,6 +18648,8 @@
             },
             {
               "id": "ordered-a9a0ffc2",
+              "kind": "ordered-clicks",
+              "evidence": "原生配置与历史现场目录；不代表最新客户端逐条手动重测。",
               "name": "身体 · 同部位顺序互动",
               "steps": [
                 {
@@ -15262,7 +18709,7 @@
       "coverage": {
         "phases": 7,
         "actions": 37,
-        "combinations": 2,
+        "combinations": 3,
         "omittedItems": 16,
         "unlocatedDrags": 0,
         "unseparatedLocations": 10
@@ -15272,6 +18719,10 @@
       "id": "yuri",
       "name": "尤里",
       "costume": "永远的吉祥物",
+      "aliases": [
+        "回归偶像"
+      ],
+      "costumeEdition": "prestige",
       "resource": "Illust_dating21",
       "initialPhaseId": null,
       "verification": {
@@ -15368,6 +18819,8 @@
       "id": "aquila",
       "name": "阿奇拉",
       "costume": "被封印的欲望",
+      "aliases": [],
+      "costumeEdition": "standard",
       "resource": "Illust_dating22",
       "initialPhaseId": "1",
       "verification": {
@@ -15617,7 +19070,249 @@
               "variantCount": 1
             }
           ],
-          "combos": [],
+          "combos": [
+            {
+              "id": "gauge-38e057bc",
+              "kind": "gauge-route",
+              "evidence": "原生配置与新版现场目录；路线条件已核对，未逐条手动重测。",
+              "name": "胳膊 → 解锁扇耳光",
+              "steps": [
+                {
+                  "actionId": "touch-dfdc62d7",
+                  "phaseId": "1",
+                  "label": "调节进度 1",
+                  "location": "当前姿态中的胳膊。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "在胳膊短按一次，新一轮有效触发使进度 +10。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 10,
+                  "resetSeconds": 5.0
+                },
+                {
+                  "actionId": "touch-dfdc62d7",
+                  "phaseId": "1",
+                  "label": "调节进度 2",
+                  "location": "当前姿态中的胳膊。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 5 秒，让同部位连续判定复位；在胳膊短按一次，新一轮有效触发使进度 +10。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 10,
+                  "resetSeconds": 5.0
+                },
+                {
+                  "actionId": "touch-dfdc62d7",
+                  "phaseId": "1",
+                  "label": "调节进度 3",
+                  "location": "当前姿态中的胳膊。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 5 秒，让同部位连续判定复位；在胳膊短按一次，新一轮有效触发使进度 +10。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 10,
+                  "resetSeconds": 5.0
+                },
+                {
+                  "actionId": "touch-dfdc62d7",
+                  "phaseId": "1",
+                  "label": "调节进度 4",
+                  "location": "当前姿态中的胳膊。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 5 秒，让同部位连续判定复位；在胳膊短按一次，新一轮有效触发使进度 +10。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 10,
+                  "resetSeconds": 5.0
+                },
+                {
+                  "actionId": "touch-dfdc62d7",
+                  "phaseId": "1",
+                  "label": "调节进度 5",
+                  "location": "当前姿态中的胳膊。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 5 秒，让同部位连续判定复位；在胳膊短按一次，新一轮有效触发使进度 +10。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 10,
+                  "resetSeconds": 5.0
+                },
+                {
+                  "actionId": "touch-ace388f1",
+                  "phaseId": "1",
+                  "label": "执行解锁动作",
+                  "location": "当前姿态中的扇耳光。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "确认进度位于 100–100 且目标已可操作后，在扇耳光单击一次鼠标左键。"
+                }
+              ],
+              "conditions": [
+                "从本阶段起始进度 50 整理的参考路线；中途继续时以游戏当前进度为准。",
+                "进度条在 10–99 范围内可用。"
+              ],
+              "note": "这是进度条件解锁路线，不是隐藏部位激活；不要跳过中间有效输入。目标已经可用时，可直接执行最后一步。 每次确认前一步的进度变化，再继续；同部位连点可能只播放动画而不再改变进度。",
+              "progress": {
+                "start": 50,
+                "targetMin": 100,
+                "targetMax": 100,
+                "naturalDecreasePerSecond": 0
+              }
+            },
+            {
+              "id": "gauge-024a2a7e",
+              "kind": "gauge-route",
+              "evidence": "原生配置与新版现场目录；路线条件已核对，未逐条手动重测。",
+              "name": "大腿护身符 → 解锁稻草娃娃",
+              "steps": [
+                {
+                  "actionId": "touch-dff3d7ba",
+                  "phaseId": "1",
+                  "label": "调节进度 1",
+                  "location": "当前姿态中的大腿护身符。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "在大腿护身符短按一次，新一轮有效触发使进度 -5。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": -5,
+                  "resetSeconds": 5.0
+                },
+                {
+                  "actionId": "touch-dff3d7ba",
+                  "phaseId": "1",
+                  "label": "调节进度 2",
+                  "location": "当前姿态中的大腿护身符。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 5 秒，让同部位连续判定复位；在大腿护身符短按一次，新一轮有效触发使进度 -5。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": -5,
+                  "resetSeconds": 5.0
+                },
+                {
+                  "actionId": "touch-dff3d7ba",
+                  "phaseId": "1",
+                  "label": "调节进度 3",
+                  "location": "当前姿态中的大腿护身符。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 5 秒，让同部位连续判定复位；在大腿护身符短按一次，新一轮有效触发使进度 -5。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": -5,
+                  "resetSeconds": 5.0
+                },
+                {
+                  "actionId": "touch-dff3d7ba",
+                  "phaseId": "1",
+                  "label": "调节进度 4",
+                  "location": "当前姿态中的大腿护身符。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 5 秒，让同部位连续判定复位；在大腿护身符短按一次，新一轮有效触发使进度 -5。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": -5,
+                  "resetSeconds": 5.0
+                },
+                {
+                  "actionId": "touch-48f4ac17",
+                  "phaseId": "1",
+                  "label": "执行解锁动作",
+                  "location": "当前姿态中的稻草娃娃。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "确认进度位于 10–30 且目标已可操作后，在稻草娃娃单击一次鼠标左键。"
+                }
+              ],
+              "conditions": [
+                "从本阶段起始进度 50 整理的参考路线；中途继续时以游戏当前进度为准。",
+                "进度条在 10–99 范围内可用。"
+              ],
+              "note": "这是进度条件解锁路线，不是隐藏部位激活；不要跳过中间有效输入。目标已经可用时，可直接执行最后一步。 每次确认前一步的进度变化，再继续；同部位连点可能只播放动画而不再改变进度。",
+              "progress": {
+                "start": 50,
+                "targetMin": 10,
+                "targetMax": 30,
+                "naturalDecreasePerSecond": 0
+              }
+            },
+            {
+              "id": "gauge-aabf832b",
+              "kind": "gauge-route",
+              "evidence": "原生配置与新版现场目录；路线条件已核对，未逐条手动重测。",
+              "name": "大腿护身符 → 解锁稻草娃娃",
+              "steps": [
+                {
+                  "actionId": "touch-dff3d7ba",
+                  "phaseId": "1",
+                  "label": "调节进度 1",
+                  "location": "当前姿态中的大腿护身符。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "在大腿护身符短按一次，新一轮有效触发使进度 -5。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": -5,
+                  "resetSeconds": 5.0
+                },
+                {
+                  "actionId": "touch-dff3d7ba",
+                  "phaseId": "1",
+                  "label": "调节进度 2",
+                  "location": "当前姿态中的大腿护身符。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 5 秒，让同部位连续判定复位；在大腿护身符短按一次，新一轮有效触发使进度 -5。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": -5,
+                  "resetSeconds": 5.0
+                },
+                {
+                  "actionId": "touch-dff3d7ba",
+                  "phaseId": "1",
+                  "label": "调节进度 3",
+                  "location": "当前姿态中的大腿护身符。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 5 秒，让同部位连续判定复位；在大腿护身符短按一次，新一轮有效触发使进度 -5。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": -5,
+                  "resetSeconds": 5.0
+                },
+                {
+                  "actionId": "touch-dff3d7ba",
+                  "phaseId": "1",
+                  "label": "调节进度 4",
+                  "location": "当前姿态中的大腿护身符。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 5 秒，让同部位连续判定复位；在大腿护身符短按一次，新一轮有效触发使进度 -5。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": -5,
+                  "resetSeconds": 5.0
+                },
+                {
+                  "actionId": "touch-dff3d7ba",
+                  "phaseId": "1",
+                  "label": "调节进度 5",
+                  "location": "当前姿态中的大腿护身符。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 5 秒，让同部位连续判定复位；在大腿护身符短按一次，新一轮有效触发使进度 -5。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": -5,
+                  "resetSeconds": 5.0
+                },
+                {
+                  "actionId": "touch-48f4ac17",
+                  "phaseId": "1",
+                  "label": "调节进度 6",
+                  "location": "当前姿态中的稻草娃娃。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "在稻草娃娃短按一次，新一轮有效触发使进度 -9。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": -9,
+                  "resetSeconds": 5.0
+                },
+                {
+                  "actionId": "touch-48f4ac17",
+                  "phaseId": "1",
+                  "label": "调节进度 7",
+                  "location": "当前姿态中的稻草娃娃。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 5 秒，让同部位连续判定复位；在稻草娃娃短按一次，新一轮有效触发使进度 -9。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": -9,
+                  "resetSeconds": 5.0
+                },
+                {
+                  "actionId": "touch-8d4e3cfb",
+                  "phaseId": "1",
+                  "label": "执行解锁动作",
+                  "location": "当前姿态中的稻草娃娃。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "确认进度位于 0–9 且目标已可操作后，在稻草娃娃单击一次鼠标左键。"
+                }
+              ],
+              "conditions": [
+                "从本阶段起始进度 50 整理的参考路线；中途继续时以游戏当前进度为准。",
+                "进度条在 10–99 范围内可用。"
+              ],
+              "note": "这是进度条件解锁路线，不是隐藏部位激活；不要跳过中间有效输入。目标已经可用时，可直接执行最后一步。 每次确认前一步的进度变化，再继续；同部位连点可能只播放动画而不再改变进度。 最后一步会推进姿态，先确认当前阶段其他想看的动作已完成。",
+              "progress": {
+                "start": 50,
+                "targetMin": 0,
+                "targetMax": 9,
+                "naturalDecreasePerSecond": 0
+              }
+            }
+          ],
           "gaugeRules": [
             {
               "title": "提高进度",
@@ -15968,7 +19663,125 @@
               "variantCount": 1
             }
           ],
-          "combos": [],
+          "combos": [
+            {
+              "id": "gauge-8b748dd9",
+              "kind": "gauge-route",
+              "evidence": "原生配置与新版现场目录；路线条件已核对，未逐条手动重测。",
+              "name": "嘴 → 解锁护身符",
+              "steps": [
+                {
+                  "actionId": "touch-55ce119f",
+                  "phaseId": "2",
+                  "label": "调节进度 1",
+                  "location": "当前姿态中的嘴。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "在嘴短按一次，新一轮有效触发使进度 +6。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 6,
+                  "resetSeconds": 10.0
+                },
+                {
+                  "actionId": "touch-55ce119f",
+                  "phaseId": "2",
+                  "label": "调节进度 2",
+                  "location": "当前姿态中的嘴。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 10 秒，让同部位连续判定复位；在嘴短按一次，新一轮有效触发使进度 +6。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 6,
+                  "resetSeconds": 10.0
+                },
+                {
+                  "actionId": "touch-55ce119f",
+                  "phaseId": "2",
+                  "label": "调节进度 3",
+                  "location": "当前姿态中的嘴。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 10 秒，让同部位连续判定复位；在嘴短按一次，新一轮有效触发使进度 +6。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 6,
+                  "resetSeconds": 10.0
+                },
+                {
+                  "actionId": "touch-55ce119f",
+                  "phaseId": "2",
+                  "label": "调节进度 4",
+                  "location": "当前姿态中的嘴。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 10 秒，让同部位连续判定复位；在嘴短按一次，新一轮有效触发使进度 +6。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 6,
+                  "resetSeconds": 10.0
+                },
+                {
+                  "actionId": "touch-55ce119f",
+                  "phaseId": "2",
+                  "label": "调节进度 5",
+                  "location": "当前姿态中的嘴。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 10 秒，让同部位连续判定复位；在嘴短按一次，新一轮有效触发使进度 +6。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 6,
+                  "resetSeconds": 10.0
+                },
+                {
+                  "actionId": "touch-55ce119f",
+                  "phaseId": "2",
+                  "label": "调节进度 6",
+                  "location": "当前姿态中的嘴。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 10 秒，让同部位连续判定复位；在嘴短按一次，新一轮有效触发使进度 +6。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 6,
+                  "resetSeconds": 10.0
+                },
+                {
+                  "actionId": "touch-55ce119f",
+                  "phaseId": "2",
+                  "label": "调节进度 7",
+                  "location": "当前姿态中的嘴。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 10 秒，让同部位连续判定复位；在嘴短按一次，新一轮有效触发使进度 +6。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 6,
+                  "resetSeconds": 10.0
+                },
+                {
+                  "actionId": "touch-55ce119f",
+                  "phaseId": "2",
+                  "label": "调节进度 8",
+                  "location": "当前姿态中的嘴。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 10 秒，让同部位连续判定复位；在嘴短按一次，新一轮有效触发使进度 +6。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 6,
+                  "resetSeconds": 10.0
+                },
+                {
+                  "actionId": "touch-55ce119f",
+                  "phaseId": "2",
+                  "label": "调节进度 9",
+                  "location": "当前姿态中的嘴。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "先等待至少约 10 秒，让同部位连续判定复位；在嘴短按一次，新一轮有效触发使进度 +6。 只在游戏允许操作时接续，确认进度变化后再做下一步。",
+                  "progressChange": 6,
+                  "resetSeconds": 10.0
+                },
+                {
+                  "actionId": "touch-19ba2f52",
+                  "phaseId": "2",
+                  "label": "执行解锁动作",
+                  "location": "当前姿态中的护身符。左右以画面方向为准。",
+                  "gesture": "短按",
+                  "instruction": "确认进度位于 100–100 且目标已可操作后，在护身符单击一次鼠标左键。"
+                }
+              ],
+              "conditions": [
+                "从本阶段起始进度 50 整理的参考路线；中途继续时以游戏当前进度为准。",
+                "进度条在 0–99 范围内可用。"
+              ],
+              "note": "这是进度条件解锁路线，不是隐藏部位激活；不要跳过中间有效输入。目标已经可用时，可直接执行最后一步。 每次确认前一步的进度变化，再继续；同部位连点可能只播放动画而不再改变进度。",
+              "progress": {
+                "start": 50,
+                "targetMin": 100,
+                "targetMax": 100,
+                "naturalDecreasePerSecond": 0
+              }
+            }
+          ],
           "gaugeRules": [
             {
               "title": "提高进度",
@@ -16043,7 +19856,7 @@
       "coverage": {
         "phases": 2,
         "actions": 29,
-        "combinations": 0,
+        "combinations": 4,
         "omittedItems": 9,
         "unlocatedDrags": 0,
         "unseparatedLocations": 7

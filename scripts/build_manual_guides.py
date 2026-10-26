@@ -63,7 +63,9 @@ def identity_tables(base):
         name = names.get(char.get("charNameTextId"), {}).get("textCn")
         outfit = names.get(skin.get("skinNameTextId", costume.get("costumeNameTextId")), {}).get("textCn")
         if name and outfit:
-            result[resource] = dict(name=name, costume=outfit, interaction=lobby["interactionId"])
+            result[resource] = dict(name=name, costume=outfit, interaction=lobby["interactionId"],
+                                    baseCostume=names.get(costume.get("costumeNameTextId"), {}).get("textCn", ""),
+                                    prestige=bool(skin))
     point_texts = {x["id"]: x.get("textCn", "") for x in read(base / "static-point-names/SpineInteractionTextTable.json")}
     point_names = {(x["interactionGroupId"], x["groupId"], x["id"]): point_texts.get(x.get("pointNameId"), "") for x in read(base / "static-identity-tables/SpineInteractionPointTable.json")}
     return result, point_names
@@ -233,6 +235,114 @@ def merge_ordinary_duplicates(actions, combos):
     return list(buckets.values()), list(merged_combos.values())
 
 
+def make_gauge_routes(stage, phase_points, by_key, stage_configs, auto_names, evidence):
+    """Publish ordinary input -> newly available input, using native score gates.
+
+    This mirrors NativeGaugeBuilder's one-step distance/clamp checks. It does not
+    infer hidden dependencies, assign animation variants, or promise a fixed
+    number of inputs when the native gauge decays between inputs.
+    """
+    routes, seen = [], set()
+    for state in stage_configs:
+        gauge = state.get("gauge", {})
+        if not gauge.get("IsOn"):
+            continue
+        tool = state["tool"]
+        start = gauge.get("StartScore", 0)
+        bounds = gauge.get("MinMaxScore", {})
+        minimum, maximum = bounds.get("x", 0), bounds.get("y", 100)
+        rate = gauge.get("AutoDecreaseScorePerSecond", 0)
+        dynamic = rate < 0  # The native automatic decrease coroutine requires a negative rate.
+        points = {k: p for k, p in phase_points.items() if k[1] == tool}
+        controls = []
+        for key, point in points.items():
+            scores = point.get("GaugeScores", [])
+            if (point.get("GaugeIsOn") and point.get("SupportsClick") and
+                    not any(point.get(field) for field in ("SupportsDrag", "SupportsHold", "SupportsContinuousClick",
+                            "ChangesStageOnEnd", "HiddenDisablesOtherPoints", "NativeActivatedPointIds",
+                            "NativeHiddenChildPointIds", "NativeClickMotionsRandom")) and
+                    point.get("HiddenRootPointId", -1) < 0 and scores and scores[0]):
+                controls.append((key, point, scores[0]))
+        for goal_key, goal in points.items():
+            lo, hi = goal.get("GaugeInteractableMin", 0), goal.get("GaugeInteractableMax", 100)
+            if (not goal.get("GaugeIsOn") or lo > hi or lo <= start <= hi or
+                    not any(goal.get(field) for field in ("SupportsClick", "SupportsHold", "SupportsDrag")) or
+                    goal.get("NativeClickMotionsRandom") or set(goal.get("NativeMotionNames", [])) & auto_names):
+                continue
+            queue, visited, found = collections.deque([(start, [])]), {start}, None
+            distance = lambda score: max(lo - score, 0, score - hi)
+            while queue:
+                score, path = queue.popleft()
+                if len(path) > 32:
+                    continue
+                if lo <= round(score) <= hi:
+                    found = (score, path)
+                    break
+                for key, point, delta in controls:
+                    if key == goal_key or not point.get("GaugeInteractableMin", 0) <= round(score) <= point.get("GaugeInteractableMax", 100):
+                        continue
+                    after = max(minimum, min(maximum, score + delta))
+                    crossed_auto = any(
+                        (motion.get("IsCanPlayWhenIncreaseScore") and score < motion.get("Score", 0) <= after) or
+                        (motion.get("IsCanPlayWhenDecreaseScore") and after <= motion.get("Score", 0) < score)
+                        for motion in gauge.get("MotionNameByScoreList", []))
+                    if after in visited or crossed_auto or distance(after) >= distance(score):
+                        continue
+                    visited.add(after)
+                    queue.append((after, path + [(key, point, delta)]))
+            if found is None or not found[1]:
+                continue
+            _, path = found
+            signature = (stage, tool, clean_name(goal["DisplayName"]), goal.get("SupportsDrag"),
+                         goal.get("SupportsHold"), lo, hi,
+                         tuple((clean_name(point["DisplayName"]), delta) for _, point, delta in path))
+            if signature in seen:
+                continue
+            # A decaying gauge needs observation after every input. Only the
+            # one-control case is described without a guessed multi-control plan.
+            if dynamic and len({key for key, _, _ in path}) != 1:
+                continue
+            seen.add(signature)
+            selected = path[:1] if dynamic else path
+            steps = []
+            for number, (key, point, delta) in enumerate(selected):
+                action = by_key[key]
+                reset = float(point.get("ContinuousClickResetSeconds", 0) or 0)
+                repeated = number > 0 and selected[number - 1][0] == key
+                reset_text = f"先等待至少约 {fnum(reset)} 秒，让同部位连续判定复位；" if repeated and reset > 0 else ""
+                instruction = reset_text + f"在{clean_name(point['DisplayName'])}短按一次，新一轮有效触发使进度 {float(delta):+g}。"
+                if dynamic:
+                    instruction = (f"在{clean_name(point['DisplayName'])}短按，按实时进度重复，直到进入 {fnum(lo)}–{fnum(hi)} 的目标范围；"
+                                   f"每次新一轮有效触发使进度 {float(delta):+g}。")
+                    if reset > 0:
+                        instruction += f" 同部位重复前至少等约 {fnum(reset)} 秒复位；自然降温会影响结果，不按固定次数操作。"
+                instruction += " 只在游戏允许操作时接续，确认进度变化后再做下一步。"
+                step = dict(actionId=action["id"], phaseId=str(stage), label="调节进度" if dynamic else f"调节进度 {number + 1}",
+                            location=action["location"], gesture="短按", instruction=instruction,
+                            progressChange=delta, resetSeconds=reset)
+                if dynamic:
+                    step["repeatUntil"] = f"实时进度进入 {fnum(lo)}–{fnum(hi)}，且目标已经可操作后继续下一步。"
+                steps.append(step)
+            target = by_key[goal_key]
+            steps.append(dict(actionId=target["id"], phaseId=str(stage), label="执行解锁动作", location=target["location"],
+                              gesture=target["gesture"], instruction=f"确认进度位于 {fnum(lo)}–{fnum(hi)} 且目标已可操作后，" + target["instructions"][0]))
+            conditions = [f"从本阶段起始进度 {fnum(start)} 整理的参考路线；中途继续时以游戏当前进度为准。"]
+            conditions.extend(by_key[path[0][0]]["conditions"])
+            note = "这是进度条件解锁路线，不是隐藏部位激活；不要跳过中间有效输入。目标已经可用时，可直接执行最后一步。"
+            if dynamic:
+                note += f" 自然降温每秒约 {fnum(abs(rate))}，次数不固定，必须观察实时变化。"
+            else:
+                note += " 每次确认前一步的进度变化，再继续；同部位连点可能只播放动画而不再改变进度。"
+            if goal.get("ChangesStageOnEnd"):
+                note += " 最后一步会推进姿态，先确认当前阶段其他想看的动作已完成。"
+            route_id = "/".join(str(key) for key, _, _ in path) + "/" + str(goal_key)
+            routes.append(dict(id="gauge-" + short_id(route_id), kind="gauge-route", evidence=evidence,
+                               name=f"{clean_name(path[0][1]['DisplayName'])} → 解锁{clean_name(goal['DisplayName'])}",
+                               steps=steps, conditions=conditions, note=note,
+                               progress=dict(start=start, targetMin=lo, targetMax=hi, naturalDecreasePerSecond=abs(rate) if dynamic else 0)))
+    return routes
+
+
 def supplemental_poses(kt):
     roots = [kt / ".cache/all-character-live", kt / ".cache/live-1.0-20261017",
              kt / ".cache/interaction-polish-20261017/live-7993-207-stage2",
@@ -265,6 +375,59 @@ def supplemental_poses(kt):
     return poses
 
 
+def apply_manual_routes(characters, source):
+    """Keep reviewed Wiki sequences editable without changing native extraction."""
+    if not source.exists():
+        return
+    document = read(source)
+    if document.get("schemaVersion") != 1:
+        raise ValueError("Unsupported manual-route source schema.")
+    known = {character["id"]: character for character in characters}
+    for addition in document.get("actions", []):
+        character = known.get(addition.get("characterId"))
+        if not character or character["id"] == "yuri":
+            raise ValueError("Supplemental manual action requires an eligible character.")
+        phase = next((item for item in character["phases"] if item["id"] == str(addition.get("phaseId"))), None)
+        if not phase or not addition.get("id", "").startswith("wiki-") or any(a["id"] == addition["id"] for a in phase["actions"]):
+            raise ValueError("Supplemental manual action has an invalid or duplicate anchor.")
+        if addition.get("gesture") != "短按" or not addition.get("location") or not addition.get("instructions"):
+            raise ValueError("Supplemental scene control requires an explicit click description.")
+        if DENIED.search(addition["name"] + addition["location"] + " ".join(addition["instructions"])):
+            raise ValueError("Supplemental manual action exceeds the public scope.")
+        action = {key: addition[key] for key in ("id", "name", "location", "gesture", "conditions", "instructions", "note")}
+        action.update(holdSeconds=None, drag=None, verified=False, variantCount=1, source="wiki-text")
+        phase["actions"].append(action)
+    for route in document.get("routes", []):
+        character = known.get(route.get("characterId"))
+        if not character or character["id"] == "yuri":
+            raise ValueError("Manual route requires an eligible known character.")
+        phases = {phase["id"]: phase for phase in character["phases"]}
+        phase = phases.get(str(route.get("phaseId")))
+        if not phase or len(route.get("steps", [])) < 2 or route.get("kind") not in ("wiki-route", "stage-route"):
+            raise ValueError("Manual route lacks a valid starting stage and sequence.")
+        if not route.get("evidence") or route.get("sourceUrl") != "https://www.gamekee.com/zsca2/644053.html":
+            raise ValueError("Manual route lacks its reviewed source.")
+        if any(combo["id"] == route["id"] for item in character["phases"] for combo in item["combos"]):
+            raise ValueError("Manual route ID already exists.")
+        steps = []
+        for step in route["steps"]:
+            target_phase = phases.get(str(step.get("phaseId", phase["id"])))
+            action = next((item for item in target_phase["actions"] if item["id"] == step.get("actionId")), None) if target_phase else None
+            if not action or step.get("gesture") not in ("短按", "连续短按", "长按", "拖拽"):
+                raise ValueError("Manual route no longer maps to an included action.")
+            if not step.get("location") or not step.get("instruction"):
+                raise ValueError("Manual route lacks a concrete location or gesture.")
+            if DENIED.search(step["location"] + step["instruction"]):
+                raise ValueError("Manual route exceeds the public neutral-control scope.")
+            steps.append({key: step[key] for key in ("actionId", "phaseId", "label", "location", "gesture", "instruction") if key in step})
+        combo = {key: route[key] for key in ("id", "name", "kind", "evidence", "sourceUrl", "conditions", "note") if key in route}
+        combo["steps"] = steps
+        phase["combos"].append(combo)
+    for character in characters:
+        character["coverage"]["actions"] = sum(len(phase["actions"]) for phase in character["phases"])
+        character["coverage"]["combinations"] = sum(len(phase["combos"]) for phase in character["phases"])
+
+
 def build(kt: Path, output: Path):
     base = kt / ".cache/new-guests-20261022"
     identities, native_names = identity_tables(base)
@@ -276,8 +439,10 @@ def build(kt: Path, output: Path):
         resource = f"Illust_dating{resource_index}"
         flow = read(base / f"prefab-flows-v2/{resource}.prefab-flow.json")
         identity = identities[resource]
-        if resource in baseline:
-            identity.update(name=baseline[resource]["characterName"], costume=baseline[resource]["costumeName"])
+        # Historical observers reported the base costume for some prestige skins.
+        # Keep the native skin table authoritative and retain the old term for search.
+        aliases = list(dict.fromkeys(name for name in (identity.get("baseCostume"),
+                    baseline.get(resource, {}).get("costumeName")) if name and name != identity["costume"]))
         snapshots = []
         if resource in baseline:
             # Local paths appear only in the private input and audit, never payload.
@@ -330,6 +495,8 @@ def build(kt: Path, output: Path):
                 if child[2] not in points[parent][field]:
                     points[parent][field].append(child[2])
         yuri = resource_index == 21
+        route_evidence = ("原生配置与新版现场目录；路线条件已核对，未逐条手动重测。" if resource_index == 22 else
+                          "原生配置与历史现场目录；不代表最新客户端逐条手动重测。")
         all_body = {k: p for k, p in points.items() if k[2] > 0}
         safe = {k: p for k, p in all_body.items() if safe_point(p, yuri)}
         stages = sorted({state["stage"] for state in flow["stageStates"]} | {k[0] for k in points})
@@ -362,7 +529,8 @@ def build(kt: Path, output: Path):
                     combo_note = "动作出现后立即接下一步，不在中间插入其他互动。"
                     if window > 0 and child in parent.get("NativeHiddenChildPointIds", []):
                         combo_note += f" 配置窗口约 {fnum(window)} 秒，动画结束也可能提前关闭入口。"
-                    combos.append(dict(id="route-" + short_id("/".join(route)), name=f"{clean_name(parent['DisplayName'])} → {clean_name(phase_points[child_key]['DisplayName'])}",
+                    combos.append(dict(id="route-" + short_id("/".join(route)), kind="hidden-route", evidence=route_evidence,
+                                       name=f"{clean_name(parent['DisplayName'])} → {clean_name(phase_points[child_key]['DisplayName'])}",
                                        steps=[dict(actionId=start["id"], location=start["location"], gesture=start["gesture"], instruction=start["instructions"][0]), dict(actionId=end["id"], location=end["location"], gesture=end["gesture"], instruction="后续部位出现后，" + end["instructions"][0])],
                                        conditions=start["conditions"], note=combo_note))
             for key, point in phase_points.items():
@@ -376,7 +544,8 @@ def build(kt: Path, output: Path):
                     label = "首次轻触" if click == 0 else "最后一步" if last else "接续轻触"
                     steps.append(dict(actionId=action["id"], label=label, location=action["location"], gesture="短按",
                                       instruction=f"在{clean_name(point['DisplayName'])}短按一次；" + ("等待本条顺序互动完整结束。" if last else "等游戏允许接续时，再在同一部位进行下一步。")))
-                combos.append(dict(id="ordered-" + short_id(str(key)), name=f"{clean_name(point['DisplayName'])} · 同部位顺序互动", steps=steps,
+                combos.append(dict(id="ordered-" + short_id(str(key)), kind="ordered-clicks", evidence=route_evidence,
+                                   name=f"{clean_name(point['DisplayName'])} · 同部位顺序互动", steps=steps,
                                    conditions=action["conditions"], note=f"完整顺序共 {total} 次短按，会按固定顺序出现不同反应。不能跳过中间步骤；已经做到中途时，从当前反应继续。"))
             gauge_rules = []
             if not yuri:
@@ -426,6 +595,8 @@ def build(kt: Path, output: Path):
                         seen_edges.add(edge_key)
                         reverse = any(p.get("ChangesStageOnEnd") and p.get("NextPointGroupId") == stage for k, p in safe.items() if k[0] == target)
                         transitions.append(dict(to=str(target), direction="reversible" if reverse else "one-way", label=f"{by_key[key]['name']} → 阶段 {target}", actionId=by_key[key]["id"], condition=" ".join(by_key[key]["conditions"]) or "在当前阶段执行完整动作并等待结束。"))
+            if not yuri:
+                combos.extend(make_gauge_routes(stage, phase_points, by_key, stage_configs, auto_names, route_evidence))
             actions, combos = merge_ordinary_duplicates(actions, combos)
             # A transition label can point to one of the merged user cards.
             action_ids = {a["id"] for a in actions}
@@ -445,7 +616,8 @@ def build(kt: Path, output: Path):
         for phase in phases:
             if phase["id"] == initial_phase:
                 phase["name"] = f"初始姿态 · 阶段 {phase['id']}"
-        character = dict(id=SLUGS[resource_index - 1], name=identity["name"], costume=identity["costume"], resource=resource, initialPhaseId=initial_phase,
+        character = dict(id=SLUGS[resource_index - 1], name=identity["name"], costume=identity["costume"], aliases=aliases,
+                         costumeEdition="prestige" if identity.get("prestige") else "standard", resource=resource, initialPhaseId=initial_phase,
                          verification=dict(level=level, label=label, note=note), availability="需在游戏中拥有并进入对应服装。", phases=phases,
                          notes=["左右以当前画面为准。触控点跟随姿态变化，网页不提供固定像素坐标。", "本页只收录普通、中性的操作说明；部分互动未提供，不等同于全部内容。"],
                          limitations=["未核对的拖动终点与工具名会单独注明。", "游戏更新可能改变可用条件；以当前游戏提示为准。"],
@@ -454,9 +626,12 @@ def build(kt: Path, output: Path):
                                        unseparatedLocations=sum(1 for p in phases for a in p["actions"] if a.get("variantCount", 1) > 1)))
         characters.append(character)
         audit.append(dict(resource=resource, identity=identity, inputSnapshots=[str(p.relative_to(kt)) for p, _ in snapshots], sourceSemanticPoints=len(all_body), ordinaryPoints=len(safe), excludedPoints=excluded, coveredKeys=[list(k) for k in safe], coverage=character["coverage"]))
-    data = dict(schemaVersion=1, generatedAt="2026-10-25", summary=dict(characters=len(characters), distinctCharacters=len({c['name'] for c in characters}), phases=sum(len(c['phases']) for c in characters), actions=sum(c['coverage']['actions'] for c in characters), combinations=sum(c['coverage']['combinations'] for c in characters), scope="普通、中性手动操作说明；包含待核对项，不是全部互动的公开清单。"), characters=characters)
+    apply_manual_routes(characters, Path(__file__).resolve().parent.parent / "data/manual-combos.json")
+    data = dict(schemaVersion=1, generatedAt="2026-10-26", summary=dict(characters=len(characters), distinctCharacters=len({c['name'] for c in characters}), phases=sum(len(c['phases']) for c in characters), actions=sum(c['coverage']['actions'] for c in characters), combinations=sum(c['coverage']['combinations'] for c in characters), scope="普通、中性手动操作说明；包含待核对项，不是全部互动的公开清单。"), characters=characters)
+    data["summary"]["combinationTypes"] = dict(collections.Counter(
+        combo["kind"] for character in characters for phase in character["phases"] for combo in phase["combos"]))
     output.parent.mkdir(parents=True, exist_ok=True)
-    output.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    output.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8", newline="\n")
     private = output.parent.parent / ".cache"
     private.mkdir(exist_ok=True)
     (private / "guide-source-audit.json").write_text(json.dumps(audit, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
@@ -469,7 +644,7 @@ def make_coverage(path, data):
     for char in data['characters']:
         c = char['coverage']
         rows.append('<tr><td><a href="./#character=' + html.escape(char['id']) + '">' + html.escape(char['name']) + '</a><br><small>' + html.escape(char['costume']) + '</small></td><td>✓ ' + str(c['phases']) + '</td><td>✓ ' + str(c['actions']) + '</td><td>✓ ' + str(c['combinations']) + '</td><td>' + str(c['unlocatedDrags']) + '</td><td>' + str(c['omittedItems']) + '</td><td>' + html.escape(char['verification']['label']) + '</td></tr>')
-    path.write_text('<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>BD2有缘之客互动图鉴 · 收录记录</title><style>body{font:16px/1.7 system-ui,sans-serif;margin:3rem auto;max-width:1100px;padding:0 1rem;color:#342a30;background:#fcf7f9}a{color:#a53c69}table{border-collapse:collapse;width:100%;background:white}th,td{padding:.8rem;text-align:left;border-bottom:1px solid #eedce4}small{color:#76646c}h1{font-size:2rem}.wrap{overflow:auto}</style><h1>BD2有缘之客互动图鉴 · 收录记录</h1><p>✓ 表示本页数据已经整理并通过结构检查，不表示对应动作已在最新游戏逐项实测。收录普通、中性的操作；未收录内容和未核对的拖动方向分别计数。</p><p><a href="./">回到角色图鉴</a> · 作者 Flowers0120 · 2026-10-25</p><div class="wrap"><table><thead><tr><th>角色／服装</th><th>阶段</th><th>操作条目</th><th>连续组合</th><th>待核对拖动</th><th>未收录项</th><th>证据范围</th></tr></thead><tbody>' + ''.join(rows) + '</tbody></table></div></html>\n', encoding='utf-8')
+    path.write_text('<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>BD2有缘之客互动图鉴 · 收录记录</title><style>body{font:16px/1.7 system-ui,sans-serif;margin:3rem auto;max-width:1100px;padding:0 1rem;color:#342a30;background:#fcf7f9}a{color:#a53c69}table{border-collapse:collapse;width:100%;background:white}th,td{padding:.8rem;text-align:left;border-bottom:1px solid #eedce4}small{color:#76646c}h1{font-size:2rem}.wrap{overflow:auto}</style><h1>BD2有缘之客互动图鉴 · 收录记录</h1><p>✓ 表示本页数据已经整理并通过结构检查，不表示对应动作已在最新游戏逐项实测。收录普通、中性的操作；未收录内容和未核对的拖动方向分别计数。</p><p><a href="./">回到角色图鉴</a> · 作者 Flowers0120 · ' + html.escape(data['generatedAt']) + '</p><div class="wrap"><table><thead><tr><th>角色／服装</th><th>阶段</th><th>操作条目</th><th>连续组合</th><th>待核对拖动</th><th>未收录项</th><th>证据范围</th></tr></thead><tbody>' + ''.join(rows) + '</tbody></table></div></html>\n', encoding='utf-8', newline='\n')
 
 
 if __name__ == '__main__':
